@@ -1,0 +1,52 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+	<img src="/images/mvplogo.png" alt="MVP" />
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Archives
+    </div>
+    <div class="panel-body">
+		<ul>
+        {% assign counter = 0 %}
+        {% for post in site.posts %}
+        {% assign thisyear = post.date | date: "%B %Y" %}
+        {% assign prevyear = post.previous.date | date: "%B %Y" %}
+        {% assign counter = counter | plus: 1 %}
+        {% if thisyear != prevyear %}
+            <li><a href="/archives/#{{ post.date | date:"%B%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
+            {% assign counter = 0 %}
+        {% endif %}
+        {% endfor %}
+		</ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body text-center">
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:300px;height:600px"
+            data-ad-client="ca-pub-2446392180502199"
+            data-ad-slot="3007017249"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Follow Blog via email
+    </div>
+    <div class="panel-body">
+        <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=dotnetthoughts', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email address"/>
+        </div>
+        <input type="submit" class="btn btn-default" value="Subscribe" />
+	<input type="hidden" value="dotnetthoughts" name="uri"/><input type="hidden" name="loc" value="en_US"/>
+	</form>
+    </div>
+</div>

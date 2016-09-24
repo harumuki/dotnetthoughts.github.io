@@ -1,0 +1,190 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" manifest="{{ site.baseurl }}/cache.manifest">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="{{ site.url }}/favicon.ico" />
+  <style>
+	.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#29d;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}body{font-family:'Open Sans',sans-serif;margin-top:60px}.PageNavigation{font-size:14px;display:block;width:auto;overflow:hidden}.PageNavigation a{display:block;width:50%;float:left;margin:1em 0}.PageNavigation .next{text-align:right}ul#display-inline-block,ul#display-inline-block li{margin:0;padding:0}ul#display-inline-block li{display:inline-block}#back-to-top{position:fixed;bottom:40px;right:40px;z-index:9999;width:32px;height:32px;text-align:center;line-height:30px;background:#f5f5f5;color:#444;cursor:pointer;border:0;border-radius:2px;text-decoration:none;transition:opacity .2s ease-out;opacity:0}#back-to-top:hover{background:#e9ebec}#back-to-top.show{opacity:1}
+	.github { width: 32px; height: 32px; background: url(/images/social.png) -0px 0;} .googleplus { width: 32px; height: 32px; background: url(/images/social.png) -32px 0;} .rss { width: 32px; height: 32px; background: url(/images/social.png) -64px 0;} .socialfb { width: 32px; height: 32px; background: url(/images/social.png) -96px 0;} .socialtwit { width: 32px; height: 32px; background: url(/images/social.png) -128px 0;}
+  </style>
+  <link href="{{ site.baseurl }}/css/syntax.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  {% seo %}
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+        aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://dotnetthoughts.com">
+        	<img alt="{{ site.name }}" src="/favicon.ico" style="display: inline-block; margin-top: -5px">
+        	{{ site.name }}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <!--
+          <li><a href="http://dotnetthoughts.net">Home</a></li>
+        -->
+          {% for page in site.pages %} {% if page.title %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %} {% endfor %}
+          <li><a href="http://feeds.feedburner.com/dotnetthoughts">RSS</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" method="GET" action="/search">
+	<div class="form-group has-feedback">
+	<input type="text" class="form-control" name="query" id="query" placeholder="Search..." />
+	<!--
+	<span class="glyphicon glyphicon-search form-control-feedback"></span>
+	-->
+	</div>
+	</form>
+      </div>
+	
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        {{ content }}
+      </div>
+      <div class="col-sm-4">
+        {% include sidebar.html %}
+      </div>
+    </div>
+    <hr />
+    <div class="text-center">
+	 <ul id="display-inline-block" style="text-align:center;">
+        {% if site.twitter_username %}
+            <li><a target="_blank" href="http://www.twitter.com/{{ site.twitter_username }}"><div class="socialtwit"></div></a></li>
+        {% endif %}
+        {% if site.facebook_username %}
+            <li><a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><div class="socialfb"></div></a></li>
+        {% endif %}
+        {% if site.github_username %}
+            <li><a target="_blank" href="http://www.github.com/{{ site.github_username }}"><div class="github"></div></a></li>
+        {% endif %}
+        {% if site.googleplus_username %}
+            <li><a target="_blank" href="https://plus.google.com/u/0/{{ site.googleplus_username }}"><div class="googleplus"></div></a></li>
+        {% endif %}
+        {% if site.showFeed %}
+            <li><a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"><div class="rss"></div></a></li>
+        {% endif %}
+    </ul><br/>
+     Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.author_name }}. Blog content licensed under the Creative Commons <a href="http://creativecommons.org/licenses/by/2.5/" target="_blank">CC BY 2.5</a> | Unless otherwise stated or granted, code samples licensed under the <a href="http://sm.mit-license.org/" target="_blank">MIT license</a>. This is a personal blog. The opinions expressed here represent my own and not those of my employer.
+  </div>
+<hr />
+  </div>
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+		<div>
+        <img src="http://dotnetthoughts.net/favicon.ico" alt="Image Preview" id="imagepreview">
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+  <script async src="{{ site.baseurl }}/js/pace.min.js"></script>
+  <script async src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+  <script async src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
+  <script>
+    $(function() {
+      $('img').addClass('img-responsive center-block').css({ 'cursor': "pointer" });
+      $('img').click(function(){ var $img = $(this); $('#imagepreview').attr('src',  $img.attr('src')); $('#imagemodal').modal('show'); });
+      if($("#back-to-top").length){var scrollTrigger=100,backToTop=function(){var o=$(window).scrollTop();o>scrollTrigger?$("#back-to-top").addClass("show"):$("#back-to-top").removeClass("show")};backToTop(),$(window).on("scroll",function(){backToTop()}),$("#back-to-top").on("click",function(o){o.preventDefault(),$("html,body").animate({scrollTop:0},700)})}
+    });
+  </script>
+  {% if site.disqus_shortname and page.categories %}
+  <script type="text/javascript">
+    var disqus_shortname = '{{ site.disqus_shortname }}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  {% endif %}
+   <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  {% if page.isSearch %}
+	<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+	$(function() {
+		var searchTerm = getParameterByName("query");
+		if(searchTerm)
+		{
+			var html = "";
+			var count = 0;
+			$.getJSON('/search.json', function(data) {
+				searchTerm = searchTerm.toLowerCase();
+				$.each(data, function(key, val){
+					var existsInContent = val.content.toLowerCase().indexOf(searchTerm) >= 0;
+					var existsIntitle = val.title.toLowerCase().indexOf(searchTerm) >= 0;
+					if(existsInContent || existsIntitle)
+					{
+						count++;
+						html += '<h3><a href="' + val.link + '">' + val.title + '</a></h3>';
+						html += '<div class="entry">' + val.excerpt + '</div>';
+					}
+				});
+				
+				html = "<h2>" + count + " result" + (count > 1 ? "s" : "") + " found for <em>" + searchTerm + "</em></h2><hr/>" + html;
+				if(count == 0)
+				{
+					html = '<div>';
+					html += '<h2>No results found.</h2>';
+					html += '</div>';
+				}
+				
+				$('#search_results').html(html);
+			});
+		}
+	});
+	</script>
+	{% endif %}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+</body>
+</html>

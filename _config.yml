@@ -1,0 +1,48 @@
+# Site settings
+host : dotnetthoughts.net
+name : dotnetthoughts
+description: a dotnet developer's technical journal
+author_name : "Anuraj P"
+author_bio : "Anuraj Parameswaran works as an architect. He has been working on .NET platform since its early days. He is a co-founder of mobithoughts, a mobile application development company. His focus areas are Data Analytics, Architecture and Cloud computing. He is a Microsoft MVP in Visual Studio and Development technologies." 
+baseurl : ""
+twitter_username: anuraj
+github_username:  anuraj
+facebook_username: dotnetthoughts
+googleplus_username : 105671778313820571858
+disqus_shortname: dotnetthoughts
+google_analytics: 'UA-12179122-1'
+gravatar_hash : ab9111466be86e8e027c658e8dc1778f
+url : http://dotnetthoughts.net
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+permalink: /:title/
+paginate: 7
+showFeed : true
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+# SEO settings
+title: dotnetthoughts
+url: http://dotnetthoughts.net
+twitter:
+  username: dotnet_thoughts
+facebook:
+  app_id: 222755514444735
+  publisher: https://www.facebook.com/anuraj.p
+  admins: https://www.facebook.com/anuraj.p
+social:
+  name : Anuraj
+  links: ["http://www.twitter.com/anuraj","https://www.facebook.com/anuraj.p","https://plus.google.com/+AnurajP","https://in.linkedin.com/in/anurajp","https://www.youtube.com/channel/UC98FbpEB4PvgOYq1GKCtOgQ"]
+google_site_verification: gfDtT8jd3OHpmGe2VJwYDE7G9-xwmpbQVVugKEU-Kp4
+author:
+  twitter: anuraj
