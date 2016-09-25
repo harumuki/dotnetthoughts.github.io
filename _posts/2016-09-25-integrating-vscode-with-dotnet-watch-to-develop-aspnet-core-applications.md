@@ -2,7 +2,7 @@
 layout: post
 title: "Integrating Visual Studio Code with dotnet watch to develop ASP.NET Core applications"
 subtitle: "This post is about integrating Visual Studio Code with dotnet watch to develop ASP.NET Core applications. Visual Studio code is a free-cross platform editor supports development and debugging of ASP.NET Core applications. You can download the VS Code from http://code.visualstudio.com."
-date: 2016-09-18 00:00
+date: 2016-09-25 00:00
 author: "Anuraj"
 comments: true
 categories: [C#, ASP.NET Core, VSCode, dotnet-watch]
