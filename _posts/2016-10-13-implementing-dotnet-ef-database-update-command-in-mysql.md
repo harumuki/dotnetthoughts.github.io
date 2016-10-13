@@ -17,7 +17,8 @@ This post is about implementing dotnet ef database update command with MySql con
 It was `ExistsSql` property in the [MySQLHistoryRepository.cs](https://github.com/mysql/mysql-connector-net/blob/7.0/Source/MySql.Data.EntityFramework7/Migrations/MySQLHistoryRepository.cs#L58) class. I looked the implementation in SqlServer and I found it is looking for existing tables, using `SELECT OBJECTID`. Then I searched how I can do same with MySql, something like this.
 
 {% highlight SQL %}
-SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'SCHEMA' AND table_name='TABLE NAME' 
+SELECT COUNT(*) FROM information_schema.tables WHERE 
+    table_schema = 'SCHEMA' AND table_name='TABLE NAME' 
 {% endhighlight %}
 
 And I implemented same in C# something like this.
@@ -50,7 +51,7 @@ I found the database update working most of the scenarios, except when your mode
 
 And here is the `database update` command execution, after implementation.
 
-![Database update command]({{ site.baseurl }}/assets/images/2016/08/mysql_dotnet_ef_database_update.png)
+![Database update command]({{ site.baseurl }}/assets/images/2016/10/mysql_dotnet_ef_database_update.png)
 
 Yes there are some warnings I am getting related to the MySql.Data package, but right now I am ignoring that.
 
