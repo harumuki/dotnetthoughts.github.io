@@ -4,7 +4,7 @@ name : dotnetthoughts
 description: a dotnet developer's technical journal
 author_name : "Anuraj P"
 author_bio : "Anuraj Parameswaran works as an architect. He has been working on .NET platform since its early days. He is a co-founder of mobithoughts, a mobile application development company. His focus areas are Data Analytics, Architecture and Cloud computing. He is a Microsoft MVP in Visual Studio and Development technologies." 
-baseurl : ""
+baseurl : "http://dotnetthoughts.net"
 twitter_username: anuraj
 github_username:  anuraj
 facebook_username: dotnetthoughts
