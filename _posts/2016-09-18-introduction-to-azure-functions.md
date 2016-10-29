@@ -62,5 +62,3 @@ You can test it using the fiddler or postman as well, you can either use HTTP PO
 In this I am passing the color as query string.
 
 Azure functions can also used for Build BOTs and APIs. You can also use Azure functions integrated with WebHooks.
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

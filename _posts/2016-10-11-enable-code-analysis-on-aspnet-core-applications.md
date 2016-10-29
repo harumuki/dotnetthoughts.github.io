@@ -37,5 +37,3 @@ You can find more details about stylecop.json file [here](https://github.com/Dot
 If you're using Visual Studio, you can do the same steps to enable code analysis
 
 Happy Programming :)
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

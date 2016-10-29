@@ -63,5 +63,3 @@ dotnet aspnet-codegenerator --project . controller -name HelloController -m Auth
 The above command will generate controller with name `HelloController` in the root directory, and views for CRUD options inside `Hello` folder under `Views` folder. You can use `--help` commandline switch after controller parameter to get more options about controller generator.
 
 Happy Coding :)
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

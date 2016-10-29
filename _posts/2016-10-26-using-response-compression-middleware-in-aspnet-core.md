@@ -64,5 +64,3 @@ You can verify GZip compression enabled or not using Chrome developer tools. You
 You can find more features and details about ASP.NET Core 1.1 Preview 1 release [here](https://blogs.msdn.microsoft.com/webdev/2016/10/25/announcing-asp-net-core-1-1-preview-1/)
 
 Happy Programming :)
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

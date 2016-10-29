@@ -59,5 +59,3 @@ And if you are using WebListener, the server will be displayed as "Microsoft-HTT
 ![WebListener server name]({{ site.baseurl }}/assets/images/2016/10/server_name.png)
 
 Happy Programming :)
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

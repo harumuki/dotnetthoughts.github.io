@@ -56,5 +56,3 @@ And here is the `database update` command execution, after implementation.
 Yes there are some warnings I am getting related to the MySql.Data package, but right now I am ignoring that.
 
 Happy Programming :)
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

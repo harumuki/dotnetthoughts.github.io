@@ -95,5 +95,3 @@ I prefer to use Azure Web app service to host your Bot. So you can use Web app's
 And once it is completed, you can copy HTML code from the "Embed template" textbox, and set the Secret in the placeholder. If you have used an ASP.NET MVC app, you can put it in the Index page and upload it again. You can see the demo of the weather bot [here](http://weatherbotapp.azurewebsites.net/). And here is the screenshot of the same.
 
 ![Weather bot running]({{ site.baseurl }}/assets/images/2016/09/weather_bot_running.png)
-
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

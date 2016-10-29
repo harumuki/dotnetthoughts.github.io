@@ -56,5 +56,3 @@ To verify the Bot implementation, you need to run the web application and in the
 ![Bot Framework Channel Emulator running]({{ site.baseurl }}/assets/images/2016/09/bot_framework_channel_emulator_demo.png)
 
 Bot Framework supports Markdown in the responses, which can be used for improving the response, like including links or images etc. In the next post I will be explaining about the deployment and other enhancements you can implement in your Bot app. 
-
-Did this post help you? Please let us know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.

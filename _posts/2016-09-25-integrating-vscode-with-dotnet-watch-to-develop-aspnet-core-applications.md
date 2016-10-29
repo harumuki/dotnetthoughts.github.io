@@ -42,4 +42,4 @@ Once you confirmed the installation, VS Code will create two files inside .vscod
 
 Now you can run the `watch` task from VSCode using Command palette, and select run task option, where you will find the `watch` command, once you select that it will execute the `dotnet watch run` command. To stop the execution you need to select `terminate running task` option from Command palette again.
 
-Did this post / article help you? Please let me know your feedback in the below comments section. Also, you can ping me on Twitter [@anuraj](http://twitter.com/anuraj) to ask your queries or share the feedback.
+Happy Programming :)
