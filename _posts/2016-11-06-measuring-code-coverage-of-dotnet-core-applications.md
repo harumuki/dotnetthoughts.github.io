@@ -2,7 +2,7 @@
 layout: post
 title: "Measuring code coverage of .NET Core applications"
 subtitle: "This post is about getting code coverage of .NET Core using Opencover. This is an update post, long back I wrote a post on code coverage using ASP.NET Core in RC days. This post is using dotnet command and 1.0 version."
-date: 2016-06-11 00:00:00
+date: 2016-11-06 00:00:00
 categories: [C#, ASP.NET Core, Unit Testing, Code Coverage, .NET Core]
 tags: [C#, ASP.NET Core, Unit Testing, Code Coverage, .NET Core]
 author:     "Anuraj"
