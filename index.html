@@ -1,14 +1,6 @@
 ---
 layout: default
 ---
-<div itemscope itemtype="http://schema.org/WebSite">
-  <meta itemprop="url" content="http://dotnetthoughts.net"/>
-  <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-    <meta itemprop="target" content="http://dotnetthoughts.net/search/?query={search_term_string}"/>
-    <input itemprop="query-input" type="text" name="search_term_string" required/>
-    <input type="submit"/>
-  </form>
-</div>
 
 <div class="posts">
       {% for post in paginator.posts %}
