@@ -44,14 +44,18 @@ layout: compress
           {% endif %} {% endfor %}
           <li><a href="http://feeds.feedburner.com/dotnetthoughts">RSS</a></li>
         </ul>
-        <form class="navbar-form navbar-right" method="GET" action="/search">
+	<div itemscope itemtype="http://schema.org/WebSite">
+	<meta itemprop="url" content="http://dotnetthoughts.net"/>
+        <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" class="navbar-form navbar-right" method="GET" action="/search">
+	<meta itemprop="target" content="http://dotnetthoughts.net/search/?query={search_term_string}"/>
 	<div class="form-group has-feedback">
-	<input type="text" class="form-control" name="query" id="query" placeholder="Search..." />
+	<input type="text" itemprop="query-input" class="form-control" name="query" id="query" placeholder="Search..." />
 	<!--
 	<span class="glyphicon glyphicon-search form-control-feedback"></span>
 	-->
 	</div>
 	</form>
+	</div>
       </div>
 	
       <!--/.nav-collapse -->
