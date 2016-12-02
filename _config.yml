@@ -12,7 +12,6 @@ googleplus_username : 105671778313820571858
 disqus_shortname: dotnetthoughts
 google_analytics: 'UA-12179122-1'
 gravatar_hash : ab9111466be86e8e027c658e8dc1778f
-url : http://dotnetthoughts.net
 # Build settings
 markdown: kramdown
 kramdown:
