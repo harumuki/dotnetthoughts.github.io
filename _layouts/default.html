@@ -8,13 +8,13 @@ layout: compress
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" href="{{ site.baseurl }}/favicon.ico" />
+  <link href="{{ site.url }}{{ site.baseurl }}css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="{{ site.url }}{{ site.baseurl }}favicon.ico" />
   <style>
 	.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#29d;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}body{font-family:'Open Sans',sans-serif;margin-top:60px}.PageNavigation{font-size:14px;display:block;width:auto;overflow:hidden}.PageNavigation a{display:block;width:50%;float:left;margin:1em 0}.PageNavigation .next{text-align:right}ul#display-inline-block,ul#display-inline-block li{margin:0;padding:0}ul#display-inline-block li{display:inline-block}#back-to-top{position:fixed;bottom:40px;right:40px;z-index:9999;width:32px;height:32px;text-align:center;line-height:30px;background:#f5f5f5;color:#444;cursor:pointer;border:0;border-radius:2px;text-decoration:none;transition:opacity .2s ease-out;opacity:0}#back-to-top:hover{background:#e9ebec}#back-to-top.show{opacity:1}
 	.github { width: 32px; height: 32px; background: url(/images/social.png) -0px 0;} .googleplus { width: 32px; height: 32px; background: url(/images/social.png) -32px 0;} .rss { width: 32px; height: 32px; background: url(/images/social.png) -64px 0;} .socialfb { width: 32px; height: 32px; background: url(/images/social.png) -96px 0;} .socialtwit { width: 32px; height: 32px; background: url(/images/social.png) -128px 0;}
   </style>
-  <link href="{{ site.baseurl }}/css/syntax.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}css/syntax.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   {% seo %}
 </head>
@@ -87,7 +87,7 @@ layout: compress
             <li><a target="_blank" href="https://plus.google.com/u/0/{{ site.googleplus_username }}"><div class="googleplus"></div></a></li>
         {% endif %}
         {% if site.showFeed %}
-            <li><a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.baseurl }}"><div class="rss"></div></a></li>
+            <li><a target="_blank" href="{{ "/feed.xml" | prepend: site.url | prepend: site.baseurl }}"><div class="rss"></div></a></li>
         {% endif %}
     </ul><br/>
      Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.author_name }}. Blog content licensed under the Creative Commons <a href="http://creativecommons.org/licenses/by/2.5/" target="_blank">CC BY 2.5</a> | Unless otherwise stated or granted, code samples licensed under the <a href="http://sm.mit-license.org/" target="_blank">MIT license</a>. This is a personal blog. The opinions expressed here represent my own and not those of my employer.
@@ -113,10 +113,10 @@ layout: compress
   </div>
 </div>
 
-  <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-  <script async src="{{ site.baseurl }}/js/pace.min.js"></script>
-  <script async src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-  <script async src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}js/jquery.min.js"></script>
+  <script async src="{{ site.url }}{{ site.baseurl }}js/pace.min.js"></script>
+  <script async src="{{ site.url }}{{ site.baseurl }}js/bootstrap.min.js"></script>
+  <script async src="{{ site.url }}{{ site.baseurl }}js/ie10-viewport-bug-workaround.js"></script>
   <script>
     $(function() {
       $('img').addClass('img-responsive center-block').css({ 'cursor': "pointer" });
