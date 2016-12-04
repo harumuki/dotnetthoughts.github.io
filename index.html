@@ -29,7 +29,7 @@ layout: default
 	{{ post.date | date: "%A, %B %-d, %Y" }}</p>
       <p>
             {% for category in post.categories %}
-                  <span class="label label-default">{{ category }}</span>
+                  <a href="/tags#{{ category }}" class="label label-default">{{ category }}</a>
             {% endfor %}
       </p>
       <div class="entry">

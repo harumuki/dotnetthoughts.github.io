@@ -14,7 +14,7 @@ layout: default
 	{{ page.date | date: "%A, %B %-d, %Y" }}</p>
  <p>
 	{% for category in page.categories %}
-		<span class="label label-default">{{ category }}</span>
+		<a href="/tags#{{ category }}" class="label label-default">{{ category }}</a>
 	{% endfor %}
 </p>
 <p>{{ content }}</p>
