@@ -26,7 +26,6 @@ showFeed : true
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 gems:
   - jekyll-sitemap
-  - jekyll-feed
   - jekyll-seo-tag
 compress_html:
   clippings: all
