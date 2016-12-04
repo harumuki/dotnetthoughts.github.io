@@ -78,6 +78,6 @@ And here is the layout of the activity.
 
 And here is the screen shot of the application running on emulator.
 
-![Android emulator running with C# application]({{ site.baseurl }}/assets/images/2013/11/Mono_for_android_emulator.png)
+![Android emulator running with C# application]({{ site.url }}/assets/images/2013/11/Mono_for_android_emulator.png)
 
 You can find the source code on github - [https://github.com/anuraj/HybridApp](https://github.com/anuraj/HybridApp)

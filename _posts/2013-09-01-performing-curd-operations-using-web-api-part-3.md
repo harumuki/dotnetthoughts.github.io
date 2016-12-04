@@ -55,11 +55,11 @@ In Web API, Request.CreateErrorResponse() method supports an overload which help
 
 Here is the Fiddler request, with invalid email address in POST body.
 
-![Fiddler - POST request with Invalid Email address]({{ site.baseurl }}/assets/images/2013/09/fiddler_compose.png)
+![Fiddler - POST request with Invalid Email address]({{ site.url }}/assets/images/2013/09/fiddler_compose.png)
 
 And here is the response from Web API Service, in Fiddler.
 
-![Service response in Fiddler]({{ site.baseurl }}/assets/images/2013/09/fiddler_response.png)
+![Service response in Fiddler]({{ site.url }}/assets/images/2013/09/fiddler_response.png)
 
 Happy Programming
 

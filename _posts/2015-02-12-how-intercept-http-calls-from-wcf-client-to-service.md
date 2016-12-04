@@ -50,6 +50,6 @@ For me it is also not working :(
 
 This is the proxy request and response captured using Fiddler.
 
-![WCF Request and Response using Fiddler]({{ site.baseurl }}/assets/images/2015/02/fiddler_wcf.png)
+![WCF Request and Response using Fiddler]({{ site.url }}/assets/images/2015/02/fiddler_wcf.png)
 
 Happy Programming :)

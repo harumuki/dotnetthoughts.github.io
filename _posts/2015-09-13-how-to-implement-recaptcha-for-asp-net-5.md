@@ -11,11 +11,11 @@ header-img: "img/post-bg-01.jpg"
 ---
 This is post is about integrating [Google reCaptcha](https://www.google.com/recaptcha/) for ASP.NET 5. To use reCaptcha in your website, you need to register in the [reCaptcha website](https://www.google.com/recaptcha/). You need to provide the label, domain name and email address of the owners. 
 
-![reCaptcha Registration ]({{ site.baseurl }}/assets/images/2015/09/reCaptchaReg.png)
+![reCaptcha Registration ]({{ site.url }}/assets/images/2015/09/reCaptchaReg.png)
 
 Once it is completed, you will get a screen like this.
 
-![reCaptcha - Dashboard]({{ site.baseurl }}/assets/images/2015/09/reCaptchaReg2.png)
+![reCaptcha - Dashboard]({{ site.url }}/assets/images/2015/09/reCaptchaReg2.png)
 
 From this screen you can get Site key and Secret key values. Site key used to generate captcha images on client side. For client side integration, include the script reference in the head element.
 {% highlight XML %}
@@ -29,7 +29,7 @@ And based on the theme, paste the HTML code, which renders the captcha.
 
 This is the site key from the dashboard. Now you have completed the client side integration. If you run the page, you can view a captcha image like this.
 
-![recaptcha running]({{ site.baseurl }}/assets/images/2015/09/webpage.png)
+![recaptcha running]({{ site.url }}/assets/images/2015/09/webpage.png)
 
 Now as part of form submission, you need to validate the captcha response. For that you need to post data from your application to Google servers.
 

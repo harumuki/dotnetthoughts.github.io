@@ -11,6 +11,6 @@ header-img: "img/post-bg-01.jpg"
 ---
 Unlike IIS Server, IIS Express doesn't support Windows Authentication by default. You can enable the Windows Authentication in IIS Express by modifying the applicationhost.config under the "C:\Users\[username]\Documents\IISExpress\config" directory. You need to find the windowsAuthentication element under authentication, and change the value of attribute enabled to true.
 
-![ASP.Net application with Windows Authentication in IIS Express]({{ site.baseurl }}/assets/images/2013/09/windowsauth.png)
+![ASP.Net application with Windows Authentication in IIS Express]({{ site.url }}/assets/images/2013/09/windowsauth.png)
 
 Happy Programming.

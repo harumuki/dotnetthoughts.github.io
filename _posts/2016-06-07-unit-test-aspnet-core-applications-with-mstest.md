@@ -72,6 +72,6 @@ public class EmployeeControllerTests
 
 Here is the typical output you will get while executing the tests.
 
-![MS Test Runner executing ASP.NET Core Unit Tests]({{ site.baseurl }}/assets/images/2016/06/ms_test_running_with_dotnet_test.png)
+![MS Test Runner executing ASP.NET Core Unit Tests]({{ site.url }}/assets/images/2016/06/ms_test_running_with_dotnet_test.png)
 
 Happy Programming :)

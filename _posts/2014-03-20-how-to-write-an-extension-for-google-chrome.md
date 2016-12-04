@@ -63,23 +63,23 @@ The searchOlam function will get the highlighted / selected text as info paramet
 
 Now you need to package and install the extension. To do this, open Google Chrome, in the address bar type **"chrome://extensions/"**
 
-![Installing Chrome Extension]({{ site.baseurl }}/assets/images/2014/03/chromeextns.png)
+![Installing Chrome Extension]({{ site.url }}/assets/images/2014/03/chromeextns.png)
 
 In this screen, Select / Check the Developer mode checkbox, which will display two buttons Load Unpacked Extension and Pack Extension. Click on the Pack Extension, which will display a dialog like this.
 
-![Pack Extension Dialog]({{ site.baseurl }}/assets/images/2014/03/packextn.png)
+![Pack Extension Dialog]({{ site.url }}/assets/images/2014/03/packextn.png)
 
 You need to provide the directory, which contains the manifest.json, background.js, and your icon images to Extension root directory. Now click on the Pack Extension button, which will create Chrome Extension and Private Key file to the location. Now drag and drop the crx (Chrome Extension) file Google Chrome. Chrome will ask for a confirmation like this. 
 
-![Add Extension - Confirmation]({{ site.baseurl }}/assets/images/2014/03/installextn.png)
+![Add Extension - Confirmation]({{ site.url }}/assets/images/2014/03/installextn.png)
 
 Click on the Add button. Once it is added successfully, it will be displayed in the extensions tab.
 
-![Extension Installed Successfully]({{ site.baseurl }}/assets/images/2014/03/installed.png)
+![Extension Installed Successfully]({{ site.url }}/assets/images/2014/03/installed.png)
 
 To see the extension in action, select a word, and right click you can see a context menu item like this.
 
-![Extension in Action]({{ site.baseurl }}/assets/images/2014/03/context_menu.png)
+![Extension in Action]({{ site.url }}/assets/images/2014/03/context_menu.png)
 
 Clicking on it will open a Tab, which will display the Malayalam meanings of the English words.
 

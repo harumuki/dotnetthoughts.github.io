@@ -13,11 +13,11 @@ ASP.NET 4.5 includes a new feature to minify and bundle CSS and JavaScript withi
 
 Here is a sample web application, which contains 6 style sheets and 3 javascript files, and this is network traffic before css and javascript bundling and minification.
 
-![Network Traffic without Bundling and Minification]({{ site.baseurl }}/assets/images/2013/10/download_without_bundling.png)
+![Network Traffic without Bundling and Minification]({{ site.url }}/assets/images/2013/10/download_without_bundling.png)
 
 And here is the same web application after enabling css and javascript bundling and minification.
 
-![Network Traffic with Bundling and Minification]({{ site.baseurl }}/assets/images/2013/10/download_with_bundling.png)
+![Network Traffic with Bundling and Minification]({{ site.url }}/assets/images/2013/10/download_with_bundling.png)
 
 You can enable bundling and minification using Microsoft Web Optimization framework. You can install it using nuget.
 

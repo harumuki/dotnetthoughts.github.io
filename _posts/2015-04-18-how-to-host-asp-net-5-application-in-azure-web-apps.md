@@ -45,7 +45,7 @@ kpm bundle --out C:\WebApp --runtime kre-clr-win-x86.1.0.0-beta3
 
 You can find the installed runtimes and the name from the "C:\Users\[username]\.k\runtimes" folder. I am using beta3 runtime. Once you execute this command, you will find a folder structure like this in the C:\WebApp folder.
 
-![Bundle output - Folder structure]({{ site.baseurl }}/assets/images/2015/04/folderstructure.png)
+![Bundle output - Folder structure]({{ site.url }}/assets/images/2015/04/folderstructure.png)
 
 Make sure you have a bin folder inside wwwroot folder, and which contains file - AspNet.Loader.dll. And here is the web.config file, inside wwwroot folder.
 {% highlight XML %}
@@ -66,14 +66,14 @@ All the runtime, dependencies and packages are created inside approot folder. If
 
 3.  Publish files using FTP - Connect to the website FTP folder using any FTP client. Copy the contents in the C:\WebApp(output folder of kpm build) to site folder of the website. With this copy operation, You are overwriting the original site/wwwroot folder with the one in output folder and adding a new folder site/approot. Once upload finished, Remote site folder structure will look like this.
 
-![Remote site folder structure]({{ site.baseurl }}/assets/images/2015/04/remotesite.png)
+![Remote site folder structure]({{ site.url }}/assets/images/2015/04/remotesite.png)
 
 
 **Hosting ASP.NET 5 apps in IIS and IIS Express.**
 
 As I mentioned earlier, you can host this app in IIS, by pointing the physical path to the wwwroot folder.
 
-![ASP.NET 5 - Hosting in IIS]({{ site.baseurl }}/assets/images/2015/04/hostinginiis.png)
+![ASP.NET 5 - Hosting in IIS]({{ site.url }}/assets/images/2015/04/hostinginiis.png)
 
 And you can do the same with IIS express as well.
 

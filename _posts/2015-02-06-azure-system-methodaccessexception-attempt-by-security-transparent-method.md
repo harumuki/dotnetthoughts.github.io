@@ -21,11 +21,11 @@ When I tried to browse the page I got an exception like this -
 
 Here is the screenshot
 
-![System.MethodAccessException: Attempt by security transparent method]({{ site.baseurl }}/assets/images/2015/02/server_error.png)
+![System.MethodAccessException: Attempt by security transparent method]({{ site.url }}/assets/images/2015/02/server_error.png)
 
 This issue was resolved by changing the file publish options.
 
-![File Publish Options]({{ site.baseurl }}/assets/images/2015/02/publishsettings.png)
+![File Publish Options]({{ site.url }}/assets/images/2015/02/publishsettings.png)
 
 Select the "Remove additional files at destination" checkbox. 
 

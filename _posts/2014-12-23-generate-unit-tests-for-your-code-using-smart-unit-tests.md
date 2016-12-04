@@ -13,11 +13,11 @@ Smart Unit Tests is a new feature in Visual Studio 2015, Smart Unit Tests helps 
 
 You can right click on the class file or method, and select Smart Unit Tests context menu option.
 
-![Smart Unit Tests - Context menu option]({{ site.baseurl }}/assets/images/2014/12/smartunittests.png)
+![Smart Unit Tests - Context menu option]({{ site.url }}/assets/images/2014/12/smartunittests.png)
 
 A parameterized unit test is generated for this method. The test data is created to exercise the code paths in the method. Smart Unit Tests runs your code many times with different inputs. Each run is represented in the table showing the input test data and the resulting output or exception. The dropdown list in the smart unit tests window will display all the public methods, for which test data is generated.
 
-![Generated Test Data and Test cases]({{ site.baseurl }}/assets/images/2014/12/smartunittests2.png)
+![Generated Test Data and Test cases]({{ site.url }}/assets/images/2014/12/smartunittests2.png)
 
 Developers can save the unit test generated, by clicking on the save button of Smart Unit Tests window.Smart unit tests also helps you to identify potential problems in your code as well.
 

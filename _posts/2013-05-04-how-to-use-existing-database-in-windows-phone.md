@@ -31,7 +31,7 @@ if (!dataContext.DatabaseExists())
 
 This approach is not feasible if you have lot of data, for example a Dictionary database. In such scenarios you can add the existing database to the project, and setting the Build Action to Content. 
 
-![Properties Window - Build Action - Content]({{ site.baseurl }}/assets/images/2013/05/CaptureItPlus4.jpeg)
+![Properties Window - Build Action - Content]({{ site.url }}/assets/images/2013/05/CaptureItPlus4.jpeg)
 
 This will deploy the database file with your application onto the phone, but it will be placed in the same folder as all other static content for your application. Your application can only read from this folder.
  

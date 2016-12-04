@@ -18,7 +18,7 @@ This post is about implementing authentication with Slack. Similar to Linkedin o
 
 For slack you can get the Client Id and Client Secret from the [apps](https://api.slack.com/apps) page. If you haven't created an app you need to create it first. The return uri in this configuration and in our code should be same, otherwise slack authentication will not work. 
 
-![Slack API Credentials]({{ site.baseurl }}/assets/images/2016/07/slack_api_credentials.png)
+![Slack API Credentials]({{ site.url }}/assets/images/2016/07/slack_api_credentials.png)
 
 And here is the other endpoints.
 
@@ -174,15 +174,15 @@ Here is the screenshots of the Slack authentication in ASP.NET Core.
 
 When user click on login link, which will invoke the login method mapped in Startup.cs
 
-![Slack Sign In Dialog with Team Selection]({{ site.baseurl }}/assets/images/2016/07/slack_signin_team_dialog.png)
+![Slack Sign In Dialog with Team Selection]({{ site.url }}/assets/images/2016/07/slack_signin_team_dialog.png)
 
 Once user's team selection completed, the authentication dialog will be presented with username and password fields.
 
-![Slack Sign In Dialog with Credentials]({{ site.baseurl }}/assets/images/2016/07/slack_signin_user_dialog.png)
+![Slack Sign In Dialog with Credentials]({{ site.url }}/assets/images/2016/07/slack_signin_user_dialog.png)
 
 And finally once authentication is completed, it will redirect to the application, and with the Razor view code, it will display user's name and logout button like this.
 
-![Web Application with logged in Name]({{ site.baseurl }}/assets/images/2016/07/mvc_app_with_slackauth.png)
+![Web Application with logged in Name]({{ site.url }}/assets/images/2016/07/mvc_app_with_slackauth.png)
 
 You can use the similar steps for Linkedin and Github as well.
 

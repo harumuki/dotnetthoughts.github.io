@@ -28,7 +28,7 @@ Line #5 - Start IISExpress.exe from the location, with a Random port (%RANDOM% -
 
 Create a file with ".reg" extension, copy paste the code and save. Double click on the reg file. You may get UAC dialog and a security warning from Registry editor. Once you successfully merged the changes, you will get a context menu item like this, which will start IIS Express.
 
-![IIS Express Webserver Here - Shell Extension]({{ site.baseurl }}/assets/images/2013/06/contextmenu.png)
+![IIS Express Webserver Here - Shell Extension]({{ site.url }}/assets/images/2013/06/contextmenu.png)
 
 My Environment is Windows 7 x64 bit system. Please modify the script according to your environment.
 

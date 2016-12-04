@@ -106,6 +106,6 @@ C:\Users\[USERNAME]\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.ex
 
 Here is the screenshot of opencover - running on dotnet code application.
 
-![Open Cover Execution]({{ site.baseurl }}/assets/images/2016/11/code_coverage_execution.png)
+![Open Cover Execution]({{ site.url }}/assets/images/2016/11/code_coverage_execution.png)
 
 Happy Programming :)

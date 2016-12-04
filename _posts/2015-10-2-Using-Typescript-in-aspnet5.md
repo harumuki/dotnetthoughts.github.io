@@ -41,15 +41,15 @@ gulp.task('default', function () {
 
 When you run the default task using gulp command, it will read all the typescript (*.ts) files from scripts directory and will compile to javascript and will output to scripts folder inside wwwroot folder. You can integrate gulp uglify package to minify the generated javascript files. You can execute this gulp file using gulp command.
 
-![Gulp compiles typescript to javascript]({{ site.baseurl }}/assets/images/2015/10/typescriptgulp.png)
+![Gulp compiles typescript to javascript]({{ site.url }}/assets/images/2015/10/typescriptgulp.png)
 
 And here is the screenshot of the same task running using Visual studio code.
  
-![VS Code execute tasks]({{ site.baseurl }}/assets/images/2015/10/vscode_runtask.png)
+![VS Code execute tasks]({{ site.url }}/assets/images/2015/10/vscode_runtask.png)
 
 Once the task executed, this will be the file structure.
 
-![Folder structure]({{ site.baseurl }}/assets/images/2015/10/filestructure.png)
+![Folder structure]({{ site.url }}/assets/images/2015/10/filestructure.png)
 
 You can configure script task as well using project.json file.
 

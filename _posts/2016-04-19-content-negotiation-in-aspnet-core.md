@@ -10,7 +10,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 Content negotiation as "the process of selecting the best representation for a given response when there are multiple representations available". Content negotiation takes place when browser or other HTTP-client requests server what content formats it accepts. HTTP-client uses Accept header to list all formats it can understand. By default ASP.NET Core returns responses as JSON, even if the client sends accept header with application/xml value. 
 
-![Postman - HTTP Request with application/xml accept header]({{ site.baseurl }}/assets/images/2016/04/postman_web_api_request_with_xml.png)
+![Postman - HTTP Request with application/xml accept header]({{ site.url }}/assets/images/2016/04/postman_web_api_request_with_xml.png)
 
 Here is my code, which returns a list of products and I didn't mentioned anything about the format. But it returns JSON output.
 
@@ -50,7 +50,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Now if your client sends a request with accept header, it will return XML instead of JSON.
 
-![Postman - HTTP Request with application/xml accept header with XML Response]({{ site.baseurl }}/assets/images/2016/04/postman_web_api_request_with_xml2.png)
+![Postman - HTTP Request with application/xml accept header with XML Response]({{ site.url }}/assets/images/2016/04/postman_web_api_request_with_xml2.png)
 
 And you can get JSON output if you change the accept header to application/json instead of application/xml.
 

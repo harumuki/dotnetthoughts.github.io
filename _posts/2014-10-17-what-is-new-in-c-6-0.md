@@ -112,7 +112,7 @@ var dictionary = new Dictionary<int, string>()
 
 **Note** : These are experimental features, you have to explicitly enable this, otherwise VS2014 will show an error, while compiling like this. - Feature 'primary constructor' is only available in 'experimental' language version.
 
-![Experimental feature error - VS 2014]({{ site.baseurl }}/assets/images/2014/10/experimental.png)
+![Experimental feature error - VS 2014]({{ site.url }}/assets/images/2014/10/experimental.png)
 
 You can do this manually editing the project file.(I didn't found any option to do this via Visual Studio.) You can open the *.csproj file in your favorite text editor and add the following line.
 

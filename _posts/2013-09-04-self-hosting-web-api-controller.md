@@ -59,7 +59,7 @@ public class HelloWorldController : ApiController
 
 You are successfully hosted the Web API controller in a console application. Now open the browser and point to http://localhost:8000/api/HelloWorld, which will return a JSON string. 
 
-![Web API Self Hosting]({{ site.baseurl }}/assets/images/2013/09/screenshot.png)
+![Web API Self Hosting]({{ site.url }}/assets/images/2013/09/screenshot.png)
 
 *You may get some Access denied exception, if you are not running your Visual Studio or the console application in Administrator mode.*
 

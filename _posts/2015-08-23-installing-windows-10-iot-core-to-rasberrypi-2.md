@@ -32,6 +32,6 @@ SD card you want to flash and then provide the location of the ffu (C:\Program F
 
 Now you can put the SD card to RasberryPI 2. Windows 10 IoT Core will boot automatically after connecting the power supply. This process will take a few minutes. Once the device has booted, the DefaultApp will launch and display the IP address of your RasberryPI 2.
 
-![Window10 IoT core - Raspberry Pi 2]({{ site.baseurl }}/assets/images/2015/08/Raspberry-Pi-2.png)
+![Window10 IoT core - Raspberry Pi 2]({{ site.url }}/assets/images/2015/08/Raspberry-Pi-2.png)
 
 Note : If you are connecting RasberryPI 2 to VGA monitor, you may need to change the "hdmi_group" configuration value to 1 from 2.(Default it will be 2). You can get more details [here](https://www.raspberrypi.org/forums/viewtopic.php?t=5851)

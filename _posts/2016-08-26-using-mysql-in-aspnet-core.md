@@ -113,21 +113,21 @@ public class BooksController : Controller
 
 Now if you run the app and try to access the Books controller, books table will be created.
 
-![MySql Table Query]({{ site.baseurl }}/assets/images/2016/08/mysql_table_script.png)
+![MySql Table Query]({{ site.url }}/assets/images/2016/08/mysql_table_script.png)
 
 And here is the phpmyadmin console, with Books table data.
 
-![phpmyadmin console]({{ site.baseurl }}/assets/images/2016/08/phpmyadmin_console.png)
+![phpmyadmin console]({{ site.url }}/assets/images/2016/08/phpmyadmin_console.png)
 
 ### EF Code First Migrations
 
 The Migrations feature enables you to change the data model and deploy your changes to production by updating the database schema without having to drop and re-create the database. You can use "dotnet ef" command to create and execute the migrations. In the project.json you have already added the References and Tools for EF migrations. I have added an Author table and created a migrations.
 
-![Database Migrations created]({{ site.baseurl }}/assets/images/2016/08/database_migration1.png) 
+![Database Migrations created]({{ site.url }}/assets/images/2016/08/database_migration1.png) 
 
 It is creating the migration folder and C# scripts for the migration. Now you can run the database update command. And here is the result of the database update command.
 
-![Database update command]({{ site.baseurl }}/assets/images/2016/08/database_migration2.png)
+![Database update command]({{ site.url }}/assets/images/2016/08/database_migration2.png)
 
 It is failing :( It is throwing a Not Implemented Exception. I am not sure actually it is not implemented or I missed some configuration. Hope MySql team will work on this and will fix the issue.
 

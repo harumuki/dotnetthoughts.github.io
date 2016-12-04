@@ -78,7 +78,7 @@ Similar to ASP.NET 5 applications, unit test project also requires a project.jso
 
 You need to execute the **kpm restore** command to download the XUnit runner, once it is finished, you can execute **k test** command to execute the tests. XUnit test runner will display result like this.
 
-![XUnit Test Results ]({{ site.baseurl }}/assets/images/2014/12/ktest1.png)
+![XUnit Test Results ]({{ site.url }}/assets/images/2014/12/ktest1.png)
 
 If you looked into the XUnit test results you can see something like Total :3, it because of the Theory and InlineData attributes, XUnit will treat the test method as a different one.
 
@@ -290,7 +290,7 @@ _employeeController.ModelState.AddModelError("Error", "Name is Required");
 
 is used to mock the model validation error. XUnit running on the tests
 
-![XUnit MVC Test Results]({{ site.baseurl }}/assets/images/2014/12/xunitmvcresults.png).
+![XUnit MVC Test Results]({{ site.url }}/assets/images/2014/12/xunitmvcresults.png).
 
 Here is my model class.
 {% highlight CSharp %}

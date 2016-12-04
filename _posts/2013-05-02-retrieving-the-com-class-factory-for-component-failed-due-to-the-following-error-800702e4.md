@@ -17,7 +17,7 @@ While working on some outlook C# application I got a COM exception like this.
 
 
 
-![Retrieving the COM class factory for component with CLSID {0006F03A-0000-0000-C000-000000000046} failed due to the following error: 800702e4.]({{ site.baseurl }}/assets/images/2013/05/CaptureItPlus7.png)
+![Retrieving the COM class factory for component with CLSID {0006F03A-0000-0000-C000-000000000046} failed due to the following error: 800702e4.]({{ site.url }}/assets/images/2013/05/CaptureItPlus7.png)
 
 My code was simply straight forward, I was just creating the instance of the outlook application. 
 

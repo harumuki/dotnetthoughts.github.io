@@ -19,7 +19,7 @@ You also need to install Git, it is required for bower to download packages from
 
 To use bower in your project, you need to create a bower.json file, this is the file that will contain a list of all the packages your application depends on. You can create bower.json file using `bower init` command.
 
-![Bower Init command for creating bower.json file]({{ site.baseurl }}/assets/images/2016/11/bower_init_command.png)
+![Bower Init command for creating bower.json file]({{ site.url }}/assets/images/2016/11/bower_init_command.png)
 
 You can install packages to bower using `bower install` command.
 
@@ -100,7 +100,7 @@ Now you bundleconfig.json file, which contains the configuration information abo
 
 You can run `dotnet bundle` command as part of dotnet publish scripts or you can do it manually as well. 
 
-![dotnet bundle command running]({{ site.baseurl }}/assets/images/2016/11/dotnet_bundle_command.png)
+![dotnet bundle command running]({{ site.url }}/assets/images/2016/11/dotnet_bundle_command.png)
 
 Now you can add reference of scripts and css from wwwroot folder in the _layout.cshtml file. 
 

@@ -49,7 +49,7 @@ singleton.Log("Hello World");
 
 And here is the output
 
-![Singleton Application running in the console]({{ site.baseurl }}/assets/images/2014/01/Singleton_v1_console.png)
+![Singleton Application running in the console]({{ site.url }}/assets/images/2014/01/Singleton_v1_console.png)
 
 But this code will fail in a multi threaded environment. Like if you are running this using a Parallel For Each.
 
@@ -63,7 +63,7 @@ Parallel.For(1, 10, x =>
 
 And here is the output. 
 
-![Singleton running on Multithreaded environment]({{ site.baseurl }}/assets/images/2014/01/Singleton_v1_Multithreaded.png)
+![Singleton running on Multithreaded environment]({{ site.url }}/assets/images/2014/01/Singleton_v1_Multithreaded.png)
 
 If you look at the screen shot, the constructor is getting invoked 4 times. That means it violates the only one instance principle of singleton. You can resolve this by adding a [lock statement](http://msdn.microsoft.com/en-us/library/c5kehkcz.aspx) before the instantiation, like this. The following implementation allows only a single thread to enter the critical area, which the lock block identifies, when no instance of Singleton has yet been created.
 
@@ -103,7 +103,7 @@ public class Singleton
 
 Again this will work most of the scenarios, but it will also fail in some (Because multiple threads can check for null, before one thread acquire lock and creates the instance). Here is the screenshot, the application again creates multiple instances. 
 
-![Singleton Multithreaded with lock statement]({{ site.baseurl }}/assets/images/2014/01/Singleton_v2_Multithreaded.png)
+![Singleton Multithreaded with lock statement]({{ site.url }}/assets/images/2014/01/Singleton_v2_Multithreaded.png)
 
 To avoid this by using a technique called [double checked locking](http://en.wikipedia.org/wiki/Double-checked_locking). In this implementation, you are verifying the instance variable again inside the lock() statement. Here is the implementation.
 
@@ -146,7 +146,7 @@ public class Singleton
 
 This will resolve the problem. Here is the screenshot of application running in the console.
 
-![Singleton Multithreaded - with Double-checked locking]({{ site.baseurl }}/assets/images/2014/01/Singleton_v3_Multithreaded.png)
+![Singleton Multithreaded - with Double-checked locking]({{ site.url }}/assets/images/2014/01/Singleton_v3_Multithreaded.png)
 
 Later I found an [simple and better approach](http://haacked.com/archive/2007/03/19/double-check-locking-and-other-premature-optimizations-can-shoot-you.aspx/) :) Here is the implementation.
 

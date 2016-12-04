@@ -12,7 +12,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 This post is about uploading files to ASP.NET 5 web application using HTML5 file API. Most of the HTML5 File upload examples are using the "HttpContext.Current.Request.Files"  which is not implemented in the ASP.NET5. The alternative is to use IFormFile, it is working fine, if you are using the normal Form - File upload combination. But in case of Ajax file upload it is not working. Later I found a [SO post](http://stackoverflow.com/a/26445416/38024), which talks about File upload in ASP.NET5. It is mentioned like you need to read the body contents and save it using file stream. But when I did that, it was also not working. Later I found that the body contains the filename and content type information as well like this.
 
-![File upload Request body]({{ site.baseurl }}/assets/images/2015/10/fileuploadbody.png)
+![File upload Request body]({{ site.url }}/assets/images/2015/10/fileuploadbody.png)
 
 Since I have the content type and file name, saving the file stream as file won't create a valid image file. You need a parser to parse the contents. Initially I thought of implementing one, but later I found one which is already available in codeplex - [Multipart Form Data Parser](http://multipartparser.codeplex.com/). Using this you can parse the body and get the file name, content type and file contents. 
 

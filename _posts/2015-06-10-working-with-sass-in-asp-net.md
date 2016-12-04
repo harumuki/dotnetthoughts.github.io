@@ -22,11 +22,11 @@ I prefer to use the 3rd one because in that approach you can use ASP.NET bundlin
 
 Visual Studio 2013 ships with an editor that provides syntax-highlighting, IntelliSense, formatting, outlining, and more, it doesn't include a Sass compiler. This means that you can create new *.scss files and edit them with nice tooling support, but Visual Studio won't generate the compiled CSS files for you. :( You can find various extensions which supports SASS compliation. I am using an extension called <a href="https://visualstudiogallery.msdn.microsoft.com/2e7b72e0-f6ca-4e5e-9b30-afcc07d801f0?SRC=Home" target="_blank">CompileSass</a>, which works with both VS 2013 and VS 2015.
 
-![Compile SAAS Visual Studio extension]({{ site.baseurl }}/assets/images/2015/06/compilesass.png)
+![Compile SAAS Visual Studio extension]({{ site.url }}/assets/images/2015/06/compilesass.png)
 
 CompileSass will generate CSS files while saving the SASS file. The CSS file will be minified as well.
 
-![Solution Explorer - CSS generated from SASS files]({{ site.baseurl }}/assets/images/2015/06/solutionexplorer.png)
+![Solution Explorer - CSS generated from SASS files]({{ site.url }}/assets/images/2015/06/solutionexplorer.png)
 
 Here is a basic SASS file
 
@@ -46,7 +46,7 @@ body{font-family:'Segoe UI'}/*# sourceMappingURL=HelloWorld.css.map */
 
 You can find the status in the output window. CompileSASS generate css minification mapping file as well.
 
-![Compile SASS - Output details]({{ site.baseurl }}/assets/images/2015/06/outputwindow.png)
+![Compile SASS - Output details]({{ site.url }}/assets/images/2015/06/outputwindow.png)
 
 **Using Visual Studio Code / Commandline**
 If you are an ASP.NET 5 developer who developing using Visual Studio code or any other editor and running with DNX, you won't get CompileSASS like experience. You can using gulp and NodeJS to compile SASS file. First you need to install gulp and gulp-sass.
@@ -71,7 +71,7 @@ gulp.task('sass', function () {
 
 Once it is done, on Visual Studio code, invoke Run Task option using Ctrl + Shift + P. And select "sass" task. Once selected, you can see the output of the task in Output window. 
 
-![Visual Studio Code - Output tasks]({{ site.baseurl }}/assets/images/2015/06/vscodetasks.png)
+![Visual Studio Code - Output tasks]({{ site.url }}/assets/images/2015/06/vscodetasks.png)
 
 If task completed successfully, you can look into wwwroot/content folder and you can see minified CSS file.
 

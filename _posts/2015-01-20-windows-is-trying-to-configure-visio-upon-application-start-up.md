@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 This post is not related to anything programming :) In my system, when launching Visio, the application will pause while displaying "Please wait while Windows configures Microsoft Visio". And after sometime, it shows the main window.
 
-![Windows is trying to configure Visio]({{ site.baseurl }}/assets/images/2015/01/VisioStartup.png)
+![Windows is trying to configure Visio]({{ site.url }}/assets/images/2015/01/VisioStartup.png)
 
 I tried repair, but it was not working. Today I found a similar Microsoft Support article - [2685120](https://support.microsoft.com/kb/2685120). And the solution worked for me :)
 

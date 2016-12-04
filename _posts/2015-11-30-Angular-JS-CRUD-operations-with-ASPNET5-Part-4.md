@@ -108,7 +108,7 @@ describe("Hello World", function(){
 
 Here is the screenshot of hello world unit test.
 
-![Screenshot of hello world unit test]({{ site.baseurl }}/assets/images/2015/11/firstSpec1.png)
+![Screenshot of hello world unit test]({{ site.url }}/assets/images/2015/11/firstSpec1.png)
 
 For mocking http service angular comes with httpBackend service. And here is the unit tests for CreateToDo and loadTodos functions.
 
@@ -177,7 +177,7 @@ describe("ToDo Controller - Tests", function(){
 
 Here is the screenshot 
 
-![Screenshot of todo list unit tests]({{ site.baseurl }}/assets/images/2015/11/todolistapptests.png)
+![Screenshot of todo list unit tests]({{ site.url }}/assets/images/2015/11/todolistapptests.png)
 
 If you look into the code, we are duplicating lot of code. We can refactor using *beforeEach* function. Here is the refactored version of the unit test code.
 

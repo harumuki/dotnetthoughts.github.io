@@ -38,7 +38,7 @@ I have added the reference of blanket. Once you execute bower install command, b
 
 The data-cover-only attribute used to specify the source files which you need to enable code coverage. And the data-cover-adapter attribute specifies the adapter for Jasmine. Now you can browse the html file and can view the code coverage results along with the test results. Here is the screenshot.
 
-![Javascript code coverage enabled]({{ site.baseurl }}/assets/images/2015/12/jscodecoverage.png)
+![Javascript code coverage enabled]({{ site.url }}/assets/images/2015/12/jscodecoverage.png)
 
 If you're facing some issues when you're running blanket with jasmine, [here](http://stackoverflow.com/a/21890213/38024) is one solution. I have created a [PR](https://github.com/alex-seville/blanket/commit/85b3aecb10d2b2013df5de77e119167423867bba) for this, look like it is merged.
 
@@ -68,4 +68,4 @@ if(document.body.querySelector("#blanket-main") != null)
 
 In this script, I am looking for the DIV with id *blanket-main*, which the container, with all the code coverage information. Inside that element I am looking for DIV with classes *bl-cl* and *rs*, which contains the coverage percentage. Here is the output from phantomjs. 
 
-![phantomjs output]({{ site.baseurl }}/assets/images/2015/12/phantomjsoutput.png)
+![phantomjs output]({{ site.url }}/assets/images/2015/12/phantomjsoutput.png)

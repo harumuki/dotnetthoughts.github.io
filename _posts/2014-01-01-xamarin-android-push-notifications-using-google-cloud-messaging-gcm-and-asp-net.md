@@ -20,15 +20,15 @@ Here is the workflow
 
 As the first step you need to create a new project. To create a Google API project, open the [google api console](https://cloud.google.com/console). If you haven't created an API project yet, click Create Project. Supply a project name and click Create. Once the project has been created, a page appears that displays your project ID and project number. For example, Project Number: 670330094152. Copy down your project number. You will use it later on as the GCM sender ID. By default GCM service will be disabled, you can enable it by clicking on the APIs & auth menu item, from the displayed list of APIs, turn on the Google Cloud Messaging for Android.
 
-![Google Developers Console - Push Notification enabled]({{ site.baseurl }}/assets/images/2014/01/gcm_console.png)
+![Google Developers Console - Push Notification enabled]({{ site.url }}/assets/images/2014/01/gcm_console.png)
 
 Before start developing, you need to setup an Google account in the emulator. For that you need to change the target API for the virtual device. You can either create one or edit the existing AVDs. Instead of creating a new virtual device, I modified the Target and changed to Google APIs (Google Inc.) - API Level 14.
 
-![Modify existing Android Virtual Device]({{ site.baseurl }}/assets/images/2014/01/modify_avd.png)
+![Modify existing Android Virtual Device]({{ site.url }}/assets/images/2014/01/modify_avd.png)
 
 Start the emulator and go to Accounts & Sync option in the Settings. And then press Add Account button and add a Google account.(Without changing the target to google api this option will not be available.)
 
-![Add Google Account in the emulator]({{ site.baseurl }}/assets/images/2014/01/add_google_account.png)
+![Add Google Account in the emulator]({{ site.url }}/assets/images/2014/01/add_google_account.png)
 
 Now we will create the client application, open the Xamarin studio and create a new Android project. Right click on the components folder in the solution and add Google Cloud Messaging Client, this is a component which will help to setup Push Notifications quickly and easily. The components feature in Xamarin studio, is similar to the nuget in Visual Studio.
 
@@ -139,11 +139,11 @@ public string SendNotification(string deviceId, string message)
 
 In the server, you can see a google appid is required, which is nothing but a browser key you need to generate from the API console. Select credentials menu under APIs & auth, and create a new key for Public API access. From the Create new key option popup, select Server Key, and click create.
 
-![Key for server applications]({{ site.baseurl }}/assets/images/2014/01/Key_for_server_applications.png)
+![Key for server applications]({{ site.url }}/assets/images/2014/01/Key_for_server_applications.png)
 
 Now you can run the Android application, get the registration Id from output window. Run the ASP.Net application, provide the registration id and message. Click send notification. If everything goes well, you see a notification in the emulator.
 
-![Push Notification received in the emulator]({{ site.baseurl }}/assets/images/2014/01/pushnotification_in_emulator.png)
+![Push Notification received in the emulator]({{ site.url }}/assets/images/2014/01/pushnotification_in_emulator.png)
 
 You can find the source code on github â€“ [https://github.com/anuraj/PushNotification](https://github.com/anuraj/PushNotification)
 

@@ -52,6 +52,6 @@ And in the project.json file, you need to mention the Sqlite dependency as well.
 
 Here is the Sqlite Database created.
 
-![Sqlite Identity Database]({{ site.baseurl }}/assets/images/2015/11/sqlite_identity_db.png)
+![Sqlite Identity Database]({{ site.url }}/assets/images/2015/11/sqlite_identity_db.png)
 
 Happy Programming 

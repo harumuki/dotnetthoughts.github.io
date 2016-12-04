@@ -37,7 +37,7 @@ function sendRequest() {
 
 Without enabling CORS, the ajax request will fail, it will throw some exception like this.
 
-![XMLHttpRequest cannot load http://localhost:5001/Home/Test. No ]({{ site.baseurl }}/assets/images/2015/07/ajax_error.png)
+![XMLHttpRequest cannot load http://localhost:5001/Home/Test. No ]({{ site.url }}/assets/images/2015/07/ajax_error.png)
 
 To enable CORS in ASP.NET 5, you need to install the "Microsoft.AspNet.Cors" package to the project.json. And you need to configure CORS in the Startup.cs file.
 

@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 This post is about creating custom configuration sections in .Net. If you search for this topic in internet, you will find lot of code snippets and blog posts(Here is the [MSDN link](http://msdn.microsoft.com/en-us/library/vstudio/2tw134k3(v=vs.100).aspx)). Unlike that, this post is about a nice tool, [.NET Configuration Code Generator](http://nconfiggen.codeplex.com/) which will help you to generate code for you to create custom configuration section. It is a free, open source tool licensed under Apache License 2.0 (Apache).
 
-![.NET Configuration Code Generator]({{ site.baseurl }}/assets/images/2014/07/customconfiggen.png)
+![.NET Configuration Code Generator]({{ site.url }}/assets/images/2014/07/customconfiggen.png)
 
 You can download it from codeplex - http://nconfiggen.codeplex.com/
 

@@ -97,6 +97,6 @@ And you can bind model properties as well, like this.
 
 which will render like this.
 
-![Markdown tag helper with markdown text]({{ site.baseurl }}/assets/images/2016/04/markdown_taghelper_with_source_property.png)
+![Markdown tag helper with markdown text]({{ site.url }}/assets/images/2016/04/markdown_taghelper_with_source_property.png)
 
 Happy Programming :)

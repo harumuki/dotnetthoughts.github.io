@@ -15,15 +15,15 @@ This post is about using scaffolding to create ASP.NET Core applications. Scaffo
 
 If you are using Visual Studio 2015, you can leverage scaffolding features by creating new ASP.NET Core Web Application project. You need to change the authentication mode to Individual User Accounts. This is bug in the current ASP.NET Core project templates.
 
-![New Visual Studio project with Individual User Accounts authentication mode]({{ site.baseurl }}/assets/images/2016/10/change_auth_mode.png)
+![New Visual Studio project with Individual User Accounts authentication mode]({{ site.url }}/assets/images/2016/10/change_auth_mode.png)
 
 If you are using any other authentication mode, scaffolding will not work. Once project is created, you can right click on the controllers folder, and can select the New scaffolded Item menu.
 
-![Scaffolded Menu item]({{ site.baseurl }}/assets/images/2016/10/scaffolded_item_contextmenu.png)
+![Scaffolded Menu item]({{ site.url }}/assets/images/2016/10/scaffolded_item_contextmenu.png)
 
 This will display Add Scaffold dialog, where you can select various templates similar to previous versions of Visual Studio.
 
-![Add Scaffold dialog]({{ site.baseurl }}/assets/images/2016/10/add_scaffold_dialog.png)
+![Add Scaffold dialog]({{ site.url }}/assets/images/2016/10/add_scaffold_dialog.png)
 
 ### Scaffolding in Visual Studio Code or Commandline
 
@@ -58,7 +58,7 @@ Now you can restore the packages using `dotnet restore` command. Once it is comp
 dotnet aspnet-codegenerator --project . controller -name HelloController -m Author -dc WebAPIDataContext
 {% endhighlight %}
 
-![Command line scaffolding]({{ site.baseurl }}/assets/images/2016/10/commandline_scaffolding.png)
+![Command line scaffolding]({{ site.url }}/assets/images/2016/10/commandline_scaffolding.png)
 
 The above command will generate controller with name `HelloController` in the root directory, and views for CRUD options inside `Hello` folder under `Views` folder. You can use `--help` commandline switch after controller parameter to get more options about controller generator.
 

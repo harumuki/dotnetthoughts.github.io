@@ -43,7 +43,7 @@ $(function () {
 
 Clicking on the textbox will popup calender like this.
 
-![JQuery UI DateTime Picker in MVC]({{ site.baseurl }}/assets/images/2014/05/datetimepicker.png)
+![JQuery UI DateTime Picker in MVC]({{ site.url }}/assets/images/2014/05/datetimepicker.png)
 
 It works perfectly, until validations come in to the play :) As my application is targeted to India / UK customers, I have added a formatting to DatePicker like this. 
 
@@ -57,7 +57,7 @@ $(function () {
 
 But MVC validator controls didn't recognize the textbox value as a valid date time.
 
-![JQuery UI DateTime Picker in MVC - Date Validation fails]({{ site.baseurl }}/assets/images/2014/05/datetimepicker2.png)
+![JQuery UI DateTime Picker in MVC - Date Validation fails]({{ site.url }}/assets/images/2014/05/datetimepicker2.png)
 
 To resolve this issue, you need to override the date validation behaviour of JQuery validation library. You can do this by adding following snippet.
 

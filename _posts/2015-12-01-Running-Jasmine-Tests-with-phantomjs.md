@@ -19,7 +19,7 @@ phantomjs.exe run-jasmine.js <Test Page URL>
 
 And here is the screenshot of the console, where Jasmine unit tests are running.
 
-![Unit Test - Results from console]({{ site.baseurl }}/assets/images/2015/12/ConsoleUnitTestsResult.png)
+![Unit Test - Results from console]({{ site.url }}/assets/images/2015/12/ConsoleUnitTestsResult.png)
 
 In Travis CI - phantomjs.exe pre-installed, so you don't need to install it seperatly. And if unit tests are failing the exit code will be "1" and if every unit tests passed exit code is "0".
 

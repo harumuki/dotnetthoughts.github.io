@@ -22,7 +22,7 @@ public IActionResult GetUsers(int userId)
 
 Now if you try to access it using "http://localhost:5000/Users/18" URL, it will display something like this.
 
-![Attribute Routing JSON Response]({{ site.baseurl }}/assets/images/2016/04/attribute_routing_json_response1.png)
+![Attribute Routing JSON Response]({{ site.url }}/assets/images/2016/04/attribute_routing_json_response1.png)
 
 The string "/Users/{userid}" is the URI template for the route. ASPNET Core tries to match the request URI to the template. In this example, "Users" is literal segment, and "{userid}" is a place holder or parameter. The user id parameter can be anything, like string or number. And if you try to access the URL with a string userid, it will return a user object with default values. You can restrict them using constraints. Here is a constraint, which validates user id is always integer.
 
@@ -36,7 +36,7 @@ public IActionResult GetUsers(int userId)
 
 Now if you try to access the URL with string user id, it will return an HTTP Status 404.
 
-![Attribute Routing JSON Response - 404 response]({{ site.baseurl }}/assets/images/2016/04/attribute_routing_json_response_404.png)
+![Attribute Routing JSON Response - 404 response]({{ site.url }}/assets/images/2016/04/attribute_routing_json_response_404.png)
 
 Here is few examples of Route constraints
 
@@ -90,7 +90,7 @@ public IActionResult Create(User user)
 
 In the above code snippet, the Route name "GetUserById" is used in the Create method to generate the target link for the create response. Here is the response for Create method.
 
-![Attribute Routing Create method Response]({{ site.baseurl }}/assets/images/2016/04/attribute_routing_json_response_create.png)
+![Attribute Routing Create method Response]({{ site.url }}/assets/images/2016/04/attribute_routing_json_response_create.png)
 
 Route Order is another feature which helps developers to specify which route to evaluate first, when a request coming for a resource. To specify the order, set the RouteOrder property on the route attribute. Lower values are evaluated first. The default order value is zero.
 

@@ -47,7 +47,7 @@ You can use the Tag Helper like this.
 </div>
 {% endhighlight %}
 
-![Captcha in ASP.NET 5]({{ site.baseurl }}/assets/images/2015/09/captcha.png)
+![Captcha in ASP.NET 5]({{ site.url }}/assets/images/2015/09/captcha.png)
 
 To validate, I am using the Request.Form collection to get the hidden field value.
 

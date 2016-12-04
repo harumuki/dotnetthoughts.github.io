@@ -37,27 +37,27 @@ public Form1()
 
 I have a form with a label docked in it. While launching the application, based on the time, it will display a greeting in the label with the username.
 
-![Application running ]({{ site.baseurl }}/assets/images/2013/08/app.png)
+![Application running ]({{ site.url }}/assets/images/2013/08/app.png)
 
 Now build the application, open the executable in Just Decompile. Expand the Form1 node from the tree. You can see the code like this. 
 
-![Opening the assembly in  Just Decompile]({{ site.baseurl }}/assets/images/2013/08/opening_assembly1.png)
+![Opening the assembly in  Just Decompile]({{ site.url }}/assets/images/2013/08/opening_assembly1.png)
 
 If you look into the code, you can find a small issue in the code, it is displaying Good Evening, after 4 PM, and you need to modify it like it should display Good Evening only after 5 PM. Lets reverse engineer that. Click on the Plugins menu and select Reflexil plugin and select the method you want to modify, in this scenario, the constructor. Reflexil plugin will open up a window on the bottom of the screen with few tabs in it like this.
 
-![Reflexil plugin]({{ site.baseurl }}/assets/images/2013/08/opening_plugin.png)
+![Reflexil plugin]({{ site.url }}/assets/images/2013/08/opening_plugin.png)
 
 Look for the value 16, in the operand column of the Reflexil Grid. Right click on the row and select edit.
 
-![Select Edit menu item]({{ site.baseurl }}/assets/images/2013/08/edit_with.png)
+![Select Edit menu item]({{ site.url }}/assets/images/2013/08/edit_with.png)
 
 Now modify the value from 16 to 17 in the Edit existing instruction dialog.
 
-![Edit existing instruction]({{ site.baseurl }}/assets/images/2013/08/change_the_value.png)
+![Edit existing instruction]({{ site.url }}/assets/images/2013/08/change_the_value.png)
 
 Click update. Most of the instructions, Edit existing instruction dialog will display details. You can learn more from any IL tutorial. Now go the assembly in Tree view, right click, Select Reflexil 1.5, and choose save as... option.
 
-![Reflexil 1.5 Save As option]({{ site.baseurl }}/assets/images/2013/08/save_as1.png)
+![Reflexil 1.5 Save As option]({{ site.url }}/assets/images/2013/08/save_as1.png)
 
 Now save the file, by default the filename with be assemblyname.patched.exe. Now run the patched executable you can see the change. 
 

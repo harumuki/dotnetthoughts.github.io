@@ -38,7 +38,7 @@ This post is about reverse engineering model classes from existing database usin
 
 Now you need to run the "dotnet restore" command to restore the packages. Once the packages restored successfully, you can verify the EF tool installation using "dotnet ef" command, which will display EF console like this.
 
-![dotnet ef command]({{ site.baseurl }}/assets/images/2016/07/dotnet_ef_command_result.png)
+![dotnet ef command]({{ site.url }}/assets/images/2016/07/dotnet_ef_command_result.png)
 
 You can run all the EF commands similar to previous versions commands. You can find more details about EF migration commands in this [post](http://dotnetthoughts.net/entity-framework-7-code-first-migrations/).
 

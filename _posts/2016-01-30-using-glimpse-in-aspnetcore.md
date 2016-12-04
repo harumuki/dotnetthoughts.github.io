@@ -64,10 +64,10 @@ public class Startup
 
 Now Glimpse is configured. Now you can run the application with dnx web command. You can browse the page and Glimpse dashboard at the bottom of the screen like this.
 
-![Glimpse dashboard]({{ site.baseurl }}/assets/images/2016/01/glimpse_default.png)
+![Glimpse dashboard]({{ site.url }}/assets/images/2016/01/glimpse_default.png)
 
 And you can click on the right side and get more details like this. Since this is the hello mvc application, it doesn't have data access and ajax calls.
 
-![Glimpse details]({{ site.baseurl }}/assets/images/2016/01/glimpse_details.png)
+![Glimpse details]({{ site.url }}/assets/images/2016/01/glimpse_details.png)
 
 Happy Programming :)

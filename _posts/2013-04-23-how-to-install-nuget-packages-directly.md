@@ -23,6 +23,6 @@ Currently there is no command to delete an installed package using NuGet.exe, in
 
 Here is the screen shot NuGet.exe installing jQuery.Validation from NuGet.org.
 
-![NuGet commandline ]({{ site.baseurl }}/assets/images/2013/04/CaptureItPlus3.jpeg)
+![NuGet commandline ]({{ site.url }}/assets/images/2013/04/CaptureItPlus3.jpeg)
 
 

@@ -13,7 +13,7 @@ In WP8, Microsoft introduced libraries for both Text to Speech and Speech to Tex
 
 The following code requires Client Id and Client Secret, which you can get from https://datamarket.azure.com/account, Customer ID is the Client Id, Primary Account Key is Client Secret. The Text to Speech work flow is like this.
 
-![Bing Text to Speech - Workflow]({{ site.baseurl }}/assets/images/2013/07/Workflow.png)
+![Bing Text to Speech - Workflow]({{ site.url }}/assets/images/2013/07/Workflow.png)
 
 The Auth token will expire after 10 minutes, so you need to renew it on every 10 minutes. 
 

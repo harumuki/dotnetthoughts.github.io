@@ -105,6 +105,6 @@ _browser.Url = Url; navigates to the calculator page and waits until Angular is 
 
 Here is the Result of XUnit running with Protractor.
 
-![XUnit Running Angular JS Tests with Protractor.NET]({{ site.baseurl }}/assets/images/2016/04/xunit_running_angular_tests_with_protractor.png)
+![XUnit Running Angular JS Tests with Protractor.NET]({{ site.url }}/assets/images/2016/04/xunit_running_angular_tests_with_protractor.png)
 
 Happy Programming :)

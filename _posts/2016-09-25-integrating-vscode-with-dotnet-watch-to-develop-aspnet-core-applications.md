@@ -22,11 +22,11 @@ This post is about integrating Visual Studio Code with dotnet watch to develop A
 
 Now instead of using `dotnet run` command, use `dotnet watch run` command, which will run the web application as well watch for the chnages in the directory, and if any changes found it will re-build the project and re-run the application.
 
-![dotnet watch command line feature]({{ site.baseurl }}/assets/images/2016/09/dotnet_watch_command_line.png)
+![dotnet watch command line feature]({{ site.url }}/assets/images/2016/09/dotnet_watch_command_line.png)
 
 VS Code doesn't support running `dotnet` commands directly, so as alternative you can either use a Javascript task runners like Grunt or Gulp. VS Code also supports tasks. Once you open your ASP.NET Core project in VS Code, it will prompt install required assets to build and debug the project, like this. 
 
-![Required assets to build and debug Install prompt]({{ site.baseurl }}/assets/images/2016/09/vscode_debugging_assets.png)
+![Required assets to build and debug Install prompt]({{ site.url }}/assets/images/2016/09/vscode_debugging_assets.png)
 
 Once you confirmed the installation, VS Code will create two files inside .vscode folder. Open the tasks.json file, by default there will be a build task available, you need to add one more task like this, in which you need to set the IsWatchingCommand as true.
 

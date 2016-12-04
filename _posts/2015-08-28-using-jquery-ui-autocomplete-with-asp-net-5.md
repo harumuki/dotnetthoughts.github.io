@@ -67,7 +67,7 @@ HTML Code
 
 Autocomplete textbox data is loaded using the source property, on keydown, using JQuery ajax, request send to the server with query string. Based on query string, data returned as JSON. And this data mapped back to the textbox. And here is the screenshot of the web page running on my system.
 
-![JQuery Auto Suggestion box]({{ site.baseurl }}/assets/images/2015/08/autosuggest.png)
+![JQuery Auto Suggestion box]({{ site.url }}/assets/images/2015/08/autosuggest.png)
 
 Here is the getJSON version of the code
 

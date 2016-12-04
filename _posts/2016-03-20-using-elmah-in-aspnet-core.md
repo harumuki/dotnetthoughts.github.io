@@ -61,6 +61,6 @@ public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
 
 Now if you browse http://localhost:5004/elm, you can see the logging information. Due to line break characters in style, the CSS is not working properly.
 
-![ASP.NET Core ELM Log]({{ site.baseurl }}/assets/images/2016/03/elm_log_aspnet_core.png)
+![ASP.NET Core ELM Log]({{ site.url }}/assets/images/2016/03/elm_log_aspnet_core.png)
 
 Happy Coding

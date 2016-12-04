@@ -19,7 +19,7 @@ MongoDB (from humongous) is one of many cross-platform document-oriented databas
 3.  Now you can run the mongod.exe from C:\Program Files\MongoDB\Server\3.0\bin. You can see a console window  displaying several messages pertaining to initialization and listening.
 4.  Run the mongo.exe, which is MongoDB administration shell. By default, the shell will connect to the MongoDB instance that you just started.
 
-![Mongod.exe is running and waiting for connections]({{ site.baseurl }}/assets/images/2015/04/mongodb_running.png)
+![Mongod.exe is running and waiting for connections]({{ site.url }}/assets/images/2015/04/mongodb_running.png)
 
 
 **Working with MongoDB from ASP.NET application.**
@@ -103,6 +103,6 @@ You can download the full source code from [here](https://github.com/anuraj/Empl
 
 Here is the Mongo DB database and collection using RoboMongo.
 
-![Mongo DB - Database and Collection using RoboMongo]({{ site.baseurl }}/assets/images/2015/04/Robomongo_ConnectedToDB.png)
+![Mongo DB - Database and Collection using RoboMongo]({{ site.url }}/assets/images/2015/04/Robomongo_ConnectedToDB.png)
 
 Happy Programming :)

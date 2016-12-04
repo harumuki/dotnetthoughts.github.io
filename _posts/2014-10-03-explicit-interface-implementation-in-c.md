@@ -34,7 +34,7 @@ interface ISample2
 
 If the two interface members do not perform the same function, however, this can lead to an incorrect implementation of one or both of the interfaces. 
 
-![Explicit Interface Implementation]({{ site.baseurl }}/assets/images/2014/10/explicit.png)
+![Explicit Interface Implementation]({{ site.url }}/assets/images/2014/10/explicit.png)
 
 It is possible to implement an interface member explicitly - creating a class member that is only called through the interface, and is specific to that interface. This is accomplished by naming the class member with the name of the interface and a period.
 

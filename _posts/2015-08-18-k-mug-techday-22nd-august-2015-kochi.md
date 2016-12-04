@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 This monthâ€™s K-MUG TechDay is planned for Saturday, 23 August 2015 at ORION India Systems, Infopark venue.
 
-![K-MUG TechDay - Saturday, 23 August 2015]({{ site.baseurl }}/assets/images/2015/08/k_mug_event.png)
+![K-MUG TechDay - Saturday, 23 August 2015]({{ site.url }}/assets/images/2015/08/k_mug_event.png)
 
 I am taking session on Windows IoT edition :)
 

@@ -78,7 +78,7 @@ In this MainActivity.cs, you are enabling Javascript (Line #19) and Line #20, yo
 
 Now if you run the application and click on the Show Toast button, it will display a toast like this. (I don't know why the button is showing like that ;) )
 
-![Javascript to C# - Run method]({{ site.baseurl }}/assets/images/2013/11/jstocs_run.png)
+![Javascript to C# - Run method]({{ site.url }}/assets/images/2013/11/jstocs_run.png)
 
 This works fine. But what if you want to change the name of the function, from Run() to another, or you want to pass some parameter to this function. To resolve this issue you can find an existing bound interface or virtual class method that provides the name and signature that you want. Then override the method/implement the interface, and things look fairly similar to the example above. 
 

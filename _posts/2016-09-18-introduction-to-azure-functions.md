@@ -14,15 +14,15 @@ This post is Azure functions. Azure functions is a new service offered by Micros
 1. Go to the [Azure Functions portal](https://functions.azure.com/signin) and sign-in with your Azure account.
 2. From the page you can create azure function by providing a name and selecting the Region.
 
-![Create an Azure Function]({{ site.baseurl }}/assets/images/2016/09/new_azure_functions.png)
+![Create an Azure Function]({{ site.url }}/assets/images/2016/09/new_azure_functions.png)
 
 3. Next you can create a function from the templates available. Here you can choose the langague for your azure function. I am using C# and I am using an HTTP Trigger C# Template. You can name the function - ColorConverter.
 
-![Azure Function templates]({{ site.baseurl }}/assets/images/2016/09/azure_function_template.png)
+![Azure Function templates]({{ site.url }}/assets/images/2016/09/azure_function_template.png)
 
 4. Once you create the function, you will be redirected to the Develop tab, where you can write code for your function. 
 
-![Azure Function Develop Tab]({{ site.baseurl }}/assets/images/2016/09/azure_function_develop.png)
+![Azure Function Develop Tab]({{ site.url }}/assets/images/2016/09/azure_function_develop.png)
 
 In this tab, you can see the code editor, logs and infrastructure to test your azure function. And here is the azure function code.
 
@@ -53,11 +53,11 @@ private static string ColorToHex(string colorName)
 
 You need to add reference of System.Drawing using "#r" syntax. And you can test it using the utility, like this
 
-![Testing the azure function]({{ site.baseurl }}/assets/images/2016/09/azure_function_testing.png)
+![Testing the azure function]({{ site.url }}/assets/images/2016/09/azure_function_testing.png)
 
 You can test it using the fiddler or postman as well, you can either use HTTP POST or HTTP GET methods. Here is the screenshot of testing the azure function using Postman client. I am using HTTP GET method.
 
-![Testing the azure function using Postman]({{ site.baseurl }}/assets/images/2016/09/testing_azure_function_using_postman.png)
+![Testing the azure function using Postman]({{ site.url }}/assets/images/2016/09/testing_azure_function_using_postman.png)
 
 In this I am passing the color as query string.
 

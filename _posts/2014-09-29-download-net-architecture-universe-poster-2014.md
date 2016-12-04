@@ -11,6 +11,6 @@ header-img: "img/post-bg-01.jpg"
 ---
 .NET Universe Poster (2014) showing the main .NET SDKs, libraries and packages classified by application type and package type (NuGet, official support, etc.)
 
-![Download .NET Architecture Universe Poster - 2014]({{ site.baseurl }}/assets/images/2014/09/dotnetposter.png)
+![Download .NET Architecture Universe Poster - 2014]({{ site.url }}/assets/images/2014/09/dotnetposter.png)
 
 You can download it from [here](http://www.microsoft.com/en-us/download/details.aspx?id=44228)

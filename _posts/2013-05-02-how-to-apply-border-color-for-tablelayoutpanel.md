@@ -36,10 +36,10 @@ using (var pen = new Pen(Color.Black, 1))
 
 Here is the screen shot of the Form in Design Time
 
-![Form in Design Time]({{ site.baseurl }}/assets/images/2013/05/CaptureItPlus4.png)
+![Form in Design Time]({{ site.url }}/assets/images/2013/05/CaptureItPlus4.png)
 
 And in Runtime
 
-![Form in Runtime]({{ site.baseurl }}/assets/images/2013/05/CaptureItPlus5.png)
+![Form in Runtime]({{ site.url }}/assets/images/2013/05/CaptureItPlus5.png)
 
 Happy Coding

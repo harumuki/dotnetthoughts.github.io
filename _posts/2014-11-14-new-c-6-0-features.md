@@ -32,7 +32,7 @@ public string FirstName
 
 Runtime will replace the property with the property name while generating the IL code.
 
-![IL code generated for nameof operator]({{ site.baseurl }}/assets/images/2014/11/ILCodegenerated1.png)
+![IL code generated for nameof operator]({{ site.url }}/assets/images/2014/11/ILCodegenerated1.png)
 
 
 *   null conditional dot operator - as the name indicates it for null checking. This helps you to make null checking fade into the background.
@@ -58,7 +58,7 @@ static void PrintBook(Book book)
 
 In case of value types, Visual Studio will treat the type of the variable as nullable, if you use null conditional dot operator.
 
-![null conditional dot operator - with value types]({{ site.baseurl }}/assets/images/2014/11/code2.png)
+![null conditional dot operator - with value types]({{ site.url }}/assets/images/2014/11/code2.png)
 
 *   string interpolation - Another cool feature, which will help you to manage string formatting easy. In the current framework, you need use string.Format function, it little complex, you need to put numeric place holders ({n}) and based on the number you need to set the variables. String Interpolation will help developers to use actual variables as placeholders.
 
@@ -74,7 +74,7 @@ var message = "Book Name :\{name} Price :\{price}";
 
 It supports IntelliSense for the variable names, also variables can be identified with different color.
 
-![String Interpolation - IntelliSense ]({{ site.baseurl }}/assets/images/2014/11/code3.png)
+![String Interpolation - IntelliSense ]({{ site.url }}/assets/images/2014/11/code3.png)
 
 
 You can download VS 2015 Preview from [here](http://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs.aspx)

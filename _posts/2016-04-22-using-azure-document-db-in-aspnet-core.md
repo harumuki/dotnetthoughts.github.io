@@ -12,11 +12,11 @@ Azure DocumentDB is Microsoft's multi-tenant distributed database service for ma
 
 To use Document DB, first you need to create Document DB from Azure portal. You can get Azure Document DB under Data + Storage. 
 
-![Azure Document DB - Create Account]({{ site.baseurl }}/assets/images/2016/04/azure_document_db_create.png)
+![Azure Document DB - Create Account]({{ site.url }}/assets/images/2016/04/azure_document_db_create.png)
 
 Once you create the Document DB Account, you can navigate to the Keys section and get the required keys, which is required in the application.
 
-![Azure Document DB - Keys]({{ site.baseurl }}/assets/images/2016/04/azure_document_db_keys.png)
+![Azure Document DB - Keys]({{ site.url }}/assets/images/2016/04/azure_document_db_keys.png)
 
 Now you completed the infrastructure configuration to use Document DB. Next you need to add the "Microsoft.Azure.DocumentDB" package in your project.json file. Here is my project.json file.
 
@@ -156,6 +156,6 @@ using Microsoft.Azure.Documents.Linq;
 
 Once you created any document in Document DB, you can view it in Azure portal, Document DB explorer feature.
 
-![Azure Document DB - Document Explorer]({{ site.baseurl }}/assets/images/2016/04/azure_document_db_document_explorer.png)
+![Azure Document DB - Document Explorer]({{ site.url }}/assets/images/2016/04/azure_document_db_document_explorer.png)
 
 Happy Programming :)

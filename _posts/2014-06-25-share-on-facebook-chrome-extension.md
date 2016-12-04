@@ -30,7 +30,7 @@ function Popup(url) {
 
 And here is the screenshot of the extension running on my chrome browser.
 
-![Share on facebook from chrome extension]({{ site.baseurl }}/assets/images/2014/06/shareonfbextension.png)
+![Share on facebook from chrome extension]({{ site.url }}/assets/images/2014/06/shareonfbextension.png)
 
 You can find the source code on GitHub - [https://github.com/anuraj/ShareOnFb](https://github.com/anuraj/ShareOnFb)
 

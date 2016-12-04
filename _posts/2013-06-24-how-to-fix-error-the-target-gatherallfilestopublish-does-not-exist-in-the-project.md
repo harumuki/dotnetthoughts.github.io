@@ -17,7 +17,7 @@ Today while publishing a web application I got a strange error like this from Vi
 
 
 
-![he target â€œGatherAllFilesToPublishâ€ does not exist in the project]({{ site.baseurl }}/assets/images/2013/06/webpublisherror.png)
+![he target â€œGatherAllFilesToPublishâ€ does not exist in the project]({{ site.url }}/assets/images/2013/06/webpublisherror.png)
 
 Web publishing was working without any problems, only reason was I have installed Windows Azure SDK. Then found the solution, thanks to Google. Here is the solution.
 

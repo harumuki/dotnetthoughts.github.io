@@ -15,7 +15,7 @@ In this implementation, I am fetching all the appointments from outlook (using O
 
 Here is the references required for the project.
 
-![Project References]({{ site.baseurl }}/assets/images/2013/07/References.png)
+![Project References]({{ site.url }}/assets/images/2013/07/References.png)
 
 Here is the code snippets.
 

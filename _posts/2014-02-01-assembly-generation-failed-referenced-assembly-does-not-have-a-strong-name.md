@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 Recently while working a on project I faced an error like this. 
 
-![Assembly generation failed - Referenced assembly does not have a strong name]({{ site.baseurl }}/assets/images/2014/02/assembly_generation_failed_error.png)
+![Assembly generation failed - Referenced assembly does not have a strong name]({{ site.url }}/assets/images/2014/02/assembly_generation_failed_error.png)
 
 The assembly without strong name was a third party dll, I don't have the source code with me. If you have strong named your application, it is a requirement like you need to strong name all your referenced assemblies as well. This post is about strong naming an assembly without source code. Here is the steps you need to follow.
 

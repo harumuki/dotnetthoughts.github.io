@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 Today I saw some SO question asked about how to get values from Masked Textbox without the masked format. For those who don't know what is [masked textbox](http://msdn.microsoft.com/en-us/library/system.windows.forms.maskedtextbox.aspx) - Uses a mask to distinguish between proper and improper user input.
 
-![Masked Textbox - With Phone Number mask property]({{ site.baseurl }}/assets/images/2014/06/Masked-Textbox.png)
+![Masked Textbox - With Phone Number mask property]({{ site.url }}/assets/images/2014/06/Masked-Textbox.png)
 
 Here is the code snippet. 
 

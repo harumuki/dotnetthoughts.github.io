@@ -11,6 +11,6 @@ header-img: "img/post-bg-01.jpg"
 ---
 This monthâ€™s K-MUG TechDay is planned for Saturday, 23 May 2015 at ORION India Systems, Infopark venue.
 
-![K-MUG Techday 23rd May 2015]({{ site.baseurl }}/assets/images/2015/05/kmug-23May2015.png)
+![K-MUG Techday 23rd May 2015]({{ site.url }}/assets/images/2015/05/kmug-23May2015.png)
 
 For registration and more details, visit <a href="http://k-mug.org/content/UGMeet23052015.aspx" target="_blank">K-MUG event page</a>

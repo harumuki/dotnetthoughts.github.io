@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about Configuring Redis for ASP.NET Core Session Store. Redis is an open source (BSD licensed), in-memory data structure store, used as database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries. Redis works with an in-memory dataset. it also supports persisting the dataset to disk. Moreover, It provides master-slave asynchronous replication. Redis is not officially supported on windows. However, the Microsoft Open Tech group develops and maintains Windows port targeting Win64 available [here](https://github.com/MSOpenTech/redis). You can install redis using chocolatey package manager, using `choco install redis-64` command. Once you install redis you can run `redis-server` command to start the redis server.
 
-![Redis server running local system]({{ site.baseurl }}/assets/images/2016/11/redis_server_running.png)
+![Redis server running local system]({{ site.url }}/assets/images/2016/11/redis_server_running.png)
 
 You can test the installation using `redis-cli` command. You can set and get the values. For setting the values you need to use command like `set key value` and for getting the values `get key`. To list all the keys you can execute `keys *` command. To remove all the values `flushall` command can be used.
 

@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 If you are using VS 2012, by default Code coverage results are available for Test assembly also. 
 
-![Test Assembly coverage also displayed]({{ site.baseurl }}/assets/images/2013/01/CaptureItPlus2.png)
+![Test Assembly coverage also displayed]({{ site.url }}/assets/images/2013/01/CaptureItPlus2.png)
 
 There is no direct way to disable this behavior, either you need to use the ExcludeFromCodeCoverage attribute or you need to use the runsettings file.
 
@@ -60,11 +60,11 @@ The other option is using runsettings file. To use this VS feature you need to a
 
 Select the .runsettings file from Test > Test Settings > Select Test Settings file menu.
 
-![Select runsettings file]({{ site.baseurl }}/assets/images/2013/01/CaptureItPlus1.png)
+![Select runsettings file]({{ site.url }}/assets/images/2013/01/CaptureItPlus1.png)
 
 Now if you analyze the code coverage with the new runsettings file, only the code file assembly coverage will be displayed.
 
-![Only Code assembly coverage is displayed]({{ site.baseurl }}/assets/images/2013/01/CaptureItPlus3.png)
+![Only Code assembly coverage is displayed]({{ site.url }}/assets/images/2013/01/CaptureItPlus3.png)
 
 You can disable the use of .runsettings file by un-checking it in the Test Settings Menu item.
 

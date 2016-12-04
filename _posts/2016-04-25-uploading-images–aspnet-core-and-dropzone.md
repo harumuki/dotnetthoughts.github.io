@@ -62,6 +62,6 @@ Unfortunely the IFormFile option is not working, so I had to change to HttpConte
 
 Here is the application running on my system.
 
-![ASPNET Core Application with DropzoneJS for Drag and Drop file upload]({{ site.baseurl }}/assets/images/2016/04/aspnetcore_running_with_dropzone.png)
+![ASPNET Core Application with DropzoneJS for Drag and Drop file upload]({{ site.url }}/assets/images/2016/04/aspnetcore_running_with_dropzone.png)
 
 Happy Programming :)

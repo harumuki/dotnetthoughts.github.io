@@ -34,7 +34,7 @@ public class ImageVisualizer : DialogDebuggerVisualizer
 
 And the ImagePreviewForm is a Windows form which will display the Image. Like this.
 
-![Image Visualizer in Action]({{ site.baseurl }}/assets/images/2014/05/ImageVisualizer.png)
+![Image Visualizer in Action]({{ site.url }}/assets/images/2014/05/ImageVisualizer.png)
 
 You need to associate the Visualizer to the target type. You can do this using following assembly attribute. You can add this in the assemblyinfo.cs class.
 

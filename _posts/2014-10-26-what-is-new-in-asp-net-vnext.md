@@ -28,10 +28,10 @@ ASP.NET vNext is not backwards compatible with existing ASP.NET applications. Ho
 *   Start VS 2014 CTP
 *   On the Start Page, click New Project, and then in the New Project dialog, select the C# / Web templates
 *   Select the ASP.NET vNext Empty Web Application template, name the project HelloWorld, and click OK.
-![New vNext Empty Web Application]({{ site.baseurl }}/assets/images/2014/10/newvnextproject.png)
+![New vNext Empty Web Application]({{ site.url }}/assets/images/2014/10/newvnextproject.png)
 
 *   One of the vNext feature was it is lean, Microsoft has re-written the Framework and project / solution structure. You will not find the web.config, *.csproj files. 
-![Solution Explorer with vNext Files]({{ site.baseurl }}/assets/images/2014/10/solutionexplorer.png)
+![Solution Explorer with vNext Files]({{ site.url }}/assets/images/2014/10/solutionexplorer.png)
 
 
     *   Global.json - file helps to support project-to-project references. It also makes it easy to separate test code under a different folder, but still be able to reference application projects from your test projects. This is the Global.json file for empty vNext web application. The "sources" element, indicating the "src" folder is the parent folder for finding project references.
@@ -57,11 +57,11 @@ Dependencies section lists all the dependencies of your application. These are d
 
     **Active Target Framework is ASP.Net**
 
-![Active Target Framework is ASP.Net ]({{ site.baseurl }}/assets/images/2014/10/aspnetframework.png)
+![Active Target Framework is ASP.Net ]({{ site.url }}/assets/images/2014/10/aspnetframework.png)
 
     **Active Target Framework is ASP.Net Core**
 
-![Active Target Framework is ASP.Net Core ]({{ site.baseurl }}/assets/images/2014/10/aspnetcoreframework.png)
+![Active Target Framework is ASP.Net Core ]({{ site.url }}/assets/images/2014/10/aspnetcoreframework.png)
 
     *   Startup.cs - By default, the vNext hosting environment expects to find a startup class named Startup. This class must contain a Configure method that takes an IBuilder parameter, and you configure the HTTP pipeline inside this Configure method. The empty project creates the class with nothing in the Configure method. If you were worked in Owin / Katana project, Startup.cs is similar to Owin Startup file. This is the default Startup.cs file for empty vNext application.
 {% highlight CSharp %}
@@ -86,9 +86,9 @@ To enable MVC in the HTTP pipeline you'll add a NuGet package and configure the 
 
 *   In the project.json, you need to add reference of Microsoft.AspNet.Mvc package. The project.json file supports intellisense. 
 
-![Intellisense in Project.json for packages]({{ site.baseurl }}/assets/images/2014/10/projectjsonintelli.png)
+![Intellisense in Project.json for packages]({{ site.url }}/assets/images/2014/10/projectjsonintelli.png)
 
-![Intellisense in Project.json for package version as well]({{ site.baseurl }}/assets/images/2014/10/projectjsonintelli2.png)
+![Intellisense in Project.json for package version as well]({{ site.url }}/assets/images/2014/10/projectjsonintelli2.png)
 
 {% highlight CSharp %}
 "dependencies": {
@@ -122,7 +122,7 @@ namespace HelloWorld
 If you didn't add the using Microsoft.Framework.DependencyInjection, you won't get services.AddMvc() method. The AddMvc method adds the MVC framework services to the dependency injection system. The UseMvc method configures MVC default settings such as routes.
 
 *   Next create a folder called Controller and add a controller class, HomeController.cs. Also create Home folder inside Views folder, and add a razor view - Index.cshtml. (You won't get option like Add View by right clicking on Controller method.)
-![Solution Explorer - With Controllers and Views]({{ site.baseurl }}/assets/images/2014/10/solutionexplorerwithfiles.png)
+![Solution Explorer - With Controllers and Views]({{ site.url }}/assets/images/2014/10/solutionexplorerwithfiles.png)
 
 *   Press F5 to start the application. voilÃ , you have created your first HelloWorld ASP.Net vNext application.
 

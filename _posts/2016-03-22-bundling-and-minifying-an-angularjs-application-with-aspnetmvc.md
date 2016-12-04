@@ -54,11 +54,11 @@ Here is the HTML which will use the app and controller.
 
 * For script files order is important - If you run the application with bundling and minification enabled, you will get the first error. 
 
-![Angular Minification Error]({{ site.baseurl }}/assets/images/2016/03/angular_error_script_file_order.png)
+![Angular Minification Error]({{ site.url }}/assets/images/2016/03/angular_error_script_file_order.png)
 
 If you look at the HTML source, you will find something like this.
 
-![Angular Script Order]({{ site.baseurl }}/assets/images/2016/03/angular_script_order.png)
+![Angular Script Order]({{ site.url }}/assets/images/2016/03/angular_script_order.png)
 
 In this controller loaded first then the app file. Unlike .NET references, Javascript files need to load based on the order. Angular App should be loaded first, then the related components. You can fix it by including the app file using Include method instead of IncludeDirectory method. ASP.NET Framework will load the file only once.
 
@@ -70,7 +70,7 @@ BundleTable.Bundles.Add(new ScriptBundle("~/scripts/client")
 
 This will resolve the script order problem. Here is the HTML source generated.
 
-![Angular Script Order fixed]({{ site.baseurl }}/assets/images/2016/03/angular_script_order_fixed.png)
+![Angular Script Order fixed]({{ site.url }}/assets/images/2016/03/angular_script_order_fixed.png)
 
 * Dependency Injection  - So far you haven't enabled the bundling and minification, you can do it various ways, either by changing the configuration to Release mode or by setting BundleTable.EnableOptimizations to True.
 
@@ -80,11 +80,11 @@ BundleTable.EnableOptimizations = true;
 
 Once you do this and run the application again you will find some other like this.
 
-![Angular DI Error]({{ site.baseurl }}/assets/images/2016/03/angular_di_error.png)
+![Angular DI Error]({{ site.url }}/assets/images/2016/03/angular_di_error.png)
 
 And if you look at the source code of the combined javascript file, you could see something like this.
 
-![Angular Scope variable renamed]({{ site.baseurl }}/assets/images/2016/03/scope_variable_renamed.png)
+![Angular Scope variable renamed]({{ site.url }}/assets/images/2016/03/scope_variable_renamed.png)
 
 It because the ASP.NET Web Optimization Framework renamed the '$scope' variable to 'n'. You can fix this issue using different DI syntax.
 

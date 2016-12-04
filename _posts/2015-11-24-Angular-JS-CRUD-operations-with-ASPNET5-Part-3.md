@@ -100,6 +100,6 @@ In this code I am disabling the submit button, if the form is not valid. And I a
 
 And here is the app running on my system.
 
-![Angular Todo List app running]({{ site.baseurl }}/assets/images/2015/11/todolistapp.png)
+![Angular Todo List app running]({{ site.url }}/assets/images/2015/11/todolistapp.png)
 
 In the next post I will try to cover unit testing in Angular JS.

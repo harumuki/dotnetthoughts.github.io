@@ -20,7 +20,7 @@ For getting code coverage I am using a JavaScript library, [blanket.js](http://b
 
 Once you run the HTML page again, you will see a check box, Enable coverage, if you check on this, it will populate and display the code coverage information.
 
-![Code coverage option enabled]({{ site.baseurl }}/assets/images/2014/04/enable_coverage.png)
+![Code coverage option enabled]({{ site.url }}/assets/images/2014/04/enable_coverage.png)
 
 I faced two problems while working with blanketjs.
 

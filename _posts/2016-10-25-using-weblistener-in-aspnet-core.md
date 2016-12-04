@@ -14,7 +14,7 @@ This post is about using WebListener server in ASP.NET Core. WebListener is a we
 
 Today Microsoft ASP.NET WebListener announced the release of WebListener 1.0.0 stable version.
 
-![WebListener 1.0.0 stable version announcement]({{ site.baseurl }}/assets/images/2016/10/weblistener_announcement.png)
+![WebListener 1.0.0 stable version announcement]({{ site.url }}/assets/images/2016/10/weblistener_announcement.png)
 
 You can add support for WebListener to your ASP.NET application by adding the `Microsoft.AspNetCore.Server.WebListener` dependency in project.json and calling `UseWebListener` extension method in the Main() method.
 
@@ -56,6 +56,6 @@ public static void Main(string[] args)
 
 And if you are using WebListener, the server will be displayed as "Microsoft-HTTPAPI/2.0".
 
-![WebListener server name]({{ site.baseurl }}/assets/images/2016/10/server_name.png)
+![WebListener server name]({{ site.url }}/assets/images/2016/10/server_name.png)
 
 Happy Programming :)

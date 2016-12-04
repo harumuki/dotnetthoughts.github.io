@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 In one of my project, I am using [OpenXML SDK](http://msdn.microsoft.com/en-us/library/office/bb448854(v=office.15).aspx) for opening Excel files. Recently I got an issue like SpreadsheetDocument.Open() method was throwing an IOException, if the Excel file is opened by MS Excel, even if I set the isEditable parameter false. 
 
-![IO Exception - Open XML opening file in Read Only mode]({{ site.baseurl }}/assets/images/2014/09/IOException.png)
+![IO Exception - Open XML opening file in Read Only mode]({{ site.url }}/assets/images/2014/09/IOException.png)
 
 I fixed this problem by passing a stream instead of string (file path). And I used the File stream class to open the Excel file. Here is the code snippet.
 

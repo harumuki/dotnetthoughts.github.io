@@ -25,7 +25,7 @@ protected override void OnBackKeyPress(CancelEventArgs e)
 {% endhighlight %}
 
 It will display a message box like this, if user press the back button.
-![WP7 Exit confirmation ]({{ site.baseurl }}/assets/images/2013/08/WP7_exit.png)
+![WP7 Exit confirmation ]({{ site.url }}/assets/images/2013/08/WP7_exit.png)
 
 Clicking on OK will exit the application.
 

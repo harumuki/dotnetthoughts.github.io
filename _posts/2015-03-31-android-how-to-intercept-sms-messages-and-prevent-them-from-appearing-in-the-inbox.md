@@ -13,7 +13,7 @@ Android allows app developers to intercept SMS, here is the code snippet, which 
 
 First you need to set the permission for the app to receive and process SMS. You can do this by modifing the AndroidManifest.xml file.
 
-![AndroidManifest.xml file]({{ site.baseurl }}/assets/images/2015/03/smspermission.png)
+![AndroidManifest.xml file]({{ site.url }}/assets/images/2015/03/smspermission.png)
 
 Source :
 {% highlight XML %}

@@ -73,7 +73,7 @@ public async Task<IEnumerable<Products>> Get()
 
 And here is the screenshot of the procedure running on my system.
 
-![EF Core - Procedure execution]({{ site.baseurl }}/assets/images/2016/07/ef_core_sp_execution.png)
+![EF Core - Procedure execution]({{ site.url }}/assets/images/2016/07/ef_core_sp_execution.png)
 
 And for parameterized procedures you can use the FromSql() overload, which accepts object[] parameters, like this.
 

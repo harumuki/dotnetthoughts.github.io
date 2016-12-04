@@ -10,11 +10,11 @@ header-img: "img/post-bg-01.jpg"
 ---
 This post is to about using Application Insights in ASP.NET Core. Application Insights is an extensible analytics platform that monitors the performance and usage of your live ASP.NET Core web applications. To use Application Insights, you need to create one Application Insights. It is still in Preview mode, you can create one using portal.azure.com website.
 
-![Application Insights Create Page]({{ site.baseurl }}/assets/images/2016/06/application_insights_create.png)
+![Application Insights Create Page]({{ site.url }}/assets/images/2016/06/application_insights_create.png)
 
 Once you create an application insight, you need to get the instrumentation key. You can get it from the properties.
 
-![Application Insights Properties]({{ site.baseurl }}/assets/images/2016/06/application_insights_properties.png)
+![Application Insights Properties]({{ site.url }}/assets/images/2016/06/application_insights_properties.png)
 
 Once you get the instrumentation key, you can keep it inside the appsettings.json file, like this.
 
@@ -78,6 +78,6 @@ If not _ViewImports.cshtml not present, add it in _layout.cshtml. Also in the _L
 
 Once you completed these configuration, you can run the application using "dotnet run". And you can view the details in the azure portal.
 
-![Application Insights Properties]({{ site.baseurl }}/assets/images/2016/06/application_insights_results.png)
+![Application Insights Properties]({{ site.url }}/assets/images/2016/06/application_insights_results.png)
 
 Happy Programming :)

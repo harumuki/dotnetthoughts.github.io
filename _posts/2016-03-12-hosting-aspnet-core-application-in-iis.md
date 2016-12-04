@@ -20,11 +20,11 @@ This command will publish your application with active runtime, in my scenario, 
 
 * Create an application pool in IIS, with .NET CLR Version as no managed code option selected. Like this.
 
-![Create an application pool in IIS, with .NET CLR Version as no managed code option selected]({{ site.baseurl }}/assets/images/2016/03/add_application_pool.png)
+![Create an application pool in IIS, with .NET CLR Version as no managed code option selected]({{ site.url }}/assets/images/2016/03/add_application_pool.png)
 
 * Now create an application, make sure you're selecting the application pool created in previous step.
 
-![Create an application IIS, with the created app pool]({{ site.baseurl }}/assets/images/2016/03/add_application.png)
+![Create an application IIS, with the created app pool]({{ site.url }}/assets/images/2016/03/add_application.png)
 
 * Physical Path of the application should point to the wwwroot of your published application.
 * Make sure you're IISPlatform handler installed, else you can download it from [here](http://www.iis.net/downloads/microsoft/httpplatformhandler)

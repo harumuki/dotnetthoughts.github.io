@@ -13,7 +13,7 @@ In this post I am going to show how to implement Basic HTTP authentication in a 
 
 Basic authentication works as follows: - If a request requires authentication, the server returns 401 (Unauthorized). The response includes a WWW-Authenticate header, indicating the server supports Basic authentication. The client sends another request, with the client credentials in the Authorization header. The credentials are formatted as the string â€œname:passwordâ€, base64-encoded. The credentials are not encrypted. Basic authentication is performed within the context of a â€œrealm.â€ The server includes the name of the realm in the WWW-Authenticate header. The userâ€™s credentials are valid within that realm. The exact scope of a realm is defined by the server. 
 
-![Basic authentication flow]({{ site.baseurl }}/assets/images/2013/11/basic_auth.png)
+![Basic authentication flow]({{ site.url }}/assets/images/2013/11/basic_auth.png)
 
 Because the credentials are sent unencrypted, Basic authentication is only secure over HTTPS. Basic authentication is also vulnerable to CSRF attacks. After the user enters credentials, the browser automatically sends them on subsequent requests to the same domain, for the duration of the session. This includes AJAX requests. 
 

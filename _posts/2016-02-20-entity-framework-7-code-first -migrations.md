@@ -38,7 +38,7 @@ For enabling the code first migrations, you need to modify the project.json file
 
 Now you can try EF commands using dnx ef command, which will display EF screen like this.
 
-![EF 7 dnx command]({{ site.baseurl }}/assets/images/2016/02/dnx_ef_command.png)
+![EF 7 dnx command]({{ site.url }}/assets/images/2016/02/dnx_ef_command.png)
 
 Here is the model class and database context class.
 
@@ -77,7 +77,7 @@ dnx ef migrations add Initial
 
 This command will create a Migrations folder and will display result like this.
 
-![Add migrations command result]({{ site.baseurl }}/assets/images/2016/02/add_migrations_initial.png)
+![Add migrations command result]({{ site.url }}/assets/images/2016/02/add_migrations_initial.png)
 
 Now you can run the code to create the database. 
 
@@ -87,7 +87,7 @@ dnx ef database update Initial
 
 Migration name is optional, if not specified, all the pending migrations will be applied. Once migrations completed, it will create the database and display a message like this.
 
-![Database migrations applied]({{ site.baseurl }}/assets/images/2016/02/db_migrations_updated.png)
+![Database migrations applied]({{ site.url }}/assets/images/2016/02/db_migrations_updated.png)
 
 You can add code to use the database. This code will create an entry into the blog table.
 {% highlight CSharp %}
@@ -119,7 +119,7 @@ public class Blog
 
 If you run the application, you will get a DbUpdateException. Now you can add one more migration and update the database.
 
-![DbUpdateException]({{ site.baseurl }}/assets/images/2016/02/DbUpdateException.png)
+![DbUpdateException]({{ site.url }}/assets/images/2016/02/DbUpdateException.png)
 
 Now you need to create another migration and need to update the database again.
 
@@ -135,7 +135,7 @@ dnx ef migrations list
 
 And it will display something like this.
 
-![Available Code First Migrations]({{ site.baseurl }}/assets/images/2016/02/migrations_list.png)
+![Available Code First Migrations]({{ site.url }}/assets/images/2016/02/migrations_list.png)
 
 Now if you run the application using dnx run, you won't see the DbUpdateException any more. Now let's add one more class, and customize the database update. 
 
@@ -187,7 +187,7 @@ dnx ef migrations script
 
 It will print the generated SQL Script into the console. Like this
 
-![SQL Script]({{ site.baseurl }}/assets/images/2016/02/sql_script.png)
+![SQL Script]({{ site.url }}/assets/images/2016/02/sql_script.png)
 
 If you want to generate it file, you can use -o option, where you can specify the output file.
 

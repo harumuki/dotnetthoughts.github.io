@@ -15,7 +15,7 @@ The implementation is pretty same, you have to get the instance of the lync inst
 
 You need to install the Lync SDK to start using the lync APIs, which you can download from [here](http://www.microsoft.com/en-in/download/details.aspx?id=36824). You need to add reference of Microsoft.Lync.Model and Microsoft.Lync.Utilities DLLs. 
 
-![Lync References ]({{ site.baseurl }}/assets/images/2015/04/lyncAPIRefe.png)
+![Lync References ]({{ site.url }}/assets/images/2015/04/lyncAPIRefe.png)
 
 And here is the code snippet.
 

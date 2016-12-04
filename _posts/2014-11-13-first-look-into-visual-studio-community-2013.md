@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 Yesterday Connect(); Event, Scott Guthrie and Soma Somasegar made a number of important announcements for the cloud-first, mobile-first developer. Visual Studio Community 2013 is a new free, fully-featured edition of Visual Studio that lets developers target any platform, from desktop and mobile to web and cloud.  
 
-![Visual Studio Community 2013]({{ site.baseurl }}/assets/images/2014/11/1.png)
+![Visual Studio Community 2013]({{ site.url }}/assets/images/2014/11/1.png)
  
 Visual Studio Community 2013 also supports full Visual Studio extensibility, offering access to the ecosystem of over 5000 extensions. You can download it from [here](http://www.visualstudio.com/products/visual-studio-community-vs). You can also try Visual Studio Community 2013 in Azure VM image.
 
@@ -25,7 +25,7 @@ What is new in Visual Studio Community 2013
 *   Cross-platform mobile development including the web, Android, iOS, and Windows Phone with the free [Visual Studio Tools for Apache Cordova extension](http://www.visualstudio.com/en-US/explore/cordova-vs).
 
 *   Take advantage of cloud services with simplified Azure SDK integration, and incorporate modern app analytics and telemetry with Application Insights. Application Insights collects, processes and presents a wide variety of telemetry including performance, usage, availability, exception, crash, environment, log and developer-supplied data from all components of a modern application â€“ including clients (devices and browser), servers, databases and services.
-![Application Insights]({{ site.baseurl }}/assets/images/2014/11/7.png)
+![Application Insights]({{ site.url }}/assets/images/2014/11/7.png)
 
 *   Access to all the Visual Studio 2013 extensions on the Visual Studio Gallery
 

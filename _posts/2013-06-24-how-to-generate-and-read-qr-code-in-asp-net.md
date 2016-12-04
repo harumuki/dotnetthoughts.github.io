@@ -46,6 +46,6 @@ Response.Write(result.Text);
 
 Here is the QR code generated using the code 
 
-![dotnetthoughts - QR Code]({{ site.baseurl }}/assets/images/2013/06/QRCode.jpg)
+![dotnetthoughts - QR Code]({{ site.url }}/assets/images/2013/06/QRCode.jpg)
 
 Happy Programming.

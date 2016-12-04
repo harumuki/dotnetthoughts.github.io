@@ -13,7 +13,7 @@ If you are using StyleCop for maintaining C# coding standards and conventions, w
 
 We can set the keyboard shortcut by using Tools > Options. And select the Keyboard option. In the Show commands containing textbox, search for "Edit.RemoveAndSort", this command will do the removing and sorting of namespaces, set shortcut for the same using Shortcut keys textbox and assign text box. Currently I am using "Ctrl + Shift + K" for this. Click Assign and OK.
 
-![Remove and Sort - Keyboard shortcut assignment]({{ site.baseurl }}/assets/images/2014/08/toolsoptions.png)
+![Remove and Sort - Keyboard shortcut assignment]({{ site.url }}/assets/images/2014/08/toolsoptions.png)
 
 Next time you can simply using "Ctrl + Shift + K" shortcut for removing and sorting namespaces. 
 

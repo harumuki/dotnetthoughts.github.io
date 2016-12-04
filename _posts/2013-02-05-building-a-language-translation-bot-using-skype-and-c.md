@@ -50,13 +50,13 @@ private void SkypeMessageStatus(ChatMessage pMessage,
 
 While launching the application, you will get a prompt like this
 
-![Skype - Application permission dialog]({{ site.baseurl }}/assets/images/2013/02/CaptureItPlus2.png)
+![Skype - Application permission dialog]({{ site.url }}/assets/images/2013/02/CaptureItPlus2.png)
 
 You need to click on the allow access button, otherwise application wonâ€™t work.
 
 Skype bot running on my system.
 
-![Skype bot - English to Hindi]({{ site.baseurl }}/assets/images/2013/02/CaptureItPlus3.png)
+![Skype bot - English to Hindi]({{ site.url }}/assets/images/2013/02/CaptureItPlus3.png)
 
 The Translate method, translate from English to Hindi using Bing API. Bing API doesn't support translation to Malayalam from English. So Hindi language is used.
 

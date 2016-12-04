@@ -69,7 +69,7 @@ public IActionResult Index(UserViewModel uservm)
 
 This is the screenshot of mapping using Automapper.
 
-![AutoMapper ]({{ site.baseurl }}/assets/images/2016/12/automapper_in_aspnet_core.png)
+![AutoMapper running in ASP.NET Core Web app]({{ site.url }}/assets/images/2016/12/automapper_in_aspnet_core.png)
 
 Here is the profile class implementation, which quite similar to current implementation except all the mappings will be inside this class.
 

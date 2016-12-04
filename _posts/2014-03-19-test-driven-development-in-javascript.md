@@ -63,7 +63,7 @@ test("Verify Calculate function exists", function () {
 
 And open the test runner HTML. As we don't have a function like that, it will fail.
 
-![QUnit - Test Failed]({{ site.baseurl }}/assets/images/2014/03/Failed_Test.png)
+![QUnit - Test Failed]({{ site.url }}/assets/images/2014/03/Failed_Test.png)
 
 Now you to write minimal code to pass the test.
 
@@ -78,7 +78,7 @@ AgeCalculator.prototype.Calculate = function (date) {
 
 Here is the calculate function which doesn't not do anything, but helps to pass the first test. Now open the test runner again, and refresh the page. 
 
-![QUnit - Test Passed]({{ site.baseurl }}/assets/images/2014/03/Passed_Test.png)
+![QUnit - Test Passed]({{ site.url }}/assets/images/2014/03/Passed_Test.png)
 
 Now you need to write a test which will verify the functionality, like the Calculate function should return a positive integer.
 
@@ -101,7 +101,7 @@ AgeCalculator.prototype.Calculate = function (date) {
 
 Now the second test will pass. 
 
-![QUnit - 2 Tests Passed]({{ site.baseurl }}/assets/images/2014/03/Passed_Test2.png)
+![QUnit - 2 Tests Passed]({{ site.url }}/assets/images/2014/03/Passed_Test2.png)
 
 Now we can do some refactoring the unit tests, if you look into the test code, we are are duplicating the initialization of AgeCalculator. Either you can create a method which will return the instance, and call the function in the initialization or you can create a QUnit module and can use the framework feature for initialization before running every tests.
 
@@ -128,11 +128,11 @@ test("Verify Calculate function returns Age", function () {
 
 And here is the screenshot for the same.
 
-![QUnit Module]({{ site.baseurl }}/assets/images/2014/03/final.png)
+![QUnit Module]({{ site.url }}/assets/images/2014/03/final.png)
 
 If you are using Visual Studio, there is a nice test adapter available for Javascript unit testing. It is called "Chutzpah - A JavaScript Test Runner". You can download it from http://chutzpah.codeplex.com/, which helps to run javascript test cases from Visual Studio itself. It is also supports Continuous integration too.
 
-![Visual Studion 2012 - Test Explorer]({{ site.baseurl }}/assets/images/2014/03/TestExplorer.png)
+![Visual Studion 2012 - Test Explorer]({{ site.url }}/assets/images/2014/03/TestExplorer.png)
 
 ReSharper also supports Javascript unit testing.
 

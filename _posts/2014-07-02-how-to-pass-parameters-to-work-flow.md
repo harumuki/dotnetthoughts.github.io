@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 You can create arguments to workflow and can pass the values from outside. For creating arguments, you can use the Arguments Tab in the WorkFlow designer.
 
-![WF Arguments Tab]({{ site.baseurl }}/assets/images/2014/07/workflow_arguments.png)
+![WF Arguments Tab]({{ site.url }}/assets/images/2014/07/workflow_arguments.png)
 
 In the last [post](http://www.dotnetthoughts.net/how-to-load-wf-workflows-dynamically/) I mentioned about loading and invoking a WorkFlow, the WorkFlowInvoker class's Invoke method has an overload, which accepts inputs parameter, which is type of IDictionary<string, object>. You can create an Dictionary<string, object> and pass it as the parameter to the Invoke method. 
 

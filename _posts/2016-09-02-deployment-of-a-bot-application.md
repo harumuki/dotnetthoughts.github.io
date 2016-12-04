@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 This post is about how to deploy your Bot Application. For deployment you require Bot Id and Microsoft App Id. Both Ids can be created from Bot Framework portal, which can be accessed from [http://dev.botframework.com](http://dev.botframework.com). Once you register / sign in, you can create a new Bot from the Register a Bot menu. You need to set the Messaging endpoint to an HTTPS URL. While creating your bot, you can provide some https url here, which you can change later once you deploy the Bot. 
 
-![Bot Registration Page]({{ site.baseurl }}/assets/images/2016/09/bot_registration.png)
+![Bot Registration Page]({{ site.url }}/assets/images/2016/09/bot_registration.png)
 
 I modified the Bot code, instead of simple echo bot, I modified the code to display weather information about the given city. I am using the "openweathermap.org" API for this purpose. Here is the code.
 
@@ -67,7 +67,7 @@ private async Task<string> GetWeather(string city)
 
 Once you create the Bot App in the portal, get the BotId, MicrosoftAppID and MicrosoftAppPassword, which need to be set in the web.config of the application. 
 
-![Bot Details]({{ site.baseurl }}/assets/images/2016/09/bot_details.png)
+![Bot Details]({{ site.url }}/assets/images/2016/09/bot_details.png)
 
 Also you need to set the Bot Authentication attribute to the MessagesController class, this attribute will help you to secure your bot, this endpoint can only accessed from Bot Connector.
 
@@ -90,8 +90,8 @@ public class MessagesController : ApiController
 
 I prefer to use Azure Web app service to host your Bot. So you can use Web app's HTTPS URL instead of using your own certificate. You can host it on any other platforms which supports ASP.NET Web API hosting. Now you can publish the application. Once you publish the app, you can test it using the Test option in the Bot Page, which will return a message like "Accepted". You can embed the Bot in your HTML page using Web Chat integration. Click on the Edit button in the Web Chat under the Channels, and click on "Regenerate Web Chat secret" button.
 
-![Web Chat Integration]({{ site.baseurl }}/assets/images/2016/09/web_chat_integration.png)
+![Web Chat Integration]({{ site.url }}/assets/images/2016/09/web_chat_integration.png)
 
 And once it is completed, you can copy HTML code from the "Embed template" textbox, and set the Secret in the placeholder. If you have used an ASP.NET MVC app, you can put it in the Index page and upload it again. You can see the demo of the weather bot [here](http://weatherbotapp.azurewebsites.net/). And here is the screenshot of the same.
 
-![Weather bot running]({{ site.baseurl }}/assets/images/2016/09/weather_bot_running.png)
+![Weather bot running]({{ site.url }}/assets/images/2016/09/weather_bot_running.png)

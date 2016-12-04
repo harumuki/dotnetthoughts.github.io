@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 While working on MVC5 application, I faced this issue, I was using Ajax.BeginForm() and from controller, I was returning content result. But instead of updating the DIV, the content was opened in new Tab. Initially I thought it was due to some javascript error, but it was not working with Ajax.ActionLink also. Later I found it was due to missing "Microsoft.jQuery.Unobtrusive.Ajax" package. You can install this via NuGet. 
 
-![NuGet package - Microsoft.jQuery.Unobtrusive.Ajax]({{ site.baseurl }}/assets/images/2015/03/nuget_webapp.png)
+![NuGet package - Microsoft.jQuery.Unobtrusive.Ajax]({{ site.url }}/assets/images/2015/03/nuget_webapp.png)
 
 And include it in the BundleConfig.cs. 
 

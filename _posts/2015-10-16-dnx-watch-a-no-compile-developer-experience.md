@@ -24,6 +24,6 @@ dnx-watch web
 
 This will start the dnx-watch command, and which will monitor the directory for changes. Here is the screenshot of dnx-watch running on my system.
 
-![dnx-watch running on my system]({{ site.baseurl }}/assets/images/2015/10/dnxwatch.png)
+![dnx-watch running on my system]({{ site.url }}/assets/images/2015/10/dnxwatch.png)
 
 Happy Programming.

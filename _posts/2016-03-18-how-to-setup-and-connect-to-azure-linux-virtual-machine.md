@@ -10,11 +10,11 @@ header-img: "img/post-bg-01.jpg"
 ---
 This post is about creating and connecting to a Linux Virtual Machine running on Windows Azure. This is using the Ubuntu 14.04 LTS OS Image. First you need to create Linux VM in Azure, I am using old azure portal for creating the VM. You can create a VM using Quick Create option, you need to provide the VM Name, Image (Ubuntu 14.04 LTS), Size, Password and Region.
 
-![Create an Azure VM using Ubuntu 14.04 LTS Quick Create option]({{ site.baseurl }}/assets/images/2016/03/create_azure_linux_vm.png)
+![Create an Azure VM using Ubuntu 14.04 LTS Quick Create option]({{ site.url }}/assets/images/2016/03/create_azure_linux_vm.png)
 
 And you need to add Remote Desktop endpoint using end points option. Here is the list of endpoints the VM created.
 
-![List of Remote Desktop endpoints]({{ site.baseurl }}/assets/images/2016/03/remote_desktop_endpoint.png)
+![List of Remote Desktop endpoints]({{ site.url }}/assets/images/2016/03/remote_desktop_endpoint.png)
 
 Now from the Virtual Machine dashboard, you can download the RDP file to connect to the Linux VM. But before doing that you need to configure VM to accept remote connections. To connect to VM from your system you can use "putty" which will help you to execute commands on VM.
 
@@ -34,6 +34,6 @@ You have completed the configuration, now download the RDP file from the dashboa
 
 And here is the linux vm running with xfce desktop.
 
-![List of Remote Desktop endpoints]({{ site.baseurl }}/assets/images/2016/03/linux_virtual_machine.png)
+![List of Remote Desktop endpoints]({{ site.url }}/assets/images/2016/03/linux_virtual_machine.png)
 
 Happy Programming

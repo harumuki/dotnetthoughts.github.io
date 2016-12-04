@@ -28,11 +28,11 @@ dnvm upgrade -r coreclr
 
 Installation is completed. Now you can run the 'dnvm list' command to verify the installed runtimes. Get the samples from [ASP.NET Home](https://github.com/aspnet/Home). Open terminal and extract the zip. Navigate to the samples directory and execute 'dnu restore' and 'dnx web' command. Here is the screenshot of the application running from terminal.
 
-![DNX Web Command running on Ubuntu Terminal]({{ site.baseurl }}/assets/images/2016/03/dnx_web_command.png)
+![DNX Web Command running on Ubuntu Terminal]({{ site.url }}/assets/images/2016/03/dnx_web_command.png)
 
 Now you can navigate to the Azure endpoints tab, and add an HTTP endpoint, public port will be 80, and private port will be the port where your ASP.NET application running, in this case private port is 5000.
 
-![Endpoint configuraion on Azure Linux VM]({{ site.baseurl }}/assets/images/2016/03/http_endpoint_azure_linux_vm.png)
+![Endpoint configuraion on Azure Linux VM]({{ site.url }}/assets/images/2016/03/http_endpoint_azure_linux_vm.png)
 
 Now you can browse the application from your system with the vmname.cloudapp.net URL.
 

@@ -86,11 +86,11 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 
 Now you can run the api page @ http://localhost:8022/swagger/ui/index.html. Here is the screenshot.
 
-![Swagger api page]({{ site.baseurl }}/assets/images/2016/06/swaggergen_api_page.png)
+![Swagger api page]({{ site.url }}/assets/images/2016/06/swaggergen_api_page.png)
 
 Swagger also support traditional xml comments to be included in the documentation. In the ConfigureServices method. For xml documentation generation, enable xml documentation checkbox in the project properties.
 
-![Generate xml documentation]({{ site.baseurl }}/assets/images/2016/06/generate_xm_documentation.png)
+![Generate xml documentation]({{ site.url }}/assets/images/2016/06/generate_xm_documentation.png)
 
 And you can include xml comments in the ConfigureServices method like this.
 

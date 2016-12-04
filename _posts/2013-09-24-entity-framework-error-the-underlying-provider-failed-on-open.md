@@ -23,6 +23,6 @@ So IIS is trying to access the database under the credential 'IIS APPPOOL\Defaul
 
 You can modify it by selecting the Advanced settings in the Application Pool and under Process Model change the Identity to Network Service from ApplicationPoolIdentity.
 
-![IIS - Advanced Settings - Change Process Model Identity]({{ site.baseurl }}/assets/images/2013/09/iis_change.png)
+![IIS - Advanced Settings - Change Process Model Identity]({{ site.url }}/assets/images/2013/09/iis_change.png)
 
 Happy Coding.

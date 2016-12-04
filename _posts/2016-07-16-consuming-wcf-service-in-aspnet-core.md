@@ -13,11 +13,11 @@ This post is about consuming WCF Services in ASP.NET Core. With the availability
 
 To consume the WCF Service, you need to right click on the References node under the project tree, from the context menu select the Add Connected service option, which will show Add Connected service dialog, you need to select WCF Service - Preview option. And click on the configure button.
 
-![Add Connected Service Dialog]({{ site.baseurl }}/assets/images/2016/07/add_connected_service.png)
+![Add Connected Service Dialog]({{ site.url }}/assets/images/2016/07/add_connected_service.png)
 
 In the configure WCF Service reference dialog, you can either provide the URL of the service or you can try the discover option, which will display all the services inside the current solution. For this post I am using the default WCF project and it is part of the solution. So I selected the Discover option.
 
-![Configure WCF Service Reference Dialog]({{ site.baseurl }}/assets/images/2016/07/configure_wcf_service_reference.png)
+![Configure WCF Service Reference Dialog]({{ site.url }}/assets/images/2016/07/configure_wcf_service_reference.png)
 
 Similar to earlier versions of Visual Studio you can configure the Collection type and Dictionary collection type in the Data Type options tab. And Client options tab will help you to configure the generated proxy classes access specifier, either Public or Internal. Once you click finish, Visual Studio will scaffold proxy classes with the help of the extension and classes will be added to the project similar to the previous versions of Visual Studio, and it will restore the references in the project.json. All the WCF related references will be added to the project.json file.
 

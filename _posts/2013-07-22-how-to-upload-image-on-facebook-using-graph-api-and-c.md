@@ -13,10 +13,10 @@ Long back I wrote a post about uploading files to Sky Drive from C# Winform appl
 
 As you may know, Facebook does support OAuth2.0 for authentication. Unlike web applications, for desktop applications can directly get the access token, which required to upload the file to Facebook. For authentication, you need to create a Facebook Application. You can create it from Facebook Developer page - https://developers.facebook.com/apps. You can create an application using Create New App button. 
 
-![Create new Facebook application]({{ site.baseurl }}/assets/images/2013/07/Create_New_FB_app.png)
+![Create new Facebook application]({{ site.url }}/assets/images/2013/07/Create_New_FB_app.png)
 
 And you can get the App ID/API Key and App Secret, by clicking on the App details page.
-![Facebook Application details]({{ site.baseurl }}/assets/images/2013/07/FB_App_Details.png)
+![Facebook Application details]({{ site.url }}/assets/images/2013/07/FB_App_Details.png)
 
 Here is the implementation, for displaying authentication dialog, Web Browser control is used, with Dock = Fill property. Here is the code.
 
@@ -57,11 +57,11 @@ private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e
 
 The above code will display an authentication dialog like this.
 
-![Facebook Authentication Dialog]({{ site.baseurl }}/assets/images/2013/07/Authentication_dialog.png)
+![Facebook Authentication Dialog]({{ site.url }}/assets/images/2013/07/Authentication_dialog.png)
 
 Once the user authenticated successfully, Facebook will display an authorization dialog like this, which will inform user about the permissions the app is going to use.
 
-![Authorization dialog]({{ site.baseurl }}/assets/images/2013/07/Authorization_dialog.png)
+![Authorization dialog]({{ site.url }}/assets/images/2013/07/Authorization_dialog.png)
 
 Once user authorized the application successfully, the form will close, with dialog result OK, also the Form exposes the AuthToken property, which used to upload the File. And here is the code which helps to upload the File.
 
@@ -82,6 +82,6 @@ using (OpenFileDialog dlg = new OpenFileDialog())
 
 The response is JSON data, the ID of the image uploaded. And here is the sample image, uploaded by the application. The message query string value is used for image description. 
 
-![Uploaded File - From Facebook timeline]({{ site.baseurl }}/assets/images/2013/07/Uploaded_File.png)
+![Uploaded File - From Facebook timeline]({{ site.url }}/assets/images/2013/07/Uploaded_File.png)
 
 You can post the photo to selected album, currently it is posting an album with the application name. 

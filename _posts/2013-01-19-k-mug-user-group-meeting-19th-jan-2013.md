@@ -13,6 +13,6 @@ Another K-MUG UG Meeting, as usual the event was awesome. (Sorry I forgot to pos
 
 Thanks to [Orion India Systems](http://www.orioninc.com/) for their continuous support to promote such technology events and initiatives in Kerala. This time they supported the event by providing their training hall in Infopark, notepad, pen and a surprise gift â€“ a cute mug for the desktop.
 
-![]({{ site.baseurl }}/assets/images/2013/01/orioncup.jpg)
+![]({{ site.url }}/assets/images/2013/01/orioncup.jpg)
 
 Image copyright Â© [Praveen](http://blog.ninethsense.com/)

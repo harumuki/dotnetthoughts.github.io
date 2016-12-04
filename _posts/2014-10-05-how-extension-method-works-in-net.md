@@ -49,11 +49,11 @@ If you look into the code, by default string doesn't have a method like Reverse.
 
 If you look into the IL code generated using IL Disassembler, you can find a type like Extensions which is decorated with [ExtensionAttribute](http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.extensionattribute(v=vs.110).aspx), this is the same attribute you need to create an extension method in VB.Net. In C#, if you use this modifier for the first parameter of extension method, compiler will automatically emit ExtensionAttribute for the methods.
 
-![Extension Attribute in IL Code]({{ site.baseurl }}/assets/images/2014/10/extensionattribute.png)
+![Extension Attribute in IL Code]({{ site.url }}/assets/images/2014/10/extensionattribute.png)
 
 And in the consuming code, it is like invoking a static method.
 
-![IL Main - Invoking static method]({{ site.baseurl }}/assets/images/2014/10/invoke.png)
+![IL Main - Invoking static method]({{ site.url }}/assets/images/2014/10/invoke.png)
 
 General guidelines to implement Extension Methods 
 

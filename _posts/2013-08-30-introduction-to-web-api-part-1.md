@@ -13,7 +13,7 @@ Web API is a brand new platform for developing REST services using Microsoft tec
 
 Web API project template will be available under ASP.Net MVC 4 Application, you can create Web API with Web Form application also.
 
-![Web API project template]({{ site.baseurl }}/assets/images/2013/08/webapi_1.png)
+![Web API project template]({{ site.url }}/assets/images/2013/08/webapi_1.png)
 
 It will create an ASP.Net MVC project with Web API controller. The folder structure will be pretty similar to the conventional MVC project except, it has one WebApiConfig.cs under the App_Start folder, and a values controller inside the controllers folder. The routing mechanism in WebAPI is slightly different than MVC routing.
 

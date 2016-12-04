@@ -37,7 +37,7 @@ This implementation is different than custom view engine implementation in previ
 
 Here is the modified folder structure include UI folder.
 
-![Modified folder structure with UI folder]({{ site.baseurl }}/assets/images/2015/08/folderstructure.png)
+![Modified folder structure with UI folder]({{ site.url }}/assets/images/2015/08/folderstructure.png)
 
 You can configure this view engine in the Startup.cs, ConfigureServices() method.
 

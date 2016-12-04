@@ -141,6 +141,6 @@ When you start the service, if you face issues like Service couldn't start, plea
 
 Here is the screenshot of the dotnet core app hosted in windows service.
 
-![dotnet core app hosted in windows service]({{ site.baseurl }}/assets/images/2016/06/dotnet_core_windows_service.png)
+![dotnet core app hosted in windows service]({{ site.url }}/assets/images/2016/06/dotnet_core_windows_service.png)
 
 Happy Programming :)

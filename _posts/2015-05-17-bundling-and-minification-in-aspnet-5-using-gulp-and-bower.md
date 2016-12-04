@@ -32,7 +32,7 @@ gulp.task('helloworld', function(){
 
 And you can run this task by "gulp helloworld", it will print HelloWorld in the console. 
 
-![Hello World using Gulp]({{ site.baseurl }}/assets/images/2015/05/gulphello.png)
+![Hello World using Gulp]({{ site.url }}/assets/images/2015/05/gulphello.png)
 
 If you create task with name 'default', you can run this task by executing command 'gulp', you don't need to specify the task name.
 
@@ -46,7 +46,7 @@ You will find lot of plugins for gulp, to achieve various tasks.
 
 Similar to gulp, bower also works on bower.json file. You can create a bower file using "bower init" command.
 
-![Bower Init command]({{ site.baseurl }}/assets/images/2015/05/bowerfile.png)
+![Bower Init command]({{ site.url }}/assets/images/2015/05/bowerfile.png)
 
 Which will create a bower.json file like this.
 {% highlight Javascript %}
@@ -102,7 +102,7 @@ You can use Visual Studio code, to edit bower.json file, it supports auto comple
 
 You can install bower components using "bower install" command. It will download the packages and dependencies which is required for the package as well, similar to nuget.
 
-![Bower install - Bootstrap]({{ site.baseurl }}/assets/images/2015/05/bowerinstall.png)
+![Bower install - Bootstrap]({{ site.url }}/assets/images/2015/05/bowerinstall.png)
 
 For minification and bundling you need to install various gulp plugins. You need to install all these plugins using npm install command.
 

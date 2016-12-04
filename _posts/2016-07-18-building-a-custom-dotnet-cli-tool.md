@@ -61,7 +61,7 @@ Once you implemented it, you can run a "dotnet restore" command to restore the n
 
 Now you can run the command "dotnet imgopt", which will invoke the tool and which will compress the images. Here is the screenshot of the tool running on my application.
 
-![dotnet cli tool running]({{ site.baseurl }}/assets/images/2016/07/dotnet_cli_tool.png)
+![dotnet cli tool running]({{ site.url }}/assets/images/2016/07/dotnet_cli_tool.png)
 
 Similar to bundling and minification tool, you can run this tool along with the publish events, like this, which will compress the images as part of pre-compile step.
 {% highlight Javascript %}

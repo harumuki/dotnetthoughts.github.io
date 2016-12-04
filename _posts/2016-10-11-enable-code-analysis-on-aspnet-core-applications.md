@@ -22,7 +22,7 @@ To enable code analysis, first you need to reference `StyleCop.Analyzers` in you
 
 Now restore the packages using `dotnet restore` command. And once it is done, you can run the project using `dotnet run` command, while building, code analysis tool will log the warnings to the console.
 
-![Code Analysis warnings]({{ site.baseurl }}/assets/images/2016/10/code_analysis_warnings.png)
+![Code Analysis warnings]({{ site.url }}/assets/images/2016/10/code_analysis_warnings.png)
 
 ### Rulesets and stylecop.json
 

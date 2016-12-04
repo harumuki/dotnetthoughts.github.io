@@ -54,7 +54,7 @@ Now you need to specify the Javascript and stylesheet files for bundling and min
 
 The file is self explantory, you can specify multiple file in the inputFiles element, which will be combined and minified based on the minify element. Now you can combine and minify using "dotnet bundle" command. Here is the output when I run the dotnet bundle command on my MVC project.
 
-![Bundle and Minification completed with dotnet bundle command]({{ site.baseurl }}/assets/images/2016/06/bundle_minification_running.png)
+![Bundle and Minification completed with dotnet bundle command]({{ site.url }}/assets/images/2016/06/bundle_minification_running.png)
 
 You can integrate it to the development lifecycle by adding the dotnet build command in the "precompile" script section in project.json file. If you are using Yo ASP.NET generator, the project template will be using precompile script section in project.json.
 

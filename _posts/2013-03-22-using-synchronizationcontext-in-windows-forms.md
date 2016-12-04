@@ -40,6 +40,6 @@ private void LongProcess()
 
 When the value is assigned to textbox, if you look the threads window, you can find, it is running under main thread.
 
-![Threads window - UI thread]({{ site.baseurl }}/assets/images/2013/03/threads.png)
+![Threads window - UI thread]({{ site.url }}/assets/images/2013/03/threads.png)
 
 You can find more details about [WindowsFormsSynchronizationContext](http://msdn.microsoft.com/en-IN/library/system.windows.forms.windowsformssynchronizationcontext.aspx) class in MSDN

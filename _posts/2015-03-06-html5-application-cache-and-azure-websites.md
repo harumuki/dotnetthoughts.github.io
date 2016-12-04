@@ -17,7 +17,7 @@ Today I faced any issue with HTML5 Application Cache (I will post about HTML5 Ap
 
 
 
-![Application Cache Error event: Manifest fetch failed (404)]({{ site.baseurl }}/assets/images/2015/03/manifesterror.png)
+![Application Cache Error event: Manifest fetch failed (404)]({{ site.url }}/assets/images/2015/03/manifesterror.png)
 
 This issue was due to the MIME type mapping was missing. Since it is website, developers don't have direct control over the IIS. Here is the fix, using Web.Config file.
 {% highlight XML %}

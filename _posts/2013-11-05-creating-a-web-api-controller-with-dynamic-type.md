@@ -18,7 +18,7 @@ public void Post([FromBody]UserDetails userDetails,
 
 And you can do post like this using fiddler.
 
-![FromBody and FromUri attributes combined]({{ site.baseurl }}/assets/images/2013/11/webapi_12.png)
+![FromBody and FromUri attributes combined]({{ site.url }}/assets/images/2013/11/webapi_12.png)
 
 It works, but it exposes the class properties in the url, as your model class properties increases, length of the POST url also will get increase. I don't think it is good solution. Then I found an alternate solution using [dynamic](http://msdn.microsoft.com/en-us/library/vstudio/dd264736.aspx) type. To use dynamic type, you can modify the action method signature like this, which will accept anything. 
 
@@ -28,7 +28,7 @@ public void Post([FromBody]dynamic dynamic)
 
 And you can post from fiddler like this.
 
-![using FromBody attribute and dynamic type]({{ site.baseurl }}/assets/images/2013/11/webapi_11.png)
+![using FromBody attribute and dynamic type]({{ site.url }}/assets/images/2013/11/webapi_11.png)
 
 In controller action method you can access the classes and properties like this.
 

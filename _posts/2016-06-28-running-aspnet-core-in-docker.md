@@ -12,11 +12,11 @@ This post is about running your ASP.NET Core application on Docker for Windows. 
 
 Docker for Windows installation is straight forward. Once installation is completed successfully, you will see docker running inside your system tray. And Docker will display a welcome windows like this.
 
-![Docker running on Windows]({{ site.baseurl }}/assets/images/2016/06/docker_running_windows.png)
+![Docker running on Windows]({{ site.url }}/assets/images/2016/06/docker_running_windows.png)
 
 You can verify your docker installation by running "docker run hello-world" command. You will see a response like this.
 
-![Docker - Hello World]({{ site.baseurl }}/assets/images/2016/06/docker_run_hello_world.png)
+![Docker - Hello World]({{ site.url }}/assets/images/2016/06/docker_run_hello_world.png)
 
 Once you see this create an application using aspnet yo generator. It will generate a docker file with dotnet core image. Here is the dockerfile.
 
@@ -50,6 +50,6 @@ docker run -t -d -p 80:5000 dotnetthoughts/first
 
 Once docker image running, you can see using "docker ps" command. And you can browse the application using the IP Address - 10.0.75.2 (default). Here is the ASP.NET Core application running on Docker.
 
-![ASP.NET Core application running on Docker for Windows]({{ site.baseurl }}/assets/images/2016/06/aspnet_core_running_on_docker.png)
+![ASP.NET Core application running on Docker for Windows]({{ site.url }}/assets/images/2016/06/aspnet_core_running_on_docker.png)
 
 Happy Programming :)

@@ -15,7 +15,7 @@ Due to lack of 64 bit version of few COM libararies, we faced a situation to run
 
 1.  Using Platform target feature. - This is the simple solution, you can change the Platform target settings from Project Properties > Build tab.
 
-![Platform Target settings from Project Properties]({{ site.baseurl }}/assets/images/2014/10/platformtarget.png)
+![Platform Target settings from Project Properties]({{ site.url }}/assets/images/2014/10/platformtarget.png)
 
 This will cause the compiler to set the 32Bit flag in the CLR header of the corresponding assembly. Every time we run this application no matter on what type of OS it will execute as a 32bit process. But this solution although simple and straight forward was not a viable solution for us since â€“ as mentioned above â€“ we want to have one and only one version of our product. Thus all components of our package have to be compiled with Platform Target set to Any CPU.
 

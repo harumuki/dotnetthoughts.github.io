@@ -84,7 +84,7 @@ This above code will handle requests to the / and will return "Hello World" as p
 
 Here is the response using POSTMAN
 
-![Nancy in ASP.NET Core - POSTMAN UI]({{ site.baseurl }}/assets/images/2016/08/postman_nancy_example.png)
+![Nancy in ASP.NET Core - POSTMAN UI]({{ site.url }}/assets/images/2016/08/postman_nancy_example.png)
 
 And here is the code for handling a POST request.
 

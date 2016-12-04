@@ -63,11 +63,11 @@ Here is the test results before applying the middleware and after applying middl
 
 Without HtmlMinification middleware.
 
-![Without HTML Minification middleware]({{ site.baseurl }}/assets/images/2015/07/beforeminification.png)
+![Without HTML Minification middleware]({{ site.url }}/assets/images/2015/07/beforeminification.png)
 
 With HtmlMinification middleware.
 
-![With HTML minification middleware]({{ site.baseurl }}/assets/images/2015/07/afterminification.png)
+![With HTML minification middleware]({{ site.url }}/assets/images/2015/07/afterminification.png)
 
 Without middleware the document took almost 14.67 KB. With the HTML minification middleware it got reduced to 10.04 KB. You can find source code in [GitHub](https://github.com/anuraj/HtmlMinificationMiddleware). I will be adding the tests for the middleware soon.
 

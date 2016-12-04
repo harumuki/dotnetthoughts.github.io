@@ -115,15 +115,15 @@ script:
 The language line instructs the build agent to compile the project in C#. Because of this, build agent will download mono and execute all the steps. In the install phase, I am installing the KVM and downloading the runtime and packages using kvm upgrade, kpm restore commands. Finally, the script block will get execute, it will run the XUnit tests, once completed, Travis CI verifies the exit code of the process and based on exit code it will pass or fail the build. The -parallel none option required, it is a known issue in k test command, otherwise this command will not return exit code. You need to add this file also to the github repository.
 3.  Linking GitHub and Travis CI - Once the above steps completed, now you need to tell travis ci about your github repository. You can do this by signin to Travis-CI. And from the Account page select the repository. 
 
-![Linking Travis CI and GitHub]({{ site.baseurl }}/assets/images/2015/04/travisci_init.png)
+![Linking Travis CI and GitHub]({{ site.url }}/assets/images/2015/04/travisci_init.png)
 
 Now we are ready with the CI environment, you can verify it by committing to the github repository. Here is the log output from Travis CI
 
-![Travis CI build output]({{ site.baseurl }}/assets/images/2015/04/build-output.png)
+![Travis CI build output]({{ site.url }}/assets/images/2015/04/build-output.png)
 
 Travis CI supports build status images. You can include it in the readme.md files. You can the code for status image by clicking on the build status image, right side of the repository name.
 
-![build status image from Travis CI]({{ site.baseurl }}/assets/images/2015/04/build-status.png)
+![build status image from Travis CI]({{ site.url }}/assets/images/2015/04/build-status.png)
 
 You can find the full application, with .travis.yml and unit tests [here](https://github.com/anuraj/EmployeeApp). 
 

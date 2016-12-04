@@ -15,13 +15,13 @@ Here is an example of CSRF attack.
 
 
 1.  User requesting a page - with Forms authentication enabled and Anonymous authentication disabled. Server is checking for Forms authentication cookie. And responding with a 302 status code, as the request doesn't contains the cookie.
-![Requesting a web page with Forms authentication]({{ site.baseurl }}/assets/images/2013/11/loadpage1.png)
+![Requesting a web page with Forms authentication]({{ site.url }}/assets/images/2013/11/loadpage1.png)
 2.  Browser is redirecting to the login page, and gets the login page.
-![Browser redirecting to login page]({{ site.baseurl }}/assets/images/2013/11/loginpage.png)
+![Browser redirecting to login page]({{ site.url }}/assets/images/2013/11/loginpage.png)
 3.  User authenticating with the credentials, sending a POST request.
-![credentials send a POST request for authentication]({{ site.baseurl }}/assets/images/2013/11/loginwithcredentials.png)
+![credentials send a POST request for authentication]({{ site.url }}/assets/images/2013/11/loginwithcredentials.png)
 4.  Server authenticates the user and Forms authentication cookie is set.
-![Server Authenticated the user and cookie is set]({{ site.baseurl }}/assets/images/2013/11/cookieset.png)
+![Server Authenticated the user and cookie is set]({{ site.url }}/assets/images/2013/11/cookieset.png)
 5.  User sending a Ajax POST request to WebAPI. And resource created, server responded with status 201.
 Here is the controller action.
 
@@ -53,7 +53,7 @@ function createEmployee() {
 }
 {% endhighlight %}
 
-![POST request to Web API]({{ site.baseurl }}/assets/images/2013/11/post1.png)
+![POST request to Web API]({{ site.url }}/assets/images/2013/11/post1.png)
 The controller action contains an Authorize attribute, which means only Authorized request will be accepted.
 
 6.  From another web page, user sending another POST request, without logged in.
@@ -74,7 +74,7 @@ function createEmployee() {
 
 And here is the server response.
 
-![POST request to WebAPI without authentication]({{ site.baseurl }}/assets/images/2013/11/post2.png)
+![POST request to WebAPI without authentication]({{ site.url }}/assets/images/2013/11/post2.png)
 
 It is also created the resource, and server responded with status 201. As the request comes to an authenticated web page, the browser will automatically send the cookie with the request.
 
@@ -140,11 +140,11 @@ And here is the server response with and without AntiForgery implementation.
 
 POST request with RequestVerification header
 
-![POST request with RequestVerification header]({{ site.baseurl }}/assets/images/2013/11/post_with_anti.png)
+![POST request with RequestVerification header]({{ site.url }}/assets/images/2013/11/post_with_anti.png)
 
 And POST request without RequestVerification header - Server response is 500, Internal server error, ActionFilter attribute is throwing exception.
 
-![POST request without RequestVerification header]({{ site.baseurl }}/assets/images/2013/11/post_without_anti.png)
+![POST request without RequestVerification header]({{ site.url }}/assets/images/2013/11/post_without_anti.png)
 
 You can also prevent CSRF attacks by verifying the request referrer too, to a certain extend. 
 

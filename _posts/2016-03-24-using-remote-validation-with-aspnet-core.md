@@ -60,6 +60,6 @@ You need to add few script references to make remote attribute work properly.
 
 Here is the screenshot of the application 
 
-![ASPNET MVC Remote Validation]({{ site.baseurl }}/assets/images/2016/03/remote_validation_error.png)
+![ASPNET MVC Remote Validation]({{ site.url }}/assets/images/2016/03/remote_validation_error.png)
 
 Happy Programming

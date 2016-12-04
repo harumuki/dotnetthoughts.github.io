@@ -15,7 +15,7 @@ To build nuget package, you need to use the `kpm build` command, which will comp
 
 To deploy nuget packages locally, open Visual Studio. Select Package Manager Settings from Tools > NuGet Package Manager menu. It will display the Visual Studio options dialog. Select the Package Sources item. 
 
-![NuGet Package source - options]({{ site.baseurl }}/assets/images/2014/12/optionsdialog.png)
+![NuGet Package source - options]({{ site.url }}/assets/images/2014/12/optionsdialog.png)
 
 In the Window, click on + button. Now select the newly added item and modify the name and location, you can provide folder locations here.
 

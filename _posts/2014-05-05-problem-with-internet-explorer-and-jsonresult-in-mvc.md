@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 While working with the ASP.Net MVC project, one of my QA team member reported a strange issue, while uploading a file, Internet Explorer 9, showing a download file dialog like this.
 
-![File Download dialog while posting data]({{ site.baseurl }}/assets/images/2014/05/Bug-UploadVideo.png)
+![File Download dialog while posting data]({{ site.url }}/assets/images/2014/05/Bug-UploadVideo.png)
 
 And the controller action is similar like this.
 

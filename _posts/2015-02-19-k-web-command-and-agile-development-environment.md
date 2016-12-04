@@ -106,7 +106,7 @@ private static void OnChanged(object source, FileSystemEventArgs e)
 
 There is a problem with FileSystemWatcher Changed event, when ever there is change, FileSystem watcher will raise the OnChanged event twice. To overcome this issue, the _lastRead and lastWriteTime variables used. Here is the screenshot of kmonitor.exe running on my system.
 
-![kmonitor - running]({{ site.baseurl }}/assets/images/2015/02/kmonitor.png)
+![kmonitor - running]({{ site.url }}/assets/images/2015/02/kmonitor.png)
 
 Here is the [gist for kmonitor](https://gist.github.com/anuraj/bd39d8c6f46a0af4380b)
 

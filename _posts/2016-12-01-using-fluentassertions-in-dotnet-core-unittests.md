@@ -63,6 +63,6 @@ The first test is to verify that a string begins, ends and contains a particular
 
 Now you can do a `dotnet restore` command to restore the dependencies and run the unit tests with `dotnet test` command. And here is the results.
 
-![XUnit with FluentAssertions]({{ site.baseurl }}/assets/images/2016/12/xunit_test_with_dotnet.png)
+![XUnit with FluentAssertions]({{ site.url }}/assets/images/2016/12/xunit_test_with_dotnet.png)
 
 Happy Programming :)

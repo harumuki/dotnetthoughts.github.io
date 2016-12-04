@@ -42,7 +42,7 @@ Using nuget package manager.
 
 If you're using Visual Studio 2015, the recommended way is to install Angular via nuget packages. 
 
-![nuget package manager VS 2015]({{ site.baseurl }}/assets/images/2015/11/AngularJSNugetPackageManager.png)
+![nuget package manager VS 2015]({{ site.url }}/assets/images/2015/11/AngularJSNugetPackageManager.png)
 
 This will download all the required packages and install it to the solution. Nuget package manager will install the files to the scripts folder of you're solution. You need to reference the angular js files from the scripts path.
 

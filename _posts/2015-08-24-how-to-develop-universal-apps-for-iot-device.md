@@ -18,7 +18,7 @@ This post is about developing apps for your IoT device. In the last post I menti
 2.  IoT extension SDK
 3.  Developer mode should be enabled in Windows 10. If not enabled, you can do it via Settings > Security and Update. And you need to select Developer mode.
 
-![Windows 10 - Enable Developer mode]({{ site.baseurl }}/assets/images/2015/08/developersettings.png)
+![Windows 10 - Enable Developer mode]({{ site.url }}/assets/images/2015/08/developersettings.png)
 
 
 **Developing a Hello World Application for Raspberry PI 2**
@@ -42,7 +42,7 @@ This application contains one button and one label, both shows Hello World. I do
 
 4.  Once your app is created, change the target architecture to "ARM", select "Remote machine" from the list of target devices dropdown. If no remote machine configured, Visual Studio will display a Remote connections dialog like this.
 
-![Remote machine settings]({{ site.baseurl }}/assets/images/2015/08/remotemachine.png)
+![Remote machine settings]({{ site.url }}/assets/images/2015/08/remotemachine.png)
 
 If your Rasberry PI connected and detected, you can select it from Auto Detected remote connections. If it is not available, you need provide the IP Address or machine name, and change the authentication mode as "None".
 

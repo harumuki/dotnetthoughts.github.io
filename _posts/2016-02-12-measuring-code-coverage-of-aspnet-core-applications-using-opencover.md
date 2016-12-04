@@ -120,7 +120,7 @@ C:\Users\[USERNAME]\AppData\Local\Apps\OpenCover\OpenCover.Console.exe
 
 Make sure you're using proper dnx executable (You can get the exact name and location, in C:\Users\[USERNAME]\.dnx\runtimes), the lib location should be point to the dnu build output location. Once it completed successfully, you will see some output in the console window.
 
-![Open Cover Execution]({{ site.baseurl }}/assets/images/2016/02/codecoverageresults.png)
+![Open Cover Execution]({{ site.url }}/assets/images/2016/02/codecoverageresults.png)
 
 It generates coverage.xml file, which you can be used to generate the output report using report generator tool, which can be downloaded from [http://danielpalme.github.io/ReportGenerator/](http://danielpalme.github.io/ReportGenerator/)
 

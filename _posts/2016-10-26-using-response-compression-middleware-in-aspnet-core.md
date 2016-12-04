@@ -59,7 +59,7 @@ Now you can restore the packages using `dotnet restore` command, and run the app
 
 You can verify GZip compression enabled or not using Chrome developer tools. You can able to see something like this.
 
-![GZip encoding]({{ site.baseurl }}/assets/images/2016/10/browser_content_encoding.png)
+![GZip encoding]({{ site.url }}/assets/images/2016/10/browser_content_encoding.png)
 
 You can find more features and details about ASP.NET Core 1.1 Preview 1 release [here](https://blogs.msdn.microsoft.com/webdev/2016/10/25/announcing-asp-net-core-1-1-preview-1/)
 

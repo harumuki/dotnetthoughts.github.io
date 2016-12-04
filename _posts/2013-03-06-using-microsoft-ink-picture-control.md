@@ -35,7 +35,7 @@ All the drawings are created as strokes, which you can access using InkPicture.I
 inkPicture1.EditingMode = InkOverlayEditingMode.Select;
 {% endhighlight %}
 
-![Select Mode in InkPicture control]({{ site.baseurl }}/assets/images/2013/03/CaptureItPlus2.png)
+![Select Mode in InkPicture control]({{ site.url }}/assets/images/2013/03/CaptureItPlus2.png)
 
     **Delete / Erase**
 *   Similar like Selection, changing the EditingMode from Ink or Select to Delete, helps to erase the strokes created. InkPicture control has some special properties available for Delete, it EraserMode and EraserWidth. EraserMode helps to decide what kind of erase feature is required; the values are StrokeErase and PointErase. StrokeErase mode clears the entire stroke once the mouse is move over the stroke. But PointErase clears the point where mouse is clicked. Both modes mouse cursor will be changed. EraserWidth will helps to configure the size of the eraser.
@@ -118,7 +118,7 @@ private void inkPictureMouseUp(object sender, MouseEventArgs e)
 
 The above code will draw something like this.
 
-![Custom Hatch brush drawing in InkPicture control]({{ site.baseurl }}/assets/images/2013/03/CaptureItPlus21.png)
+![Custom Hatch brush drawing in InkPicture control]({{ site.url }}/assets/images/2013/03/CaptureItPlus21.png)
 
 Note: If you draw using custom brush, selection and stroke erase will not work properly. 
 

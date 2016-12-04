@@ -31,7 +31,7 @@ This code will work because the CreateResponse() method has an over load which t
 
 This is the Get method and you will get a response like this using Fiddler.
 
-![Fiddler - Request and Response values]({{ site.baseurl }}/assets/images/2013/09/webapi_3.png)
+![Fiddler - Request and Response values]({{ site.url }}/assets/images/2013/09/webapi_3.png)
 
 Note: It is recommended to use content-type as application/json while requesting to this Get method, when I tried with IE, I found a serialization issue.
 

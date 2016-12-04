@@ -39,6 +39,6 @@ public async Task Invoke(HttpContext context)
 
 And here is the code running on HTTP listener.
 
-![Basic HTTP authentication dialog]({{ site.baseurl }}/assets/images/2015/07/BasicAuthASPNET5.png)
+![Basic HTTP authentication dialog]({{ site.url }}/assets/images/2015/07/BasicAuthASPNET5.png)
 
 Happy Programming :)

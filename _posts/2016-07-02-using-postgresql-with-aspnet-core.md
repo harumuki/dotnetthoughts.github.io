@@ -84,11 +84,11 @@ Now you can create migration scripts using "dotnet ef migration" command.
 
 Here is the output of "dotnet ef migrations add Initial" command. I am creating a migration script named "Initial".
 
-![dotnet ef migrations add Initial result]({{ site.baseurl }}/assets/images/2016/07/ef_migrations_add_command.png)
+![dotnet ef migrations add Initial result]({{ site.url }}/assets/images/2016/07/ef_migrations_add_command.png)
 
 Once migration created, you can update database using update command.
 
-![dotnet ef update database result]({{ site.baseurl }}/assets/images/2016/07/ef_migrations_update_database_command.png)
+![dotnet ef update database result]({{ site.url }}/assets/images/2016/07/ef_migrations_update_database_command.png)
 
 And here is my controller implementation, which is pretty straight forward. DbContext is getting injected to the controller, and I am using DbContext directly.
 
@@ -146,6 +146,6 @@ public class BooksController : Controller
 
 And here is the screenshot of the data inserted to ElephantSQL Console.
 
-![ElephantSQL Console]({{ site.baseurl }}/assets/images/2016/07/elephantsql_console.png)
+![ElephantSQL Console]({{ site.url }}/assets/images/2016/07/elephantsql_console.png)
 
 Happy Programming :)

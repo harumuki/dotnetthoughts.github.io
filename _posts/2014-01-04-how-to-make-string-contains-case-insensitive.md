@@ -29,7 +29,7 @@ public void TestStringContains2()
 }
 {% endhighlight %}
 
-![Unit Tests - string.Contains method]({{ site.baseurl }}/assets/images/2014/01/String_Contains_Test.png)
+![Unit Tests - string.Contains method]({{ site.url }}/assets/images/2014/01/String_Contains_Test.png)
 
 Other option is using like this. 
 
@@ -71,6 +71,6 @@ public void TestStringContains2()
 
 And here is the tests running
 
-![Modified unit tests ]({{ site.baseurl }}/assets/images/2014/01/Modified_string_tests.png)
+![Modified unit tests ]({{ site.url }}/assets/images/2014/01/Modified_string_tests.png)
 
 Happy Programming :)

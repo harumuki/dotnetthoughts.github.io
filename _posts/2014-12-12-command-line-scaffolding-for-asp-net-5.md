@@ -65,7 +65,7 @@ public class TaskContext : DbContext
 
 Here is the generated output.
 
-![COMMAND LINE SCAFFOLDING FOR ASP.NET 5]({{ site.baseurl }}/assets/images/2014/12/scaffolding.png)
+![COMMAND LINE SCAFFOLDING FOR ASP.NET 5]({{ site.url }}/assets/images/2014/12/scaffolding.png)
 
 **Customizing scaffolding templates.**
 

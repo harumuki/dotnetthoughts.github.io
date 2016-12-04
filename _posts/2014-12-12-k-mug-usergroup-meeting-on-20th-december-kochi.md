@@ -9,7 +9,7 @@ categories: [Miscellaneous, User Group Activities]
 tags: [K-MUG, Kerala Microsoft Users Group, Microsoft Users Group, Startup Village, User Group Meeting]
 header-img: "img/post-bg-01.jpg"
 ---
-![K-MUG Logo]({{ site.baseurl }}/assets/images/2009/06/logo.png)
+![K-MUG Logo]({{ site.url }}/assets/images/2009/06/logo.png)
 
 Kerala Microsoft User Group (K-MUG) is conducting monthly UG meeting on 20th December 2014, Kochi
 

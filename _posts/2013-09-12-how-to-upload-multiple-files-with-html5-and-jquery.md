@@ -90,7 +90,7 @@ public ActionResult UploadFile(string file, string name)
 
 Here is the screen shot of the web page running on my system on IE11.
 
-![Multiple File Upload - Screenshot]({{ site.baseurl }}/assets/images/2013/09/upload.png)
+![Multiple File Upload - Screenshot]({{ site.url }}/assets/images/2013/09/upload.png)
 
 You can use Web API or ASP.Net handlers to handle the upload requests.
 
