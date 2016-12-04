@@ -32,7 +32,6 @@ compress_html:
   endings: all
 # SEO settings
 title: dotnetthoughts
-url: http://dotnetthoughts.net
 twitter:
   username: dotnet_thoughts
 facebook:
