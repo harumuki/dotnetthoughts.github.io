@@ -15,10 +15,11 @@
         {% assign prevyear = post.previous.date | date: "%B %Y" %}
         {% assign counter = counter | plus: 1 %}
         {% if thisyear != prevyear %}
-            <option>{{ thisyear }} ({{ counter }})</option>
+            <option value="#{{ post.date | date:"%B%Y" }}">{{ thisyear }} ({{ counter }})</option>
             {% assign counter = 0 %}
         {% endif %}
         {% endfor %}
+        </select>
     </div>
 </div>
 
