@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Unit Testing in dotnet core"
-subtitle: "This post is about will give a brief idea about creating and executing unit tests in dotnet core. Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. Unit testing is often automated but it can also be done manually."
+subtitle: "This post will give a brief idea about creating and executing unit tests in dotnet core. Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. Unit testing is often automated but it can also be done manually."
 date: 2016-12-20 00:00:00
 categories: [unit testing, dotnet core, C#]
 tags: [unit testing, dotnet core, C#]
 author: "Anuraj"
 ---
-This post is about will give a brief idea about creating and executing unit tests in dotnet core. Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. Unit testing is often automated but it can also be done manually.
+This post will give a brief idea about creating and executing unit tests in dotnet core. Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. Unit testing is often automated but it can also be done manually.
 
 To create a unit test project, you can open execute the following command in command line.
 
