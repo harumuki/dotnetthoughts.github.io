@@ -67,7 +67,7 @@
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     {% if site.tags[this_word].size >= 5 %}
     <li>
-      <a href="#{{ this_word | cgi_escape }}" class="label label-default">{{ this_word }}
+      <a href="http://dotnetthoughts.net/tags/#{{ this_word | cgi_escape }}" class="label label-default">{{ this_word }}
         <span>({{ site.tags[this_word].size }})</span>
       </a>
     </li>
