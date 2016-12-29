@@ -10,7 +10,7 @@ layout: null
         "content": {{post.content | markdownify | strip_html | jsonify}},
         "link": "{{ site.url }}{{ post.url }}",
         "excerpt": {{ post.excerpt | strip_html | jsonify}},
-        "tags" : {{ post.tags }}
+        "tags" : ["{{ post.tags }}"]
     }
     {% assign first = false %}
     {% endif %}
