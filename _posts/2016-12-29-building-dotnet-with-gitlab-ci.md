@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about enabling Continuous Integration of .NET projects in Gitlab. Majority of GitLab’s CI examples are around Open Source technologies. In this post I will explain about implementing CI in ASP.NET and ASP.NET Core projects with Gitlab.
 
-## Building ASP.NET project with Gitlab
+### Building ASP.NET project with Gitlab
 
 In GitLab CI, Runners run your yaml. A runner is an isolated (virtual) machine that picks up builds through the coordinator API of GitLab CI. So for building ASP.NET you need to first create a runner on your Windows system. You can find the install and configuration details on [GitLab wiki](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/windows.md).
 
@@ -39,7 +39,7 @@ Make sure you have nuget.exe is installed on C:\Nuget folder. And you have MSBui
 
 You can include the MSTest or NUnit as part of the yml file.
 
-## Building ASP.NET Core project with Gitlab
+### Building ASP.NET Core project with Gitlab
 
 You can use similar approach for ASP.NET Core project as well. GitLab supports Docker based CI as well. So here is the .gitlab-ci.yml file for building ASP.NET Core projects.
 
