@@ -5,6 +5,22 @@
 </div>
 <div class="panel panel-default">
     <div class="panel-heading">
+        Subscribe
+    </div>
+    <div class="panel-body">
+        <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=dotnetthoughts', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email address"/>
+        </div>
+        <input type="submit" class="btn btn-default" value="Subscribe" />
+	<input type="hidden" value="dotnetthoughts" name="uri"/><input type="hidden" name="loc" value="en_US"/>
+	</form>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
         Archives
     </div>
     <div class="panel-body">
@@ -35,21 +51,7 @@
     </div>
 </div>
 
-<div class="panel panel-default">
-    <div class="panel-heading">
-        Follow Blog via email
-    </div>
-    <div class="panel-body">
-        <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=dotnetthoughts', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-        <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email address"/>
-        </div>
-        <input type="submit" class="btn btn-default" value="Subscribe" />
-	<input type="hidden" value="dotnetthoughts" name="uri"/><input type="hidden" name="loc" value="en_US"/>
-	</form>
-    </div>
-</div>
+
 
 <div class="panel panel-default">
     <div class="panel-heading">
