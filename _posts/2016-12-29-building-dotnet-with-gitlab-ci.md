@@ -7,6 +7,7 @@ categories: [aspnet core, mvc, Gitlab, CI]
 tags: [aspnet core, mvc, Gitlab, CI]
 author: "Anuraj"
 ---
+This post is about enabling Continuous Integration of .NET projects in Gitlab. Majority of GitLab’s CI examples are around Open Source technologies. In this post I will explain about implementing CI in ASP.NET and ASP.NET Core projects with Gitlab.
 
 ## Building ASP.NET project with Gitlab
 
