@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "File upload in ASP.NET 5 and MVC 6"
-subtitle: "File upload in ASP.NET 5 and MVC 6"
+title: "File upload in ASP.NET Core"
+subtitle: "File upload in ASP.NET Core"
 date: 2015-07-06 02:44
 author: "Anuraj"
 comments: true
-categories: [.Net, ASP.Net, ASP.Net MVC]
-tags: [.Net, ASP.NET 5, ASP.Net MVC, ASP.Net vNext, FileUpload, ModelBinding]
+categories: [.Net, ASP.Net, ASP.Net MVC, ASP.NET Core]
+tags: [.Net, ASP.NET 5, ASP.Net MVC, ASP.NET Core, FileUpload, ModelBinding]
 header-img: "img/post-bg-01.jpg"
 ---
 In ASP.NET 5 MVC 6 Microsoft changed the File upload feature. Now MVC 6 support model binding of multipart form data, which means, you can include file as the property of your model.
@@ -94,7 +94,10 @@ namespace HelloMvc.Controllers
                     ContentDispositionHeaderValue.Parse(file.ContentDisposition);
                 var filename = Path.Combine(_hostingEnvironment.WebRootPath,
                     "Uploads", parsedContentDisposition.FileName.Trim('"'));
-                file.SaveAsAsync(filename);
+                using(var stream = System.IO.File.OpenWrite(filename))
+                {
+                    file.CopyToAsync(stream);
+                }
             }
 
             return View("Index");
