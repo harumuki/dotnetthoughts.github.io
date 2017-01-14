@@ -2,7 +2,7 @@
 layout: post
 title: "Using MEF in .NET Core"
 subtitle: "This post is about using MEF (Managed Extensibility Framework) in .NET Core. The Managed Extensibility Framework or MEF is a library for creating lightweight, extensible applications. It allows application developers to discover and use extensions with no configuration required. It also lets extension developers easily encapsulate code and avoid fragile hard dependencies. MEF not only allows extensions to be reused within applications, but across applications as well."
-date: 2017-01-10 00:00:00
+date: 2017-01-13 00:00:00
 categories: [dotnet core, MEF, aspnet core]
 tags: [dotnet core, MEF, aspnet core]
 author: "Anuraj"
