@@ -22,7 +22,9 @@ public void ConfigureServices(IServiceCollection services)
         config.UseSqlServerStorage(Configuration.GetConnectionString("HangfireConnection")));
     
     services.AddMvc();
-    //This following line is only required if your jobs are failing.
+
+    //Following line is only required if your jobs are failing.
+    
     services.AddTransient<HomeController, HomeController>();
 }
 {% endhighlight %}
