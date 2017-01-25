@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VS2017 Rc - a product matching the following parameters cannot be found: channelId: VisualStudio.15.Release"
+title: "VS2017 RC - a product matching the following parameters cannot be found: channelId: VisualStudio.15.Release"
 subtitle: "This post is about an installation issue while installing the VS 2017 RC. While installing the VS 2017 RC, the installation was failing, the setup was throwing an exception like this - a product matching the following parameters cannot be found: channelId: VisualStudio.15.Release product Id : Microsoft.VisualStudio.Product.Professional."
 date: 2017-01-24 00:00:00
 categories: [VS2017 RC, VisualStudio]
