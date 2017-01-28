@@ -104,4 +104,81 @@ And here is the screenshot of MEF running on .net core console app.
 
 ![MEF on .NET Core]({{ site.url }}/assets/images/2017/01/mef_on_dotnet_core.png)
 
+### Update - Loading the plugins from different assemblies
+
+If you have the plugin files available in different assemblies, you can use following code, all the plugin dlls should be in Plugins folder under bin folder.
+
+{% highlight CSharp %}
+public class Program
+{
+    [ImportMany]
+    public IEnumerable<IMessageSender> MessageSenders { get; set; }
+    private void Compose()
+    {
+        var executableLocation = Assembly.GetEntryAssembly().Location;
+        var path = Path.Combine(Path.GetDirectoryName(executableLocation), "Plugins");
+        var assemblies = Directory
+                    .GetFiles(path, "*.dll", SearchOption.AllDirectories)
+                    .Select(AssemblyLoadContext.Default.LoadFromAssemblyPath)
+                    .ToList();
+        var configuration = new ContainerConfiguration()
+            .WithAssemblies(assemblies);
+        using (var container = configuration.CreateContainer())
+        {
+            MessageSenders = container.GetExports<IMessageSender>();
+        }
+    }
+    
+    public void Run()
+    {
+        Compose();
+        foreach (var messageSenders in MessageSenders)
+        {
+            messageSenders.Send("Hello MEF");
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        var program = new Program();
+        program.Run();
+    }
+}
+{% endhighlight %}
+
+And your plugin library should reference `Microsoft.Composition` namespace, which is required to add `Export` attribute.
+
+Here is the project.json file.
+
+{% highlight Javascript %}
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "MyCoreLib" : "1.0.0",
+    "Microsoft.Composition": "1.0.30"
+  },
+   "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [ "portable-net45+win8+wp8+wpa81" ]
+    }
+  }
+}
+{% endhighlight %}
+
+And here is the plugin file.
+
+{% highlight CSharp %}
+[Export(typeof(IMessageSender))]
+public class EmailSender : IMessageSender
+{
+    public void Send(string message)
+    {
+        Console.WriteLine(message);
+    }
+}
+{% endhighlight %}
+
 Happy Programming :)
