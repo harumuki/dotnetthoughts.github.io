@@ -9,7 +9,9 @@ author: "Anuraj"
 ---
 This post is about new features of Visual Studio 2017 for Web Developers. The new features inclues ASP.NET Core tooling, CSProj support, Migration option from project.json to csproj, client side debugging improvements etc.
 
-1. ASP.NET Core Tooling - As part of the release, Microsoft released the RTM version of ASP.NET Core Tooling. In VS 2017 the csproj tooling is enabled.  ASP.NET Core is available in the Web and .NET Core sections of new projects. The ASP.NET Core project template screen has some changes, and still makes available the choice of three web templates: Empty, API, and Web Application.
+#### ASP.NET Core Tooling
+
+As part of the release, Microsoft released the RTM version of ASP.NET Core Tooling. In VS 2017 the csproj tooling is enabled.  ASP.NET Core is available in the Web and .NET Core sections of new projects. The ASP.NET Core project template screen has some changes, and still makes available the choice of three web templates: Empty, API, and Web Application.
 
 ![ASP.NET Core - New Project dialog]({{ site.url }}/assets/images/2017/03/aspnet_core_new_project.png)
 
@@ -19,7 +21,7 @@ In the new ASP.NET Core project dialog, you can choose the runtime, ASP.NET Core
 
 In the Web Application template, both Package.json file and gulpfile.js is removed. Bower is enabled by default, which will deliver bootstrap, jQuery, and jQuery validation libraries and added to the wwwroot/lib folder by default. For bundling and minification, bundleconfig.json is added instead of gulp tasks.
 
-2. csproj Support
+#### CSPROJ Support
 
 With Visual Studio 2017 and .NET Core SDK 1.0, CSProj files are exclusively supported. Your existing project.json files will be migrated to csproj format, when you open the project in Visual Studio first time. You can use `dotnet migrate` command to migrate the project.json to csproj. Visual Studio is also executing the same command to migrate the projects. You can edit the project file directly in Visual Studio, no need to unload and edit. 
 
@@ -37,7 +39,7 @@ In the project file now has the following features activated by default.
 
 * A collection of "DotNetCliToolReference" elements. These items enhance the dotnet command-line tool to give it features necessary to build and manage this project. This is similar to the tools section in the project.json file.
 
-3. New project templates for dotnet new command.
+#### New project templates for dotnet new command.
 
 It is a .NET Core tooling feature, than a Visual Studio 2017 feature. Now you can create Empty Web app, API app, MS Test and Solution file as part of dotnet new command. 
 
@@ -45,7 +47,7 @@ It is a .NET Core tooling feature, than a Visual Studio 2017 feature. Now you ca
 
 Additionally, it is very easy to create your own templates or download other templates to use.  Instructions for building your own templates are on the [project templates wiki](https://github.com/dotnet/templating/wiki/%22Runnable-Project%22-Templates).
 
-4. Debug Your Applications with Google Chrome
+#### Debug Your Applications with Google Chrome
 
 Visual Studio has supported client-side JavaScript debugging with Internet Explorer for a long time.  With Visual Studio 2017, you can now add the Google Chrome browser to the list of supported client-side debuggers. Here is the screenshot of selecting Chrome from the options to debug.
 
@@ -57,7 +59,7 @@ If you use Google Chrome as your browser at Debug time, you will be able to hit 
 
 Right now Edge and Firefox is not supported.
 
-5. ASP.NET with Windows Container Support
+#### ASP.NET with Windows Container Support
 
 Visual Studio 2017 helps developers to containerize ASP.NET applications as well. You can use the same commands to add Windows container support to your favorite ASP.NET Web Forms, MVC, or Web API projects easily.  These applications will launch and run inside of a Windows container that is configured with IIS and the latest version of the .NET Framework.
 
