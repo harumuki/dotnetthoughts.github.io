@@ -71,7 +71,7 @@ public class CalculatorTests
 }
 {% endhighlight %}
 
-You can start Live unit testing from Test menu &lt;Live Unit Testing &lt;Start.
+You can start Live unit testing from Test menu &gt;Live Unit Testing &gt;Start.
 
 ![Start Live Unit Testing]({{ site.url }}/assets/images/2017/03/liveunittesting_start.png)
 
