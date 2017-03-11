@@ -87,7 +87,7 @@ Here is the various status of unit tests.
 
 Clicking on the icon will display the affected tests. 
 
-![Live Unit Testing - Popup]({{ site.url }}/assets/images/2017/03/liveunittesting_icon_testpopup.png)
+![Live Unit Testing - Popup]({{ site.url }}/assets/images/2017/03/lut_icon_testpopup.png)
 
 Clicking on the red icons will display the failed test details. Also clicking on the test, which helps you to navigate to the specific test. 
 
