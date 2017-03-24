@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enable Code Analysis on ASP.NET Core appllications"
+title: "Enable Code Analysis on ASP.NET Core applications"
 subtitle: "This post is about enabling stylecop code analysis on ASP.NET Core applications. StyleCop is an open source static code analysis tool from Microsoft that checks C# code for conformance to StyleCop's recommended coding styles and a subset of Microsoft's .NET Framework Design Guidelines. StyleCop analyzes the source code, allowing it to enforce a different set of rules from FxCop (which, instead of source code, checks .NET managed code assemblies)."
 date: 2016-10-11 00:00
 author: "Anuraj"
