@@ -30,23 +30,3 @@
         </script>
     </div>
 </div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        Archives
-    </div>
-    <div class="panel-body">
-        <select class="form-control" id="ArchivesDropdown">
-        {% assign counter = 0 %}
-        {% for post in site.posts %}
-        {% assign thisyear = post.date | date: "%B %Y" %}
-        {% assign prevyear = post.previous.date | date: "%B %Y" %}
-        {% assign counter = counter | plus: 1 %}
-        {% if thisyear != prevyear %}
-            <option value="#{{ post.date | date:"%B%Y" }}">{{ thisyear }} ({{ counter }})</option>
-            {% assign counter = 0 %}
-        {% endif %}
-        {% endfor %}
-        </select>
-    </div>
-</div>
