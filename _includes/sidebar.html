@@ -20,26 +20,6 @@
 </div>
 
 <div class="panel panel-default">
-    <div class="panel-heading">
-        Archives
-    </div>
-    <div class="panel-body">
-        <select class="form-control" id="ArchivesDropdown">
-        {% assign counter = 0 %}
-        {% for post in site.posts %}
-        {% assign thisyear = post.date | date: "%B %Y" %}
-        {% assign prevyear = post.previous.date | date: "%B %Y" %}
-        {% assign counter = counter | plus: 1 %}
-        {% if thisyear != prevyear %}
-            <option value="#{{ post.date | date:"%B%Y" }}">{{ thisyear }} ({{ counter }})</option>
-            {% assign counter = 0 %}
-        {% endif %}
-        {% endfor %}
-        </select>
-    </div>
-</div>
-
-<div class="panel panel-default">
     <div class="panel-body text-center">
         <ins class="adsbygoogle"
             style="display:inline-block;width:300px;height:600px"
@@ -48,35 +28,5 @@
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-    </div>
-</div>
-
-
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        Tag Cloud
-    </div>
-    <div class="panel-body">
-        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-
-{% assign tag_words = site_tags | split:',' | sort %}
-
-<ul class="list-inline">
-  {% for item in (0..site.tags.size) %}
-    
-    {% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    {% if site.tags[this_word].size >= 5 %}
-    <li>
-      <a href="http://dotnetthoughts.net/tags/#{{ this_word | cgi_escape }}" class="label label-default">{{ this_word }}
-        <span>({{ site.tags[this_word].size }})</span>
-      </a>
-    </li>
-  {% endif %}
-  {% endunless %}
-  {% endfor %}
-</ul>
-
     </div>
 </div>
