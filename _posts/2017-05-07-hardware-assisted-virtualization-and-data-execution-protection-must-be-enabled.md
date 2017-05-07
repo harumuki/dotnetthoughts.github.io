@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about fixing the error, Hardware assisted virtualization and data execution protection must be enabled in the BIOS which displayed by Docker while running Windows 10. Today while running Docker, it throws an error like this.
 
-![Hardware assisted virtualization and data execution protection must be enabled in the BIOS]({{ site.url }}/assets/images/2017/04/Hardware_assisted_virtualization_and_data_execution_protection.png)
+![Hardware assisted virtualization and data execution protection must be enabled in the BIOS]({{ site.url }}/assets/images/2017/05/Hardware_assisted_virtualization_and_data_execution_protection.png)
 
 After few searches, I found the solution for this problem.
 
