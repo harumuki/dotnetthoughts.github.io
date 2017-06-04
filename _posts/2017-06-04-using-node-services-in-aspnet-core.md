@@ -69,8 +69,7 @@ public async Task<IActionResult> GenerateUrlPreview([FromServices] INodeServices
     var file = await nodeServices.InvokeAsync<string>("UrlPreviewModule.js", url, 
         IO.Path.Combine("PreviewImages", fileName));
 
-    return Content($"<a class=\"btn btn-default\" 
-        target=\"_blank\" href=\"/Home/Download?img={fileName}\">Download image</a>");
+    return Content($"<a class=\"btn btn-default\" target=\"_blank\" href=\"/Home/Download?img={fileName}\">Download image</a>");
 }
 {% endhighlight %}
 
