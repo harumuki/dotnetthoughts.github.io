@@ -147,48 +147,6 @@ layout: compress
     })();
 
   </script>
-  {% if page.isSearch %}
-	<script>
-	function getParameterByName(name) {
-		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search);
-		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-	}
-
-	$(function() {
-		var searchTerm = getParameterByName("query");
-		if(searchTerm)
-		{
-			var html = "";
-			var count = 0;
-			$.getJSON('/search.json', function(data) {
-				searchTerm = searchTerm.toLowerCase();
-				$.each(data, function(key, val){
-					var existsInContent = val.content.toLowerCase().indexOf(searchTerm) >= 0;
-					var existsIntitle = val.title.toLowerCase().indexOf(searchTerm) >= 0;
-					if(existsInContent || existsIntitle)
-					{
-						count++;
-						html += '<h3><a href="' + val.link + '">' + val.title + '</a></h3>';
-						html += '<div class="entry">' + val.excerpt + '</div>';
-					}
-				});
-				
-				html = "<h2>" + count + " result" + (count > 1 ? "s" : "") + " found for <em>" + searchTerm + "</em></h2><hr/>" + html;
-				if(count == 0)
-				{
-					html = '<div>';
-					html += '<h2>No results found.</h2>';
-					html += '</div>';
-				}
-				
-				$('#search_results').html(html);
-        $("#query").val(searchTerm);
-			});
-		}
-	});
-	</script>
-	{% endif %}
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 </body>
