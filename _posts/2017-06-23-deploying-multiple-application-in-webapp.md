@@ -2,7 +2,7 @@
 layout: post
 title: "How to Deploy Multiple Apps on Azure WebApps"
 subtitle: "This post is about deploying multiple applications on an Azure Web App. App Service Web Apps is a fully managed compute platform that is optimized for hosting websites and web applications. This platform-as-a-service (PaaS) offering of Microsoft Azure lets you focus on your business logic while Azure takes care of the infrastructure to run and scale your apps."
-date: 2017-06-23 00:00:00
+date: 2017-06-23 00:45:00
 categories: [Azure Web App, Azure]
 tags: [Azure Web App, Azure]
 author: "Anuraj"
