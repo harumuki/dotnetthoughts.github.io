@@ -42,9 +42,9 @@ layout: compress
           <li><a href="http://feeds.feedburner.com/dotnetthoughts">RSS</a></li>
         </ul>
 	<div itemscope itemtype="http://schema.org/WebSite">
-	<meta itemprop="url" content="http://dotnetthoughts.net"/>
+	<meta itemprop="url" content="https://dotnetthoughts.net"/>
         <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" class="navbar-form navbar-right" method="GET" action="/search">
-	<meta itemprop="target" content="http://dotnetthoughts.net/search/?query={query}"/>
+	<meta itemprop="target" content="https://dotnetthoughts.net/search/?query={query}"/>
 	<div class="form-group has-feedback">
 	<input type="text" itemprop="query-input" class="form-control" name="query" id="query" placeholder="Search..." />
 	<!--
@@ -100,7 +100,7 @@ layout: compress
       </div>
       <div class="modal-body">
 		<div>
-        <img src="http://dotnetthoughts.net/favicon.ico" alt="Image Preview" id="imagepreview">
+        <img src="https://dotnetthoughts.net/favicon.ico" alt="Image Preview" id="imagepreview">
 		</div>
       </div>
       <div class="modal-footer">
@@ -120,7 +120,7 @@ layout: compress
       $('img').click(function(){ var $img = $(this); $('#imagepreview').attr('src',  $img.attr('src')); $('#myModalLabel').text($img.attr('alt')); $('#imagemodal').modal('show'); });
       if($("#back-to-top").length){var scrollTrigger=100,backToTop=function(){var o=$(window).scrollTop();o>scrollTrigger?$("#back-to-top").addClass("show"):$("#back-to-top").removeClass("show")};backToTop(),$(window).on("scroll",function(){backToTop()}),$("#back-to-top").on("click",function(o){o.preventDefault(),$("html,body").animate({scrollTop:0},700)})};
       $('#ArchivesDropdown').on('change', function() {
-        location.href = 'http://dotnetthoughts.net/archives/'+ this.value;
+        location.href = 'https://dotnetthoughts.net/archives/'+ this.value;
       })
     });
   </script>
