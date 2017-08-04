@@ -3,7 +3,7 @@ const RUNTIME = 'runtime';
 
 const PRECACHE_URLS = [
 	'index.html',
-	'./',
+	'/',
 	'css/bootstrap.min.css',
 	'js/jquery.min.js',
 	'images/mvplogo.png',
@@ -47,7 +47,6 @@ self.addEventListener('fetch', event => {
 
         return caches.open(RUNTIME).then(cache => {
           return fetch(event.request).then(response => {
-            // Put a copy of the response in the runtime cache.
             return cache.put(event.request, response.clone()).then(() => {
               return response;
             });
