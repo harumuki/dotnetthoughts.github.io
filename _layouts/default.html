@@ -118,7 +118,7 @@ layout: compress
   <script>
     $(function() {
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js', {scope: '/'});
+        navigator.serviceWorker.register('https://dotnetthoughts.net/service-worker.js', {scope: '/'});
       }
       $('img').addClass('img-responsive center-block').css({ 'cursor': "pointer" });
       $('img').click(function(){ var $img = $(this); $('#imagepreview').attr('src',  $img.attr('src')); $('#myModalLabel').text($img.attr('alt')); $('#imagemodal').modal('show'); });
