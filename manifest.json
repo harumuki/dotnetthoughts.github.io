@@ -1,0 +1,25 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "dotnetthoughts",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "/",
+  "short_name": "dotnetthoughts",
+  "theme_color": "transparent",
+  "description": "a dotnet developer’s technical journal",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16"
+    }
+  ]
+}
