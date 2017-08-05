@@ -4,7 +4,6 @@ const RUNTIME = 'runtime';
 const PRECACHE_URLS = [
 	'index.html',
 	'/',
-	'css/bootstrap.min.css',
 	'js/jquery.min.js',
 	'images/mvplogo.png',
 	'favicon.ico',
