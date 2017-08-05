@@ -54,5 +54,10 @@
       "type": "image/png"
     }
   ],
+  "serviceworker": {
+    "src": "service-worker.js",
+    "scope": "/",
+    "use_cache": false
+  },
   "splash_pages": null
 }
