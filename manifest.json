@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "dotnetthoughts",
   "scope": "/",
-  "display": "browser",
+  "display": "minimal-ui",
   "start_url": "/",
   "short_name": "dotnetthoughts",
   "theme_color": "transparent",
