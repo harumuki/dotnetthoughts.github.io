@@ -93,19 +93,19 @@ layout: compress
     <div class="text-center">
 	 <ul id="display-inline-block" style="text-align:center;">
         {% if site.twitter_username %}
-            <li><a rel="noopener" target="_blank" href="http://www.twitter.com/{{ site.twitter_username }}"><div class="socialtwit"></div></a></li>
+            <li><a rel="noopener" title="Follow me on Twitter" target="_blank" href="http://www.twitter.com/{{ site.twitter_username }}"><div class="socialtwit"></div></a></li>
         {% endif %}
         {% if site.facebook_username %}
-            <li><a rel="noopener" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><div class="socialfb"></div></a></li>
+            <li><a rel="noopener" target="_blank" title="Follow dotnetthoughts on Facebook" href="https://www.facebook.com/{{ site.facebook_username }}"><div class="socialfb"></div></a></li>
         {% endif %}
         {% if site.github_username %}
-            <li><a rel="noopener" target="_blank" href="http://www.github.com/{{ site.github_username }}"><div class="github"></div></a></li>
+            <li><a rel="noopener" target="_blank" title="Follow me on GitHub" href="http://www.github.com/{{ site.github_username }}"><div class="github"></div></a></li>
         {% endif %}
         {% if site.googleplus_username %}
-            <li><a rel="noopener" target="_blank" href="https://plus.google.com/u/0/{{ site.googleplus_username }}"><div class="googleplus"></div></a></li>
+            <li><a rel="noopener" target="_blank" title="Add me on Google Plus" href="https://plus.google.com/u/0/{{ site.googleplus_username }}"><div class="googleplus"></div></a></li>
         {% endif %}
         {% if site.showFeed %}
-            <li><a rel="noopener" target="_blank" href="http://feeds.feedburner.com/dotnetthoughts"><div class="rss"></div></a></li>
+            <li><a rel="noopener" target="_blank" title="Subscribe feed" href="http://feeds.feedburner.com/dotnetthoughts"><div class="rss"></div></a></li>
         {% endif %}
     </ul><br/>
      Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.author_name }}. Blog content licensed under the Creative Commons <a href="http://creativecommons.org/licenses/by/2.5/" rel="noopener" target="_blank">CC BY 2.5</a> | Unless otherwise stated or granted, code samples licensed under the <a href="http://sm.mit-license.org/" rel="noopener" target="_blank">MIT license</a>. This is a personal blog. The opinions expressed here represent my own and not those of my employer. Hosted with ❤ by GitHub
