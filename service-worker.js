@@ -10,7 +10,12 @@ const PRECACHE_URLS = [
 	'js/pace.min.js',
 	'js/bootstrap.min.js',
 	'js/ie10-viewport-bug-workaround.js',
-	'images/social.png'
+  'images/social.png',
+  'fonts/open-sans-v14-latin-regular.eot',
+  'fonts/open-sans-v14-latin-regular.svg',
+  'fonts/open-sans-v14-latin-regular.ttf',
+  'fonts/open-sans-v14-latin-regular.woff',
+  'fonts/open-sans-v14-latin-regular.woff2'
 ];
 
 
