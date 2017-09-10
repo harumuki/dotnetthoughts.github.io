@@ -1,3 +1,7 @@
+---
+layout: null
+---
+const VERSION = '{{ site.time | date: "%Y.%m.%d"}}';
 const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
 
