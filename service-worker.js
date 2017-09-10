@@ -2,22 +2,21 @@ const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
 
 const PRECACHE_URLS = [
-	'index.html',
-	'/',
-	'js/jquery.min.js',
-	'images/mvplogo.png',
-	'favicon.ico',
-	'js/pace.min.js',
-	'js/bootstrap.min.js',
-	'js/ie10-viewport-bug-workaround.js',
-  'images/social.png',
-  'fonts/open-sans-v14-latin-regular.eot',
-  'fonts/open-sans-v14-latin-regular.svg',
-  'fonts/open-sans-v14-latin-regular.ttf',
-  'fonts/open-sans-v14-latin-regular.woff',
-  'fonts/open-sans-v14-latin-regular.woff2'
+    'index.html',
+    '/',
+    'js/jquery.min.js',
+    'images/mvplogo.png',
+    'favicon.ico',
+    'js/pace.min.js',
+    'js/bootstrap.min.js',
+    'js/ie10-viewport-bug-workaround.js',
+    'images/social.png',
+    'fonts/open-sans-v14-latin-regular.eot',
+    'fonts/open-sans-v14-latin-regular.svg',
+    'fonts/open-sans-v14-latin-regular.ttf',
+    'fonts/open-sans-v14-latin-regular.woff',
+    'fonts/open-sans-v14-latin-regular.woff2'
 ];
-
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -26,7 +25,6 @@ self.addEventListener('install', event => {
       .then(self.skipWaiting())
   );
 });
-
 
 self.addEventListener('activate', event => {
   const currentCaches = [PRECACHE, RUNTIME];
