@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about using Log4Net with ASP.NET Core for implementing logging. The Apache log4net library is a tool to help the programmer output log statements to a variety of output targets. log4net is a port of the excellent Apache log4j™ framework to the Microsoft® .NET runtime. We have kept the framework similar in spirit to the original log4j while taking advantage of new features in the .NET runtime.
 
-First you need to add the reference of log4net libarary in project.json file. I am using `"log4net":"2.0.7"`. Now you can write code using log4net. I am writing the code in Program.cs file. Unline ASP.NET, log4net doesn't support the attribute for loading the configuration, so you need to load the configuration manually. Here is a sample log4net configuration file I am using, which will log in a file using `FileAppender`. I am logging all the information. You can find more information about logging providers and levels in the log4net documentation.
+First you need to add the reference of log4net library in project.json file. I am using `"log4net":"2.0.7"`. Now you can write code using log4net. I am writing the code in Program.cs file. Unlike ASP.NET, log4net doesn't support the attribute for loading the configuration, so you need to load the configuration manually. Here is a sample log4net configuration file I am using, which will log in a file using `FileAppender`. I am logging all the information. You can find more information about logging providers and levels in the log4net documentation.
 
 {% highlight XML %}
 <?xml version="1.0" encoding="utf-8" ?>
