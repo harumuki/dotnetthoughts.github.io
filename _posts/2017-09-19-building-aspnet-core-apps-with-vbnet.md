@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building ASP.NET Core Web API with VB.NET"
+title: "Building ASP.NET Core web apps with VB.NET"
 subtitle: "This post is about developing ASP.NET Core applications with VB.NET."
 date: 2017-09-19 00:00:00
 categories: [ASP.NET Core, VB.NET]
