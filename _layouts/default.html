@@ -137,9 +137,11 @@ layout: compress
   <script async src="{{ site.url }}{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
   <script>
     $(function() {
+      /*
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('https://dotnetthoughts.net/service-worker.js?{{ site.time | date: "%Y-%m-%d"}}', { scope: '/' });
       }
+      */
       $('img').addClass('img-responsive center-block').css({ 'cursor': "pointer" });
       $('img').click(function(){ var $img = $(this); $('#imagepreview').attr('src',  $img.attr('src')); $('#myModalLabel').text($img.attr('alt')); $('#imagemodal').modal('show'); });
       if($("#back-to-top").length){var scrollTrigger=100,backToTop=function(){var o=$(window).scrollTop();o>scrollTrigger?$("#back-to-top").addClass("show"):$("#back-to-top").removeClass("show")};backToTop(),$(window).on("scroll",function(){backToTop()}),$("#back-to-top").on("click",function(o){o.preventDefault(),$("html,body").animate({scrollTop:0},700)})};
