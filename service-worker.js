@@ -9,7 +9,7 @@ const RUNTIME = 'v{{ site.time | date: "%Y%m%d"}}';
 
 const PRECACHE_URLS = [
     '/',
-    'index.html'
+    'index.html',
     'js/jquery.min.js',
     'images/mvplogo.png',
     'favicon.ico',
