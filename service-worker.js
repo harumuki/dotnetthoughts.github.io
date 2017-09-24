@@ -8,7 +8,6 @@ const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
 
 const PRECACHE_URLS = [
-    'index.html',
     '/',
     'js/jquery.min.js',
     'images/mvplogo.png',
@@ -21,7 +20,9 @@ const PRECACHE_URLS = [
     'fonts/open-sans-v14-latin-regular.svg',
     'fonts/open-sans-v14-latin-regular.ttf',
     'fonts/open-sans-v14-latin-regular.woff',
-    'fonts/open-sans-v14-latin-regular.woff2'
+    'fonts/open-sans-v14-latin-regular.woff2',
+    'images/offline.png',
+    'offline.html'
 ];
 
 self.addEventListener('install', event => {
@@ -58,6 +59,8 @@ self.addEventListener('fetch', event => {
             return cache.put(event.request, response.clone()).then(() => {
               return response;
             });
+          }).catch(function(){
+            return caches.match('/offline.html');
           });
         });
       })
