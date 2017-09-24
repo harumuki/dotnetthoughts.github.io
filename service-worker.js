@@ -5,7 +5,7 @@ layout: none
 
 const SW_VERSION = '{{ site.time | date: "%Y.%m.%d"}}';
 const PRECACHE = 'precache-v1';
-const RUNTIME = 'runtime-v{{ site.time | date: "%Y%m%d"}}';
+const RUNTIME = 'v{{ site.time | date: "%Y%m%d"}}';
 
 const PRECACHE_URLS = [
     '/',
