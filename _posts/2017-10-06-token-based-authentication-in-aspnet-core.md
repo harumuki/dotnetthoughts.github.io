@@ -133,4 +133,6 @@ $.ajax({
 
 {% endhighlight %}
 
+Source code available on [GitHub](https://github.com/anuraj/AspNetCoreSamples/tree/master/WebApiAuthDemo)
+
 Happy Programming :)
