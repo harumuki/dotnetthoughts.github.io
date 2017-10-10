@@ -1,11 +1,11 @@
 {
   "dir": "ltr",
   "lang": "en",
-  "name": "dt blog",
+  "name": "dotnetthoughts",
   "scope": "/",
   "display": "minimal-ui",
   "start_url": "/",
-  "short_name": "dotnetthoughts",
+  "short_name": ".netthoughts",
   "theme_color": "transparent",
   "description": "a dotnet developer’s technical journal",
   "orientation": "any",
