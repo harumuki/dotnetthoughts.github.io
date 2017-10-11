@@ -96,7 +96,6 @@ Now you can protect the resources using `[Authorize]` attribute.
 [Route("api/[controller]")]
 public class ValuesController : Controller
 {
-    // GET api/values
     [HttpGet]
     public IEnumerable<string> Get()
     {
@@ -125,7 +124,7 @@ $.ajax({
     type: 'GET',
     url: '/api/values',
     headers: {
-        "Authorization": "YOUR-TOKEN"
+        "Authorization": "Bearer YOUR-TOKEN"
     }
 }).done(function (data) {
     console.log(data);
