@@ -11,6 +11,7 @@ const PRECACHE_URLS = [
     '/',
     'index.html',
     '/css/bootstrap.min.css',
+    '/css/site.css',
     'js/jquery.min.js',
     'images/mvplogo.png',
     'favicon.ico',
