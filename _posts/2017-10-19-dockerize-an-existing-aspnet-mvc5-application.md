@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Dockerize an existing ASP.NET MVC 5 application"
-subtitle: "This post is about describe the process of the migrating of existing ASP.NET MVC 5 or ASP.NET Web Forms application to Windows Containers."
+subtitle: "This post is about describe the process of the migrating of existing ASP.NET MVC 5 or ASP.NET Web Forms application to Windows Containers. Running an existing .NET Framework-based application in a Windows container doesn't require any changes to your app. To run your app in a Windows container you create a Docker image containing your app and start the container."
 date: 2017-10-19 00:00:00
 categories: [ASP.NET, Docker, Container]
 tags: [ASP.NET, Docker, Container]
 author: "Anuraj"
 ---
+This post is about describe the process of the migrating of existing ASP.NET MVC 5 or ASP.NET Web Forms application to Windows Containers. Running an existing .NET Framework-based application in a Windows container doesn't require any changes to your app. To run your app in a Windows container you create a Docker image containing your app and start the container.
+
 First you need to enable the Containers option from Programs and Features.
 
 ![Enable the Container feature]({{ site.url }}/assets/images/2017/10/install_container_feature.png)
