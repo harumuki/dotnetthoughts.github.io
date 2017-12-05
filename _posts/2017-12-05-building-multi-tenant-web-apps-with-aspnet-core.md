@@ -117,7 +117,7 @@ And you can get the tenant information from RouteData. Right now my tenant class
 
 Here is the multi tenant aspnet core running on my system, if you look the URLs, I have two URLs and based on URLs I am changing the Style sheets.
 
-![Multi Tenant app in ASP.NET Core]({{ site.url }}/assets/images/2017/11/multitenancy_aspnet_core.png)
+![Multi Tenant app in ASP.NET Core]({{ site.url }}/assets/images/2017/12/multitenancy_aspnet_core.png)
 
 Source code available on [GitHub](https://github.com/anuraj/AspNetCoreSamples/tree/master/Multitenancy)
 
