@@ -11,9 +11,9 @@ layout: none
 
     // Update 'version' if you need to refresh the cache
     var staticCacheName = 'static';
-    var version = '{{ site.time | date: "%Y.%m.%d"}}';
+    var version = '{{ site.time | date: "%Y-%m-%d"}}';
     function updateStaticCache() {
-        return caches.open(version + staticCacheName)
+        return caches.open(staticCacheName + version)
             .then(function (cache) {
                 return cache.addAll([
                   '/css/bootstrap.min.css',
