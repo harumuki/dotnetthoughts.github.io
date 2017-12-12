@@ -60,6 +60,7 @@ layout: none
 
     self.addEventListener('fetch', function (event) {
         var request = event.request;
+        console.log('Fetching -' + request)
         if (request.method !== 'GET') {
             event.respondWith(
                 fetch(request)
