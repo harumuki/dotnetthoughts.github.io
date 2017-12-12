@@ -58,10 +58,5 @@ layout: none
       "type": "image/webp"
     }
   ],
-  "serviceworker": {
-    "src": "serviceworker.js",
-    "scope": "/",
-    "use_cache": false
-  },
   "splash_pages": null
 }
