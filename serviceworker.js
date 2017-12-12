@@ -13,7 +13,7 @@ layout: none
     var staticCacheName = 'static';
     var version = '{{ site.time | date: "%Y-%m-%d"}}';
     function updateStaticCache() {
-        return caches.open(staticCacheName + version)
+        return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
                   '/css/bootstrap.min.css',
@@ -60,7 +60,16 @@ layout: none
 
     self.addEventListener('fetch', function (event) {
         var request = event.request;
-        console.log('Fetching -' + request)
+        console.log('Fetching -' + request);
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.map(function(cacheName) {
+                    if(cacheName != (version + staticCacheName)) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        });
         if (request.method !== 'GET') {
             event.respondWith(
                 fetch(request)
