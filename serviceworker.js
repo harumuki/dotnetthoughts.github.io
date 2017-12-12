@@ -11,9 +11,10 @@ layout: none
 
     // Update 'version' if you need to refresh the cache
     var staticCacheName = 'static';
-    var version = '{{ site.time | date: "%Y-%m-%d"}}';
+    var version = '{{ site.time | date: "%Y%m%d"}}';
+    var CACHENAME = version + staticCacheName;
     function updateStaticCache() {
-        return caches.open(version + staticCacheName)
+        return caches.open(CACHENAME)
             .then(function (cache) {
                 return cache.addAll([
                   '/css/bootstrap.min.css',
@@ -64,7 +65,8 @@ layout: none
         caches.keys().then(function(cacheNames) {
             return Promise.all(
                 cacheNames.map(function(cacheName) {
-                    if(cacheName != (version + staticCacheName)) {
+                    console.log(cacheName);
+                    if(cacheName != CACHENAME) {
                         return caches.delete(cacheName);
                     }
                 })
@@ -94,7 +96,7 @@ layout: none
                 fetch(request)
                     .then(function (response) {
                         var copy = response.clone();
-                        caches.open(version + staticCacheName)
+                        caches.open(CACHENAME)
                             .then(function (cache) {
                                 cache.put(request, copy);
                             });
