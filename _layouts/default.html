@@ -131,7 +131,7 @@ function googleTranslateElementInit() {
         navigator.serviceWorker.register('https://dotnetthoughts.net/serviceworker.js', { scope: '/' });
       }
       */
-      
+      'use strict'; 
       navigator.serviceWorker.getRegistrations().then(function(registrations) {
         for(let registration of registrations) {
           registration.unregister();
