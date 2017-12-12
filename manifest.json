@@ -59,7 +59,7 @@ layout: none
     }
   ],
   "serviceworker": {
-    "src": "service-worker.js",
+    "src": "serviceworker.js",
     "scope": "/",
     "use_cache": false
   },
