@@ -4,12 +4,10 @@ layout: none
 
 
 const SW_VERSION = '{{ site.time | date: "%Y.%m.%d"}}';
-const PRECACHE = 'precache-v1';
+const PRECACHE = 'precache-v10';
 const RUNTIME = '{{ site.time | date: "%Y-%m-%d"}}';
 
 const PRECACHE_URLS = [
-    '/',
-    'index.html',
     '/css/bootstrap.min.css',
     '/css/site.css',
     'js/jquery.min.js',
