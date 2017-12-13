@@ -8,10 +8,8 @@ layout: compress
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <noscript>
-    <link href="{{ site.url }}{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ site.url }}{{ site.baseurl }}/css/site.css" rel="stylesheet">
-  </noscript>
+  <link href="{{ site.url }}{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/css/site.css" rel="stylesheet">
   <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico" />
   <link href='{{ site.url }}{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
   <link rel="manifest" href="https://dotnetthoughts.net/manifest.json">
@@ -66,7 +64,7 @@ layout: compress
 
   <div class="container">
     <div class="row">
-      <div style="max-width:750px; margin: 0 auto;" class="col-sm-8">
+      <div class="col-sm-8">
         {{ content }}
       </div>
       <div class="col-sm-4">
@@ -128,15 +126,6 @@ function googleTranslateElementInit() {
 }
 </script>
   <script>
-    function loadCss(filename){
-      var fileref=document.createElement("link");
-      fileref.setAttribute("rel", "stylesheet");
-      fileref.setAttribute("type", "text/css");
-      fileref.setAttribute("href", filename);
-      if (typeof fileref!="undefined")
-        document.getElementsByTagName("head")[0].appendChild(fileref)
-    }
-
     $(function() {
       
       if('serviceWorker' in navigator) {
@@ -146,11 +135,6 @@ function googleTranslateElementInit() {
       $('img').click(function(){ var $img = $(this); $('#imagepreview').attr('src',  $img.attr('src')); $('#myModalLabel').text($img.attr('alt')); $('#imagemodal').modal('show'); });
       if($("#back-to-top").length){var scrollTrigger=100,backToTop=function(){var o=$(window).scrollTop();o>scrollTrigger?$("#back-to-top").addClass("show"):$("#back-to-top").removeClass("show")};backToTop(),$(window).on("scroll",function(){backToTop()}),$("#back-to-top").on("click",function(o){o.preventDefault(),$("html,body").animate({scrollTop:0},700)})};
     });
-
-    loadCss('{{ site.url }}{{ site.baseurl }}/css/bootstrap.min.css');
-    loadCss('{{ site.url }}{{ site.baseurl }}/css/site.css');
-    $(".col-sm-8").css("max-width","");
-    $(".col-sm-8").css("margin","");
   </script>
   {% if site.disqus_shortname and page.categories %}
   <script type="text/javascript">
