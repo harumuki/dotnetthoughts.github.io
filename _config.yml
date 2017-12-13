@@ -27,6 +27,7 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 compress_html:
   clippings: all
   comments: all
