@@ -1,7 +1,3 @@
----
-layout: null
----
-
 var CACHE_NAME = 'blog-cache-v1.01';
 var urlsToCache = [
 '/',
