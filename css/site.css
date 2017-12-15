@@ -12,3 +12,4 @@
       url('../fonts/open-sans-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
       url('../fonts/open-sans-v14-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
+.footer { padding-right: 15px; padding-left: 15px; } .footer .text-muted { margin: 20px 0; } .footer .text-muted button {margin-top: -7px; }
