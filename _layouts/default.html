@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@ layout: compress
   <link href="{{ site.url }}{{ site.baseurl }}/css/site.css" rel="stylesheet">
   <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico" />
   <link href='{{ site.url }}{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
-  <link rel="manifest" href="https://dotnetthoughts.net/manifest.json">
+  <link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/manifest.json">
   <meta name="application-name" content="dotnetthoughts">
   <link rel="icon" sizes="16x16 32x32 48x48" href="{{ site.url }}{{ site.baseurl }}/images/icons/icon-72x72.png">
   <link rel="icon" sizes="192x192" href="{{ site.url }}{{ site.baseurl }}/images/icons/icon-192x192.png">
@@ -36,19 +35,19 @@ layout: compress
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://dotnetthoughts.net">{{ site.name }}</a>
+        <a class="navbar-brand" href="https://dotnetthoughts.net">{{ site.name }}</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
         <!--
-          <li><a href="http://dotnetthoughts.net">Home</a></li>
+          <li><a href="https://dotnetthoughts.net">Home</a></li>
         -->
           {% for page in site.pages %} {% if page.title %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
           {% endif %} {% endfor %}
-          <li><a href="http://feeds.feedburner.com/dotnetthoughts">RSS</a></li>
+          <li><a href="https://feeds.feedburner.com/dotnetthoughts">RSS</a></li>
         </ul>
-	<div itemscope itemtype="http://schema.org/WebSite">
+	<div itemscope itemtype="https://schema.org/WebSite">
 	<meta itemprop="url" content="https://dotnetthoughts.net"/>
         <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" class="navbar-form navbar-right" method="GET" action="/search">
 	<meta itemprop="target" content="https://dotnetthoughts.net/search/?query={query}"/>
@@ -94,7 +93,7 @@ layout: compress
             <li><a rel="noopener" target="_blank" title="Subscribe feed" href="http://feeds.feedburner.com/dotnetthoughts"><div class="rss"></div></a></li>
         {% endif %}
     </ul><br/>
-     Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.author_name }}. Blog content licensed under the Creative Commons <a href="http://creativecommons.org/licenses/by/2.5/" rel="noopener" target="_blank">CC BY 2.5</a> | Unless otherwise stated or granted, code samples licensed under the <a href="http://sm.mit-license.org/" rel="noopener" target="_blank">MIT license</a>. This is a personal blog. The opinions expressed here represent my own and not those of my employer. Hosted with ❤ by GitHub
+     Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.author_name }}. Blog content licensed under the Creative Commons <a href="https://creativecommons.org/licenses/by/2.5/" rel="noopener" target="_blank">CC BY 2.5</a> | Unless otherwise stated or granted, code samples licensed under the <a href="https://sm.mit-license.org/" rel="noopener" target="_blank">MIT license</a>. This is a personal blog. The opinions expressed here represent my own and not those of my employer. Hosted with ❤ by GitHub
   </div>
 <hr />
   </div>
@@ -119,7 +118,7 @@ layout: compress
       </div>
       <div class="modal-body">
 		<div>
-        <img src="https://dotnetthoughts.net/favicon.ico" alt="Image Preview" id="imagepreview">
+        <img src="{{ site.url }}{{ site.baseurl }}/favicon.ico" alt="Image Preview" id="imagepreview">
 		</div>
       </div>
       <div class="modal-footer">
@@ -133,7 +132,7 @@ layout: compress
   <script async src="{{ site.url }}{{ site.baseurl }}/js/pace.min.js"></script>
   <script async src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
   <script async src="{{ site.url }}{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
-  <script async src="{{ site.baseurl }}/js/cookies.js"></script>
+  <script async src="{{ site.url }}{{ site.baseurl }}/js/cookies.js"></script>
 <script type="text/javascript" async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -146,7 +145,7 @@ function googleTranslateElementInit() {
     $(function() {
       
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('https://dotnetthoughts.net/serviceworker.js', { scope: '/' });
+        navigator.serviceWorker.register('{{ site.url }}{{ site.baseurl }}/serviceworker.js', { scope: '/' });
       }
       $('img').addClass('img-responsive center-block').css({ 'cursor': "pointer" });
       $('img').click(function(){ var $img = $(this); $('#imagepreview').attr('src',  $img.attr('src')); $('#myModalLabel').text($img.attr('alt')); $('#imagemodal').modal('show'); });

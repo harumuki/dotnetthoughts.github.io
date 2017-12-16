@@ -20,7 +20,7 @@ public HttpResponseMessage Get()
     {
         Name = "anuraj",
         Email = "anuraj.p@dotnetthoughts.net",
-        Url = "http://dotnetthoughts.net"
+        Url = "https://dotnetthoughts.net"
     };
 
     return Request.CreateResponse(HttpStatusCode.OK, developer);
