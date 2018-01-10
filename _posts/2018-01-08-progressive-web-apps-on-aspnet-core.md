@@ -82,7 +82,9 @@ You can customize the service worker caching options, network strategy using Pwa
 
 If you're getting an error like this - InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Http.IHttpContextAccessor' while attempting to activate 'WebEssentials.AspNetCore.Pwa.ServiceWorkerTagHelperComponent'. 
 
+![InvalidOperationException - IHttpContextAccessor]({{ site.url }}/assets/images/2018/01/pwa_not_working_exception.png)
 
+Then you need to inject `IHttpContextAccessor` manually to the services, like this.
 
 {% highlight CSharp %}
 public void ConfigureServices(IServiceCollection services)
