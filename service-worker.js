@@ -1,4 +1,4 @@
-var CACHE_NAME = 'blog-cache-v2';
+var CACHE_NAME = 'blog-cache-v3';
 var urlsToCache = [
 'index.html',
 '/css/bootstrap.min.css',
