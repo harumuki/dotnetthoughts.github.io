@@ -3,8 +3,8 @@ layout: post
 title: "How to launch different browsers from VS Code for debugging ASP.NET Core"
 subtitle: "This post is about launching different browsers from VSCode, while debugging ASP.NET Core. By default when debugging an ASP.NET Core, VS Code will launch default browser. There is way to choose the browser you would like to use."
 date: 2018-01-01 00:00:00
-categories: [ASP.NET Core, VSCode, Debugging]
-tags: [ASP.NET Core, VSCode, Debugging]
+categories: [ASP.NET Core,VSCode,Debugging,CodeProject]
+tags: [ASP.NET Core,VSCode,Debugging,CodeProject]
 author: "Anuraj"
 ---
 This post is about launching different browsers from VSCode, while debugging ASP.NET Core. By default when debugging an ASP.NET Core, VS Code will launch default browser. There is way to choose the browser you would like to use. Here is the code snippet which will add different debug configuration to VS Code. 
