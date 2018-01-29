@@ -78,7 +78,15 @@ And here is my _layout.cshtml file.
 
 Now you have completed the initial infrastructure.
 
-If you notice, I have removed the Bootstrap reference from _layout file. You can add it via `.angular-cli.json` file. First you need to install JQuery, Popper JS and Bootstrap 4 via `npm install` command. Once you installed it, you can modify the file like this.
+If you notice, I have removed the Bootstrap reference from _layout file. You can add it via `.angular-cli.json` file. First you need to install JQuery, Popper JS and Bootstrap 4 via `npm install` command.
+
+{% highlight HTML %}
+npm install jquery --save
+npm install popper.js --save
+npm install bootstrap --save
+{% endhighlight %}
+
+Once you installed it, you can modify the file like this.
 
 ![angular-cli.json Styles and Script reference]({{ site.url }}/assets/images/2017/11/angularcli_json_ref.png)
 
@@ -117,6 +125,16 @@ And _layout file like this.
 </html>
 {% endhighlight %}
 
+Also you need to copy Angular `app-root` element to the Index.cshtml file, like this.
+
+{% highlight HTML %}
+@{
+    ViewBag.Title = "Index";
+}
+
+<app-root></app-root>
+{% endhighlight %}
+
 Now you can run the ASP.NET MVC application to view the results. 
 
 You can run the `ng build --prod` command to make your script file minified, which is required to deploy the application in server. You don't need `-ec` parameter to generate the styles. Also the `--prod` parameter will reduce the file size as well.
@@ -145,5 +163,7 @@ Next reload the project and build it. You will be able to see the `ng build` com
 That's it. Now you can add modules and components to angular application and you can debug it with chrome developer tools.
 
 ![Debugging Web app]({{ site.url }}/assets/images/2017/11/angular_web_debug.png)
+
+Here is the [source code on Github](https://github.com/anuraj/MVCAngularCRUDExample) - This is a CRUD example using ASP.NET MVC Web API and Angular. 
 
 Happy Programming :)
