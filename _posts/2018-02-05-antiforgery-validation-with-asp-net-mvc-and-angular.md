@@ -2,7 +2,7 @@
 layout: post
 title: "Anti forgery validation with ASP.NET MVC and Angular"
 subtitle: "This post is how to implement anti forgery validation with ASP.NET MVC and Angular. The anti-forgery token can be used to help protect your application against cross-site request forgery. To use this feature, call the AntiForgeryToken method from a form and add the ValidateAntiForgeryTokenAttribute attribute to the action method that you want to protect."
-date: 2018-02-05 00:00:00
+date: 2018-02-04 23:00:00
 categories: [ASP.NET,Angular,CodeProject]
 tags: [ASP.NET,Angular,CodeProject]
 author: "Anuraj"
