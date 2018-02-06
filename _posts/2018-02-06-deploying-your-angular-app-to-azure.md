@@ -67,4 +67,6 @@ Once it is successful, you will be able to the status and detailed log, when you
 
 ![Deployment options - Deployment Details]({{ site.url }}/assets/images/2018/02/deployment_details.png)
 
+You can find the running app [here](https://ng4coreapp2.azurewebsites.net/), and source code on [GitHub](https://github.com/anuraj/ng4aspnetcore)
+
 Happy Programming :)
