@@ -16,7 +16,7 @@ public static class SeedData
 {
     public static void Initialize(IServiceProvider serviceProvider)
     {
-        var context = services.GetRequiredService<WebMarksDbContext>();
+        var context = serviceProvider.GetRequiredService<WebMarksDbContext>();
         context.Database.EnsureCreated();
         if (!context.Tenants.Any())
         {
