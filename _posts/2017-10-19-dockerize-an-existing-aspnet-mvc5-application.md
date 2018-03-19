@@ -47,7 +47,7 @@ The `-d` argument helps to run the image in detached mode, the docker images run
 If it successful, you will a unique identifier. With the current Windows Container release, you can't browse to http://localhost. This is a known behavior in WinNAT, and it will be resolved in the future. Until that is addressed, you need to use the IP address of the container. You can use the following command to identify the IP Address of the docker container.
 
 {% highlight Shell %}
-docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" mvchelloworld
+docker inspect -f {{ "{{ .NetworkSettings.Networks.nat.IPAddress }}" }} mvchelloworld
 {% endhighlight %}
 
 This will display the IP Address of the container running.
