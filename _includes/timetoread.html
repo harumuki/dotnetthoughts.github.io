@@ -1,7 +1,7 @@
 {% assign num_words = page.content | strip_html | number_of_words %}
-{% assign minutes_f = num_words | divided_by: 200.0 %}      # minutes in decimal
-{% assign minutes_i = num_words | divided_by: 200 %}        # minutes in integer
-{% assign diff = minutes_f | minus: minutes_i %}            # fractional part of minutes
+{% assign minutes_f = num_words | divided_by: 200.0 %}
+{% assign minutes_i = num_words | divided_by: 200 %}
+{% assign diff = minutes_f | minus: minutes_i %}
 {% if diff >= 0.5 %}
     {% assign minutes = minutes_i + 1 %}
 {% else %}
