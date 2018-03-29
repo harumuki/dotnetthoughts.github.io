@@ -11,7 +11,9 @@ layout: default
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <p>Posted by {% if page.author %}<a href="https://plus.google.com/+AnurajP">{{ page.author }}</a>{% else %}{{ site.title }}{% endif %} on 
-	{{ page.date | date: "%A, %B %-d, %Y" }}</p>
+  {{ page.date | date: "%A, %B %-d, %Y" }}
+|{% include timetoread.html %}
+</p>
  <p>
 	{% for category in page.categories %}
 		<a href="/tags#{{ category }}" class="label label-primary">{{ category }}</a>
