@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Working with Microsoft Library Manager for ASP.NET Core"
-subtitle: "This post is about Working with Microsoft Library Manager for ASP.NET Core. Recently ASP.NET Team posted a blog - about bower deprecation. And in there they mentioned about a new tool called Library Manager - Library Manager ("LibMan" for short) is Visual Studio's experimental client-side library acquisition tool. It provides a lightweight, simple mechanism that helps users find and fetch library files from an external source (such as CDNJS) and place them in your project."
+subtitle: "This post is about Working with Microsoft Library Manager for ASP.NET Core. Recently ASP.NET Team posted a blog - about bower deprecation. And in there they mentioned about a new tool called Library Manager - Library Manager is an experimental client-side library acquisition tool. It provides a lightweight, simple mechanism that helps users find and fetch library files from an external source (such as CDNJS) and place them in your project."
 date: 2018-04-28 00:00:00
 categories: [ASP.NET Core,LibMan]
 tags: [ASP.NET Core,LibMan]
