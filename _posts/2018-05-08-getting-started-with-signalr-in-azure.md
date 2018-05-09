@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting started with SignalR in Azure"
+title: "Getting started with SignalR service in Azure"
 subtitle: "This post is about how to work with SignalR service in Azure. In Build 2018, Microsoft introduced SignalR in Azure as a service."
 date: 2018-05-08 00:00:00
 categories: [ASP.NET Core,SignalR,Azure]
