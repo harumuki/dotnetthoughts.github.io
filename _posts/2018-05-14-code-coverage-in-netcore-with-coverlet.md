@@ -2,7 +2,7 @@
 layout: post
 title: "Code coverage in .NET Core with Coverlet"
 subtitle: "This post is about how to enable code coverage in .NET Core with Coverlet and Report Generator."
-date: 2018-05-08 00:00:00
+date: 2018-05-14 00:00:00
 categories: [.NET Core,CodeCoverage,Coverlet]
 tags: [.NET Core,CodeCoverage,Coverlet]
 author: "Anuraj"
