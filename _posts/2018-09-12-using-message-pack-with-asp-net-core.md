@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using message pack protocol with ASP.NET"
+title: "Using message pack protocol with ASP.NET Core"
 subtitle: "This post is about how to use MessagePack in ASP.NET Core. MessagePack is an efficient binary serialization format. It lets you exchange data among multiple languages like JSON. But it's faster and smaller. Small integers are encoded into a single byte, and typical short strings require only one extra byte in addition to the strings themselves."
 date: 2018-09-12 00:00:00
 categories: [ASPNET Core,MessagePack]
