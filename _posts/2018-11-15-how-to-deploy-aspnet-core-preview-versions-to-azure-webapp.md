@@ -2,8 +2,8 @@
 layout: post
 title: "How deploy ASP.NET Core preview versions to Azure App Service"
 subtitle: "This post is about how to deploy ASP.NET Core preview versions in Azure app service."
-date: 2018-11-14 00:00:00
-categories: [Docker,NuGet Server,.NET Core]
+date: 2018-11-15 00:00:00
+categories: [Azure,ASP.NET Core]
 tags: [Docker,NuGet Server,.NET Core]
 author: "Anuraj"
 ---
