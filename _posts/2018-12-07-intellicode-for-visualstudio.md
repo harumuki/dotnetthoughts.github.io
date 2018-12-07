@@ -41,5 +41,6 @@ I started using Visual Studio IntelliCode. Are you using it? Did you faced any i
 2. [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode)
 3. [IntelliCode for Visual Studio Code FAQ](https://docs.microsoft.com/en-us/visualstudio/intellicode/intellicode-visual-studio-code)
 4. [IntelliCode for Visual Studio FAQ](https://docs.microsoft.com/en-us/visualstudio/intellicode/intellicode-visual-studio)
+5. [IntelliCode models based on your code FAQ](https://docs.microsoft.com/en-us/visualstudio/intellicode/custom-model-faq)
 
 Happy Programming :)
