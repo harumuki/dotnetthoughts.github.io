@@ -2,7 +2,7 @@
 layout: post
 title: "Background tasks in ASP.NET Core"
 subtitle: "This post is about running background tasks in ASP.NET Core. In .NET Core 2.1, Microsoft introduced a new feature called IHostedService to allow developers to run a background service that can have a managed lifetime to its caller, be it from an ASP.NET Core or a console."
-date: 2018-01-12 00:00:00
+date: 2019-01-12 00:00:00
 categories: [ASP.NET Core,Background Tasks]
 tags: [ASP.NET Core,Background Tasks]
 author: "Anuraj"
