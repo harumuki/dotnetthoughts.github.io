@@ -25,7 +25,7 @@ class Program
 
 Next publish the app using publish command. Next you need to create the `run.bat` file, you need to make sure it is correctly encoded as a UTF-8 file without BOM (by order marks). Otherwise it may not work properly. Here is my code in the `run.bat` file - `dotnet DemoWebJob.dll`. Once it is created, compress the zip file and upload it to the azure portal web jobs area.
 
-![Create Azure Web Jobs]({{ site.url }}/assets/images/2019/01/intellicode_model.png)
+![Create Azure Web Jobs]({{ site.url }}/assets/images/2019/01/azure_web_job.png)
 
 For the demo post I am using Manual mode. Here is the list of Web Jobs.
 
