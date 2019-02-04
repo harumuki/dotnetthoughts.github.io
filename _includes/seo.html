@@ -8,7 +8,7 @@
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:description" content="{{ page.subtitle }}" />
 {% assign foundImage = 0 %}
-{% assign images = post.content | split:"<img " %}
+{% assign images = post.content | markdownify | split:"<img " %}
 {% for image in images %}
 {% if image contains 'src' %}
     {% if foundImage == 0 %}
