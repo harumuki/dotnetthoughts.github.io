@@ -2,7 +2,7 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:og="http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +10,12 @@ layout: compress
   <link href="{{ site.url }}{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
   <link href="{{ site.url }}{{ site.baseurl }}/css/site.css" rel="stylesheet">
   <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico" />
-  <link href='{{ site.url }}{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
-  {% seo %}
+  <link href='https://feeds.feedburner.com/dotnetthoughts' rel='alternate' type='application/atom+xml'>
+  {% include seo.html %}
   <style>
   .footer { padding-right: 15px; padding-left: 15px; } .footer .text-muted { margin: 20px 0; } .footer .text-muted button {margin-top: -7px; }
   #overlay { background: #ffffff; color: #666666; position: fixed; height: 100%; width: 100%; z-index: 5000; top: 0; left: 0; float: left; text-align: center; padding-top: 25%; }
   </style>
-  <script type="text/javascript">
-    navigator.serviceWorker.getRegistrations().then(function (registrations) {
-        if (!registrations.length) {
-          console.log('No serviceWorker registrations found.')
-          return
-        }
-        for (let registration of registrations) {
-          registration.unregister().then(function (boolean) {
-            console.log(
-              (boolean ? 'Successfully unregistered' : 'Failed to unregister'), 'ServiceWorkerRegistration\n' +
-              (registration.installing ? '  .installing.scriptURL = ' + registration.installing.scriptURL + '\n' : '') +
-              (registration.waiting ? '  .waiting.scriptURL = ' + registration.waiting.scriptURL + '\n' : '') +
-              (registration.active ? '  .active.scriptURL = ' + registration.active.scriptURL + '\n' : '') +
-              '  .scope: ' + registration.scope + '\n'
-            )
-          })
-        }
-      })
-  </script>
 </head>
 
 <body>
