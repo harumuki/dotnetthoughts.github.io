@@ -1,21 +1,33 @@
-<title>{{ page.title }}</title>
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-<meta property="og:description" content="{{ page.subtitle }}" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@dotnet_thoughts" />
-<meta name="twitter:title" content="{{ page.title }}" />
-<meta name="twitter:description" content="{{ page.subtitle }}" />
-{% assign foundImage = 0 %}
-{% assign images = page.content | markdownify | split:"<img " %}
-{% for image in images %}
-{% if image contains 'src' %}
-    {% if foundImage == 0 %}
-        {% assign html = image | split:"/>" | first %}
-        <meta name="twitter:image" content="{{ html }}" />
-        <meta property="og:image" content="{{ html }}" />
-        {% assign foundImage = 1 %}
+{% if page.title == "" %}
+    <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:description" content="{{ page.subtitle }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@dotnet_thoughts" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.subtitle }}" />
+    {% assign foundImage = 0 %}
+    {% assign images = page.content | markdownify | split:"<img " %}
+    {% for image in images %}
+    {% if image contains 'src' %}
+        {% if foundImage == 0 %}
+            {% assign html = image | split:"/>" | first %}
+            <meta name="twitter:image" content="{{ html }}" />
+            <meta property="og:image" content="{{ html }}" />
+            {% assign foundImage = 1 %}
+        {% endif %}
     {% endif %}
+    {% endfor %}
+{% else %}
+    <title>dotnetthoughts</title>
+    <meta property="og:title" content="dotnetthoughts" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dotnetthoughts.net" />
+    <meta property="og:description" content="dotnetthoughts - a dotnet developers technology journal" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@dotnet_thoughts" />
+    <meta name="twitter:title" content="dotnetthoughts" />
+    <meta name="twitter:description" content="dotnetthoughts - a dotnet developers technology journal" />
 {% endif %}
-{% endfor %}
