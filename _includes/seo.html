@@ -8,7 +8,7 @@
     <meta name="twitter:site" content="@dotnet_thoughts" />
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.subtitle }}" />
-    {% assign foundImage = 0 %}
+    <!-- {% assign foundImage = 0 %}
     {% assign images = page.content | markdownify | split:"<img " %}
     {% for image in images %}
     {% if image contains 'src' %}
@@ -19,7 +19,7 @@
             {% assign foundImage = 1 %}
         {% endif %}
     {% endif %}
-    {% endfor %}
+    {% endfor %} -->
 {% else %}
     <title>dotnetthoughts</title>
     <meta property="og:title" content="dotnetthoughts" />
