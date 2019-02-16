@@ -9,11 +9,11 @@
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.subtitle }}" />
     {% assign foundImage = 0 %}
-    {% assign images = page.content | markdownify | split:"<img " %}
+    {% assign images = page.content | markdownify | split:"<img src="" %}
     {% for image in images %}
     {% if image contains 'src' %}
         {% if foundImage == 0 %}
-            {% assign html = image | split:" alt=" | first %}
+            {% assign html = image | split:"" alt=" | first %}
             <meta name="twitter:image" content="{{ html }}" />
             <meta property="og:image" content="{{ html }}" />
             {% assign foundImage = 1 %}
