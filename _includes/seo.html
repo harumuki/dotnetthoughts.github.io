@@ -10,10 +10,10 @@
     <meta name="twitter:description" content="{{ page.subtitle }}" />
     {% assign html = page.content | markdownify %}
     {% assign htmlImg = html | split:"<img src=" | last %}
-    {% assign imgSrc= htmlImg | split:" alt=" | first %}
+    {% assign imgSrc= htmlImg | split:" alt=" | first | replace:'"','' %}
     <meta name="twitter:image" content="{{ imgSrc }}" />
     <meta property="og:image" content="{{ imgSrc }}" />
-    
+
 {% else %}
     <title>dotnetthoughts</title>
     <meta property="og:title" content="dotnetthoughts" />
