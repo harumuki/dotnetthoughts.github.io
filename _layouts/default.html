@@ -142,6 +142,7 @@ function googleTranslateElementInit() {
       if($("#back-to-top").length){var scrollTrigger=100,backToTop=function(){var o=$(window).scrollTop();o>scrollTrigger?$("#back-to-top").addClass("show"):$("#back-to-top").removeClass("show")};backToTop(),$(window).on("scroll",function(){backToTop()}),$("#back-to-top").on("click",function(o){o.preventDefault(),$("html,body").animate({scrollTop:0},700)})};
     });
   </script>
+  <a name="comments"></a>
   {% if site.disqus_shortname and page.categories %}
   <script type="text/javascript">
     var disqus_shortname = '{{ site.disqus_shortname }}';
