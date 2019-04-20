@@ -11,7 +11,7 @@ This post is about using MessagePack protocol in SignalR. MessagePack is an effi
 
 To use MessagePack, you need to install a nuget package - `Microsoft.AspNetCore.SignalR.Protocols.MessagePack`. You can install the package using `dotnet add package Microsoft.AspNetCore.SignalR.Protocols.MessagePack --version 1.1.0-preview1-35029` command.
 
-![ASP.NET Core MessagePack NuGet package]({{ site.url }}/assets/images/2018/08/messagepack_package.png)
+![ASP.NET Core MessagePack NuGet package]({{ site.url }}/assets/images/2018/09/messagepack_package.png)
 
 Once you install, you can modify the startup code like this.
 
