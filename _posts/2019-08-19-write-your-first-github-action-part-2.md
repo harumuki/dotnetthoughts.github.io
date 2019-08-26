@@ -53,7 +53,7 @@ Now commit the changes, and it will trigger the build and you will be able to se
 
 Here is the screenshot from the deployment step.
 
-!NuGet deployment]({{ site.url }}/assets/images/2019/08/nuget_deployment.png)
+![NuGet deployment]({{ site.url }}/assets/images/2019/08/nuget_deployment.png)
 
 In this post we updated our build script and included steps to deploy the package using `dotnet nuget push` command. In the next part, we will explore how to build, test and deploy an ASP.NET Core API app to Azure using GitHub actions.
 
