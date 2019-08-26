@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Write your first GitHub action - Part 1"
+title: "Write your first GitHub action - Part 2"
 subtitle: "GitHub Actions makes it easy to automate all your software workflows. This post is about deploying your dotnet core nuget package to the nuget.org using dotnet nuget push command."
 date: 2019-08-25 00:00:00
 categories: [CI,GitHub Actions,ASPNET Core]
