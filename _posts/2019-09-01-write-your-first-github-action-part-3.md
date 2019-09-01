@@ -66,4 +66,12 @@ It is a todo API application with Open API and Unit Tests. Here is the screensho
 
 In this post we updated our build script and included steps to deploy the ASP.NET Core Web API application to Azure.
 
+### Bonus Tip
+
+You can include the build status badge using the following code. 
+
+```![badge](https://action-badges.now.sh/anuraj/todo)```
+
+You can update the README.md file with the above code, which will display the build action badge for your repository, you can find more details about this feature [here](https://action-badges.now.sh)
+
 Happy Programming :)
