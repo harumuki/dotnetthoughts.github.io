@@ -2,7 +2,7 @@
 layout: post
 title: "Working with Azure App Configuration in ASP.NET Core"
 subtitle: "This post is about Azure App Configuration and how to use it with ASP.NET Core applications. Azure App Configuration service helps developers to manage application settings and feature flags centrally for the applications running on cloud. Use App Configuration to store all the settings for your application and secure their accesses in one place."
-date: 2019-11-17 00:00:00
+date: 2019-11-16 00:00:00
 categories: [ASPNET Core,Azure]
 tags: [ASPNET Core,Azure]
 author: "Anuraj"
