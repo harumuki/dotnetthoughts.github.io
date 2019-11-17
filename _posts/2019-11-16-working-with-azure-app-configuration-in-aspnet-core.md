@@ -17,7 +17,7 @@ First, you need to create an Azure App Configuration instance. You need to sign 
 | Subscription | Select the Azure subscription that you want to use. |
 | Resource group | Select or create a resource group for your App Configuration store resource. |
 | Location | Location of your Azure App Configuration |
-{: class="table"}
+{: class="table table-bordered"}
 
 Here is the details of the one I am creating.
 
@@ -30,7 +30,7 @@ Once the resource created, you will get notified by the Azure portal. Once the A
 |Key  |Value |
 |----------|------------|
 |DemoApp:Settings:Layout|Grid|
-{: class="table"}
+{: class="table table-bordered"}
 I am adding only one setting - the layout option. It can be grid or list. By default Grid option is applied. The key is similar to the ASP.NET Core configuration key.
 
 ![Create new Azure App Configuration]({{ site.url }}/assets/images/2019/11/azure_app_config_create_keyvalue.png)
