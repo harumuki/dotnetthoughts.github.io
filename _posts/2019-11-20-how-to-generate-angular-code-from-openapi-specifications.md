@@ -129,7 +129,9 @@ In this file, I am referencing the library and using the GET method to fetch the
 
 {% highlight HTML %}
 <div *ngFor="let forecast of weatherForecasts">
+{% raw %}
   {{ forecast.date }} - {{ forecast.summary }}
+{% endraw %}
 </div>
 {% endhighlight %}
 
