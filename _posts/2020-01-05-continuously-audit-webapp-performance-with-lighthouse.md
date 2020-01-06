@@ -53,73 +53,7 @@ Next I am adding a powershell script with Inline text - this powershell script w
 
 And here is the powershell script, which convert the JSON to JUnit XML.
 
-{% highlight PowerShell %}
-{% raw %}
-function Get-ObjectMembers {
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory=$True, ValueFromPipeline=$True)]
-        [PSCustomObject]$obj
-    )
-    $obj | Get-Member -MemberType NoteProperty | ForEach-Object {
-        $key = $_.Name
-        [PSCustomObject]@{Key = $key; Value = $obj."$key"}
-    }
-}
-
-$lighthouse_report = Get-Content dotnetthoughts.report.json | ConvertFrom-Json
-
-$audits = $lighthouse_report.audits
-$timingEntries = $lighthouse_report.timing.entries
-
-$junitTemplate = @'
-<testsuite name="">
-    <testcase id="" name="" time="">
-        <failure></failure>
-    </testcase>
-</testsuite>
-'@
-
-$xml = New-Object xml
-$xml.LoadXml($junitTemplate)
-$testCaseTemplate = (@($xml.testsuite.testcase)[0]).Clone()
-
-$xml.testsuite.name = $lighthouse_report.requestedUrl.ToString()
-
-$audits | Get-ObjectMembers | foreach {
-if($_.Value.scoreDisplayMode -and 
-    $_.Value.scoreDisplayMode -ne "manual" -and $_.Value.scoreDisplayMode -eq "binary"){
-
-        $testCase = $testCaseTemplate.clone()
-        $testCase.id = $_.Value.id.ToString()
-        $testCase.name = $_.Value.title.ToString()
-
-        $entryName = "lh:audit:" + $_.Value.id.ToString()
-        
-        $timingEntries | foreach {
-            if($_.name -eq $entryName){
-                $testCase.time = $_.duration.ToString()
-            }
-        }
-
-
-        if(-not $_.Value.score){
-            $testCase.ChildNodes[0].innerText = $_.Value.description.ToString()
-        } else {
-            $testCase.RemoveChild($testCase.ChildNodes[0]) | Out-Null
-        }
-
-        $xml.testsuite.AppendChild($testCase) > $null
-    }
-}
-
-$xml.testsuite.testcase | Where-Object { $_.Name -eq "" } | ForEach-Object  { [void]$xml.testsuite.RemoveChild($_) }
-$outputFileName = "junit-report-test.xml"
-$outputFile = Join-Path $(Build.ArtifactStagingDirectory) $outputFileName
-$xml.Save($outputFile)
-Write-Output $outputFile
-{% endraw %}
-{% endhighlight %}
+<script src="https://gist.github.com/anuraj/bbb3767904097cd3dee7663ef66f1e1f.js"></script>
 
 For the powershell expert users - I am a powershell beginner, if you found any issues with the implementation please let me know.
 
