@@ -19,6 +19,12 @@ Once enabled, you can configure the index document name and error document path.
 
 ![Blazor app running on Azure Storage Account]({{ site.url }}/assets/images/2020/01/blazor_app_storage_account.png)
 
+While running the application, if you see any error like this.
+
+![Mono.wasm content type error]({{ site.url }}/assets/images/2020/01/blazor_app_storage_account_error.png)
+
+It is because of the content type of the `mono.wasm` file is not `application/wasm`. So you need to modify the Content type property of `mono.wasm` file to `application/wasm`.
+
 You can improve the performance of the app by configuring CDN endpoint for Azure Storage account. You can also create backend for Blazor app using Azure Functions.
 
 Happy Programming :)
