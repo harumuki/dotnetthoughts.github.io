@@ -52,7 +52,7 @@ messaging.requestPermission().then(m => {
 
 Right now I am configured this code in a button click, when user clicks on the button it will show a prompt like this.
 
-![Firebase SDK Config]({{ site.url }}/assets/images/2020/05/firebase_sdk_config.png)
+![Firebase SDK Config]({{ site.url }}/assets/images/2020/05/notification_request.png)
 
 This token need to be send to server and store it in the database.
 
