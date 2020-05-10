@@ -96,5 +96,6 @@ public class EmailModel
 
 The `Id` and `CreatedOn` fields added to store the information in the Database.
 
+You can use the SendGrid Inboud Parse webhook feature to implement systems where users can send email to save data to applications, like Send Email to send file to Microsoft Teams Channels or you can able to test application email delivery and email confirmations etc.
 
 Happy Programming :)
