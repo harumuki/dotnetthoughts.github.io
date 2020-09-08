@@ -44,7 +44,7 @@ You can find more information and logs how the deployment is working from the `C
 
 Since Application Insights not available, troubleshooting issues will be using the Log Stream feature of App Services. So you need to enable the App Service Logs. Once you enable it, click on the Log Stream. You will be able to see the log information. 
 
-![Log Stream Information]({{ site.url }}/assets/images/2020/09/logstream.png)
+![Log Stream Information]({{ site.url }}/assets/images/2020/09/log_stream.png)
 
 In this example the app won't run properly - the app requires more than 2000MB memory since I am using SQL Server docker image. If you upgrade to a different plan it will work properly.
 
