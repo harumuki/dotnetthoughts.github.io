@@ -39,4 +39,9 @@ Select your Azure Subscription and LUIS prediction resource which you created in
 
 In this post I explained about creating a Language understanding resource in Azure portal, creating, testing and publishing a LUIS resource in LUIS portal. In the next post I will explain how to use this resource in an application.
 
+Here is few resource which will help you to understand LUIS better.
+
+* [Add prebuilt models for common usage scenarios](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/howto-add-prebuilt-models?WT.mc_id=AZ-MVP-5002040)
+* [Language Understanding (LUIS) documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/?WT.mc_id=AZ-MVP-5002040)
+
 Happy Programming :)
