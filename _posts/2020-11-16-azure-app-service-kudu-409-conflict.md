@@ -2,7 +2,7 @@
 layout: post
 title: "Azure App Service 409 Conflict Could not write to local resource web.config due to error Access to the path is denied."
 subtitle: "This post is about how to fix the issue with 409 Conflict: Could not write to local resource D:\home\site\wwwroot\web.config due to error Access to the path is denied. when working with Azure App Service."
-date: 2020-11-17 00:00:00
+date: 2020-11-16 00:00:00
 categories: [Azure,AppService,Kudu]
 tags: [Azure,AppService,Kudu]
 author: "Anuraj"
