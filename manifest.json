@@ -1,11 +1,13 @@
 {
     "theme_color": "#000000",
     "background_color": "#FFFFFF",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
+    "name": "dotnetthoughts",
     "app_name": "dotnetthoughts",
     "short_name": "dotnetthoughts",
+    "orientation": "natural",
     "description": "a dotnet developer\u2019s technical journal - you can find articles about aspnet core, dotnet, unit testing, devops and azure",
     "icons": [
         {
