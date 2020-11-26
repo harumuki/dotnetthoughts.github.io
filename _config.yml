@@ -33,3 +33,7 @@ social:
     - https://twitter.com/anuraj
     - https://www.linkedin.com/in/anurajp
     - https://github.com/anuraj
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
