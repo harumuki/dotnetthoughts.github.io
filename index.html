@@ -10,7 +10,7 @@ title: dotnetthoughts
     <p class="blog-post-meta">{{ post.date | date_to_string }} by <a class="text-dark" href="{{ site.url }}/about">{{ post.author }}</a>
     </p>
     <p class="blog-post-meta">
-        {% for category in page.categories %}
+        {% for category in post.categories %}
 		<span class="badge badge-secondary">{{ category }}</span>
 	    {% endfor %}
     </p>
