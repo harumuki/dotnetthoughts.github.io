@@ -1,46 +1,35 @@
-# Site settings
-host : dotnetthoughts.net
-name : dotnetthoughts
+title: dotnetthoughts
+tagline: a dotnet developer's technical journal
 description: a dotnet developer's technical journal
-author : "Anuraj P"
-url : "https://dotnetthoughts.net"
-baseurl : "/"
-author_name : "Anuraj P"
-author_bio : "Anuraj Parameswaran works as an architect. He has been working on .NET platform since its early days. He is a co-founder of mobithoughts, a mobile application development company. His focus areas are Data Analytics, Architecture and Cloud computing. He is a Microsoft MVP in Visual Studio and Development technologies." 
-twitter_username: anuraj
-github_username:  anuraj
-facebook_username: dotnetthoughts
-googleplus_username : 105671778313820571858
+url: "https://dotnetthoughts.ne"
 disqus_shortname: dotnetthoughts
 google_analytics: 'UA-12179122-1'
-gravatar_hash : ab9111466be86e8e027c658e8dc1778f
-# Build settings
+google_site_verification: gfDtT8jd3OHpmGe2VJwYDE7G9-xwmpbQVVugKEU-Kp
+baseurl: "/"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
 permalink: /:title/
-paginate: 7
-showFeed : true
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-# SEO settings
-title: dotnetthoughts
+paginate: 5
+page_excerpts: true
+logo: /assets/logo.png
+feed:
+  posts_limit: 10
+author:
+  twitter: anuraj
 twitter:
-  username: dotnet_thoughts
-facebook:
-  app_id: 222755514444735
-  publisher: https://www.facebook.com/anuraj.p
-  admins: https://www.facebook.com/anuraj.p
+  username: anuraj
+  card: summary
 social:
-  name : Anuraj
-  links: ["http://www.twitter.com/anuraj","https://www.facebook.com/anuraj.p","https://plus.google.com/+AnurajP","https://in.linkedin.com/in/anurajp","https://www.youtube.com/channel/UC98FbpEB4PvgOYq1GKCtOgQ"]
-google_site_verification: gfDtT8jd3OHpmGe2VJwYDE7G9-xwmpbQVVugKEU-Kp4
+  name: Anuraj
+  links:
+    - https://twitter.com/anuraj
+    - https://www.linkedin.com/in/anurajp
+    - https://github.com/anuraj

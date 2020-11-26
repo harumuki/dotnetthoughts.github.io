@@ -1,49 +1,19 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2446392180502199"
-    data-ad-slot="4196250843"
-    data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<p>Posted by {% if page.author %}<a href="https://plus.google.com/+AnurajP">{{ page.author }}</a>{% else %}{{ site.title }}{% endif %} on 
-  {{ page.date | date: "%A, %B %-d, %Y" }}
-{% include timetoread.html %}
-</p>
- <p>
-	{% for category in page.categories %}
-		<a href="/tags#{{ category }}" class="label label-primary">{{ category }}</a>
-	{% endfor %}
-</p>
-<p>{{ content }}</p>
-<p>
-  What do you think? I would like to hear your thoughts, suggestions, and questions in the <a href="#comments">comments</a> section below.
-</p>
-<hr/>
-{% include sharebuttons.html %}
-<hr/>
-<div class="PageNavigation">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
+<div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="text-dark">{{ page.title }}</a></h2>
+    <p class="blog-post-meta">{{ page.date | date_to_string }} by <a href="{{ site.url }}/about">{{ page.author }}</a>
+    </p>
+    <p class="blog-post-meta">
+        {% for category in page.categories %}
+		<span class="badge badge-secondary">{{ category }}</span>
+	    {% endfor %}
+    </p>
+    <p>
+        {{ content }}
+    </p>
+    <p>
+        <div id="disqus_thread"></div>
+    </p>
 </div>
-<hr/>
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-format="autorelaxed"
-data-ad-client="ca-pub-2446392180502199"
-data-ad-slot="2475135396"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<hr/>
-{% if site.disqus_shortname and page.categories %}
-	<div id="disqus_thread"></div>
-{% endif %}

@@ -1,132 +1,31 @@
 ---
 layout: default
+description: a dotnet developer's technical journal - you can find articles about aspnet core, dotnet, unit testing, devops and azure
+title: dotnetthoughts
 ---
 
-<div class="posts">
-      {% for post in paginator.posts %}
-      {% if forloop.index == 1 %}
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-2446392180502199"
-          data-ad-slot="4196250843"
-          data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      {% endif %}
-      {% if forloop.index == 4 %}
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-2446392180502199"
-          data-ad-slot="4196250843"
-          data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      {% endif %}
-      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-      <p>Posted by <a href="https://plus.google.com/+AnurajP">{{ post.author }}</a> on 
-	{{ post.date | date: "%A, %B %-d, %Y" }} {% include timetoreadindex.html %}</p>
-      <p>
-            {% for category in post.categories %}
-                  <a href="/tags#{{ category }}" class="label label-primary">{{ category }}</a>
-            {% endfor %}
-      </p>
-      <div class="entry">
-        {{ post.excerpt | strip_html }}
-      </div>
-  {% endfor %}
+{% for post in paginator.posts %}
+<div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="text-dark">{{ post.title }}</a></h2>
+    <p class="blog-post-meta">{{ post.date | date_to_string }} by <a href="{{ site.url }}/about">{{ post.author }}</a>
+    </p>
+    <p>
+        {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+    </p>
 </div>
+<hr />
+{% endfor %}
 
 
-{% if paginator.total_pages != 1 %} 
-{% assign page_start = paginator.page | minus: 2 %}
-{% assign page_end = paginator.page | plus: 2 %}
-{% if page_end > paginator.total_pages %}
-{% assign page_end = paginator.total_pages %}
-{% assign page_start = paginator.page | minus: 4 %}
-{% endif %}
-{% if page_start < 2 %}
-{% assign page_end = paginator.page | plus: 3 %}
-{% assign page_start = paginator.page | minus: 1 %}
-{% endif %}
-{% if page_start == 0 %}
-{% assign page_end = paginator.page | plus: 4 %}
-{% assign page_start = paginator.page %}
-{% endif %}
-
-<nav>
-    <ul class="pagination">
-    {% if paginator.total_pages > 5 %} 
+<nav class="blog-pagination">
     {% if paginator.previous_page %}
-        <li>
-          <a href="{{ site.url }}{{ site.baseurl }}">&laquo;&laquo;</a>
-        </li>
+    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}">Previous</a>
     {% else %}
-      <li class="disabled">
-        <a>&laquo;&laquo;</a>
-      </li>
+    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Previous</a>
     {% endif %}
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <li>
-          <a href="/">&laquo;</a>
-        </li>
-      {% else %}
-        <li>
-          <a href="/page{{paginator.previous_page}}">&laquo;</a>
-        </li>
-      {% endif %}
+    {% if paginator.next_page  %}
+    <a class="btn btn-outline-primary" href="{{ paginator.next_page_path  }}">Next</a>
     {% else %}
-      <li class="disabled">
-        <a href="#">&laquo;</a>
-      </li>
+    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Next</a>
     {% endif %}
-    {% if page_start == 1 %}
-    {% assign page_end = paginator.page | plus: 4 %}
-    {% assign page_start = 2 %}
-    {% if paginator.page == 1 %}
-      <li>
-        <span style="color: white;background-color: #0085a1;border: 1px solid #0085a1;">1</span>
-      </li>
-    {% else %}
-      <li>
-        <a href="/">1</a>
-      </li>
-    {% endif %}
-    {% endif %}
-    {% for count in (page_start..page_end) %}
-      {% if count == paginator.page %}
-        <li>
-          <span style="color: white;background-color: #0085a1;border: 1px solid #0085a1;">{{count}}</span>
-        </li>
-      {% else %}
-        <li>
-          <a href="/page{{count}}">{{count}}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-    {% if paginator.next_page %}
-      <li>
-        <a href="/page{{paginator.next_page}}">&raquo;</a>
-      </li>
-    {% else %}
-      <li class="disabled">
-        <a href="#">&raquo;</a>
-      </li>
-    {% endif %}
-    {% if paginator.total_pages > 5 %} 
-    {% if paginator.next_page %}
-      <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/page{{paginator.total_pages}}">&raquo;&raquo;</a>
-      </li>
-    {% else %}
-      <li class="disabled">
-        <a>&raquo;&raquo;</a>
-      </li>
-    {% endif %}
-    {% endif %}
-  </ul>
 </nav>
-{% endif %}
