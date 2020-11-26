@@ -6,7 +6,6 @@ date: 2020-11-25 00:00:00
 categories: [Azure,QRCode,Serverless]
 tags: [Azure,QRCode,Serverless]
 author: "Anuraj"
-image: {{ site.url }}/assets/images/2020/11/qrgen_running.png
 ---
 This post is about creating a QR Code generator using Azure Functions. A QR code (abbreviated from Quick Response code) is a type of matrix barcode (or two-dimensional barcode) first designed in 1994 for the automotive industry in Japan. QR codes often contain data for a locator, identifier, or tracker that points to a website or application. I will be using a library - `QRCoder` to generate the QR Code for a URL. So first I have created a function with Http Trigger.
 
