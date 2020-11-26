@@ -7,7 +7,7 @@ title: dotnetthoughts
 {% for post in paginator.posts %}
 <div class="blog-post">
     <h2 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="text-dark">{{ post.title }}</a></h2>
-    <p class="blog-post-meta">{{ post.date | date_to_string }} by <a class="text-dark" href="{{ site.url }}/about">{{ post.author }}</a>
+    <p class="blog-post-meta">{{ post.date | date_to_string }} by <a href="{{ site.url }}/about">{{ post.author }}</a>
     </p>
     <p class="blog-post-meta">
         {% for category in post.categories %}
