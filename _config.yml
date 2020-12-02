@@ -22,11 +22,12 @@ page_excerpts: true
 logo: /assets/logo.png
 feed:
   posts_limit: 10
+seo_paginator_message: dotnetthoughts | a dotnet developer's technical journal
 author:
   twitter: anuraj
 twitter:
   username: anuraj
-  card: summary
+  card: summary_large_image
 social:
   name: Anuraj
   links:
