@@ -17,7 +17,7 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 permalink: /:title/
-paginate: 5
+paginate: 7
 page_excerpts: true
 logo: /assets/logo.png
 feed:

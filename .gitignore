@@ -2,4 +2,5 @@ _site
 .jekyll-cache.sass-cache
 .jekyll-metadata
 _config-dev.yml
-codealike.jso
+codealike.json
+.jekyll-cache
