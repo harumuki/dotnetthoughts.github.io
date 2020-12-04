@@ -146,6 +146,10 @@ Once you fill up all the fields - you can skip the State field, click on Get New
 
 ![Token from Azure AD]({{ site.url }}/assets/images/2020/12/token_from_azure_ad.png)
 
+Click on the Use Token button, which will add the `Authorization` header. Now we can send the GET request which will return the JSON results, like this.
+
+![Postman with Authorization header]({{ site.url }}/assets/images/2020/12/postman_execute_auth.png)
+
 You can create another Azure App registration and use the Client Id instead of using the API client Id and secret. This way you can protect ASP.NET Core Web API using Azure Active Directory.
 
 Happy Programming :)
