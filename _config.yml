@@ -1,10 +1,10 @@
 title: dotnetthoughts
-tagline: a dotnet developer's technical journal
-description: a dotnet developer's technical journal
-url: "https://dotnetthoughts.net"
+tagline: a lehuc dotnet developer's technical journal
+description: a lehuc dotnet developer's technical journal
+url: "https://lehuc.com"
 disqus_shortname: dotnetthoughts
-google_analytics: 'UA-12179122-1'
-google_site_verification: gfDtT8jd3OHpmGe2VJwYDE7G9-xwmpbQVVugKEU-Kp
+google_analytics: 'UA-IDHERRE-1'
+google_site_verification: noplease
 baseurl: "/"
 plugins:
   - jekyll-sitemap
